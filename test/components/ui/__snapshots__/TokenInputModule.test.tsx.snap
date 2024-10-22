@@ -1,0 +1,1701 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`components/ui/TokenInputModule > should NOT show destination wallet address next to Balance when srcToken is true 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+        data-testid="token-input-source"
+      >
+        <div
+          class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+        >
+          <div
+            class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+          >
+            <div
+              class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+            >
+              From:
+            </div>
+            <input
+              class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+              inputmode="decimal"
+              min="0"
+              placeholder="0"
+              value=""
+            />
+          </div>
+          <button
+            aria-controls="radix-:rc:"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+            class=""
+            data-state="closed"
+            type="button"
+          >
+            <div
+              class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+            >
+              <div
+                class="aw-relative aw-z-0 aw-mr-2"
+              >
+                <img
+                  alt="token"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                />
+                <div
+                  data-testid="chain-icon"
+                >
+                  <img
+                    alt=""
+                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                  />
+                </div>
+              </div>
+              <span
+                class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+              >
+                APE
+              </span>
+              <svg
+                fill="none"
+                height="35"
+                viewBox="0 0 24 24"
+                width="35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  id="arrow-down"
+                >
+                  <path
+                    d="M8 10L12 14L16 10"
+                    id="Vector"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+        >
+          <div
+            class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            $0
+          </div>
+          <div>
+            <span
+              class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+            >
+              Balance
+              :
+            </span>
+            <span
+              class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+            >
+              Loading...
+            </span>
+          </div>
+          <button
+            class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+            disabled=""
+          >
+            <div
+              class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+            >
+              MAX
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+      data-testid="token-input-source"
+    >
+      <div
+        class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+      >
+        <div
+          class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+        >
+          <div
+            class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+          >
+            From:
+          </div>
+          <input
+            class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+            inputmode="decimal"
+            min="0"
+            placeholder="0"
+            value=""
+          />
+        </div>
+        <button
+          aria-controls="radix-:rc:"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class=""
+          data-state="closed"
+          type="button"
+        >
+          <div
+            class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+          >
+            <div
+              class="aw-relative aw-z-0 aw-mr-2"
+            >
+              <img
+                alt="token"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+              />
+              <div
+                data-testid="chain-icon"
+              >
+                <img
+                  alt=""
+                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                />
+              </div>
+            </div>
+            <span
+              class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+            >
+              APE
+            </span>
+            <svg
+              fill="none"
+              height="35"
+              viewBox="0 0 24 24"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                id="arrow-down"
+              >
+                <path
+                  d="M8 10L12 14L16 10"
+                  id="Vector"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+      >
+        <div
+          class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+        >
+          $0
+        </div>
+        <div>
+          <span
+            class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+          >
+            Balance
+            :
+          </span>
+          <span
+            class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            Loading...
+          </span>
+        </div>
+        <button
+          class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+          disabled=""
+        >
+          <div
+            class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+          >
+            MAX
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TokenInputModule > should only render MaxButton when srcToken is true 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+        data-testid="token-input-source"
+      >
+        <div
+          class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+        >
+          <div
+            class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+          >
+            <div
+              class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+            >
+              From:
+            </div>
+            <input
+              class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+              inputmode="decimal"
+              min="0"
+              placeholder="0"
+              value=""
+            />
+          </div>
+          <button
+            aria-controls="radix-:r3:"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+            class=""
+            data-state="closed"
+            type="button"
+          >
+            <div
+              class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+            >
+              <div
+                class="aw-relative aw-z-0 aw-mr-2"
+              >
+                <img
+                  alt="token"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                />
+                <div
+                  data-testid="chain-icon"
+                >
+                  <img
+                    alt=""
+                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                  />
+                </div>
+              </div>
+              <span
+                class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+              >
+                APE
+              </span>
+              <svg
+                fill="none"
+                height="35"
+                viewBox="0 0 24 24"
+                width="35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  id="arrow-down"
+                >
+                  <path
+                    d="M8 10L12 14L16 10"
+                    id="Vector"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+        >
+          <div
+            class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            $0
+          </div>
+          <div>
+            <span
+              class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+            >
+              Balance
+              :
+            </span>
+            <span
+              class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+            >
+              Loading...
+            </span>
+          </div>
+          <button
+            class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+            disabled=""
+          >
+            <div
+              class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+            >
+              MAX
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+      data-testid="token-input-source"
+    >
+      <div
+        class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+      >
+        <div
+          class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+        >
+          <div
+            class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+          >
+            From:
+          </div>
+          <input
+            class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+            inputmode="decimal"
+            min="0"
+            placeholder="0"
+            value=""
+          />
+        </div>
+        <button
+          aria-controls="radix-:r3:"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class=""
+          data-state="closed"
+          type="button"
+        >
+          <div
+            class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+          >
+            <div
+              class="aw-relative aw-z-0 aw-mr-2"
+            >
+              <img
+                alt="token"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+              />
+              <div
+                data-testid="chain-icon"
+              >
+                <img
+                  alt=""
+                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                />
+              </div>
+            </div>
+            <span
+              class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+            >
+              APE
+            </span>
+            <svg
+              fill="none"
+              height="35"
+              viewBox="0 0 24 24"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                id="arrow-down"
+              >
+                <path
+                  d="M8 10L12 14L16 10"
+                  id="Vector"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+      >
+        <div
+          class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+        >
+          $0
+        </div>
+        <div>
+          <span
+            class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+          >
+            Balance
+            :
+          </span>
+          <span
+            class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            Loading...
+          </span>
+        </div>
+        <button
+          class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+          disabled=""
+        >
+          <div
+            class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+          >
+            MAX
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TokenInputModule > should render MaxButton disabled if wallet is NOT connected 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+        data-testid="token-input-source"
+      >
+        <div
+          class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+        >
+          <div
+            class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+          >
+            <div
+              class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+            >
+              From:
+            </div>
+            <input
+              class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+              inputmode="decimal"
+              min="0"
+              placeholder="0"
+              value=""
+            />
+          </div>
+          <button
+            aria-controls="radix-:r6:"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+            class=""
+            data-state="closed"
+            type="button"
+          >
+            <div
+              class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+            >
+              <div
+                class="aw-relative aw-z-0 aw-mr-2"
+              >
+                <img
+                  alt="token"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                />
+                <div
+                  data-testid="chain-icon"
+                >
+                  <img
+                    alt=""
+                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                  />
+                </div>
+              </div>
+              <span
+                class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+              >
+                APE
+              </span>
+              <svg
+                fill="none"
+                height="35"
+                viewBox="0 0 24 24"
+                width="35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  id="arrow-down"
+                >
+                  <path
+                    d="M8 10L12 14L16 10"
+                    id="Vector"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+        >
+          <div
+            class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            $0
+          </div>
+          <div>
+            <span
+              class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+            >
+              Balance
+              :
+            </span>
+            <span
+              class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+            >
+              Loading...
+            </span>
+          </div>
+          <button
+            class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+            disabled=""
+          >
+            <div
+              class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+            >
+              MAX
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+      data-testid="token-input-source"
+    >
+      <div
+        class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+      >
+        <div
+          class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+        >
+          <div
+            class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+          >
+            From:
+          </div>
+          <input
+            class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+            inputmode="decimal"
+            min="0"
+            placeholder="0"
+            value=""
+          />
+        </div>
+        <button
+          aria-controls="radix-:r6:"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class=""
+          data-state="closed"
+          type="button"
+        >
+          <div
+            class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+          >
+            <div
+              class="aw-relative aw-z-0 aw-mr-2"
+            >
+              <img
+                alt="token"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+              />
+              <div
+                data-testid="chain-icon"
+              >
+                <img
+                  alt=""
+                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                />
+              </div>
+            </div>
+            <span
+              class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+            >
+              APE
+            </span>
+            <svg
+              fill="none"
+              height="35"
+              viewBox="0 0 24 24"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                id="arrow-down"
+              >
+                <path
+                  d="M8 10L12 14L16 10"
+                  id="Vector"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+      >
+        <div
+          class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+        >
+          $0
+        </div>
+        <div>
+          <span
+            class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+          >
+            Balance
+            :
+          </span>
+          <span
+            class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            Loading...
+          </span>
+        </div>
+        <button
+          class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+          disabled=""
+        >
+          <div
+            class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+          >
+            MAX
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TokenInputModule > should render MaxButton enabled if wallet is connected 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+        data-testid="token-input-source"
+      >
+        <div
+          class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+        >
+          <div
+            class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+          >
+            <div
+              class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+            >
+              From:
+            </div>
+            <input
+              class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+              inputmode="decimal"
+              min="0"
+              placeholder="0"
+              value=""
+            />
+          </div>
+          <button
+            aria-controls="radix-:r9:"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+            class=""
+            data-state="closed"
+            type="button"
+          >
+            <div
+              class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+            >
+              <div
+                class="aw-relative aw-z-0 aw-mr-2"
+              >
+                <img
+                  alt="token"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                />
+                <div
+                  data-testid="chain-icon"
+                >
+                  <img
+                    alt=""
+                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                  />
+                </div>
+              </div>
+              <span
+                class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+              >
+                APE
+              </span>
+              <svg
+                fill="none"
+                height="35"
+                viewBox="0 0 24 24"
+                width="35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  id="arrow-down"
+                >
+                  <path
+                    d="M8 10L12 14L16 10"
+                    id="Vector"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+        >
+          <div
+            class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            $0
+          </div>
+          <div>
+            <span
+              class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+            >
+              Balance
+              :
+            </span>
+            <span
+              class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+            >
+              Loading...
+            </span>
+          </div>
+          <button
+            class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+          >
+            <div
+              class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+            >
+              MAX
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+      data-testid="token-input-source"
+    >
+      <div
+        class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+      >
+        <div
+          class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+        >
+          <div
+            class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+          >
+            From:
+          </div>
+          <input
+            class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+            inputmode="decimal"
+            min="0"
+            placeholder="0"
+            value=""
+          />
+        </div>
+        <button
+          aria-controls="radix-:r9:"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class=""
+          data-state="closed"
+          type="button"
+        >
+          <div
+            class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+          >
+            <div
+              class="aw-relative aw-z-0 aw-mr-2"
+            >
+              <img
+                alt="token"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+              />
+              <div
+                data-testid="chain-icon"
+              >
+                <img
+                  alt=""
+                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                />
+              </div>
+            </div>
+            <span
+              class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+            >
+              APE
+            </span>
+            <svg
+              fill="none"
+              height="35"
+              viewBox="0 0 24 24"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                id="arrow-down"
+              >
+                <path
+                  d="M8 10L12 14L16 10"
+                  id="Vector"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+      >
+        <div
+          class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+        >
+          $0
+        </div>
+        <div>
+          <span
+            class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+          >
+            Balance
+            :
+          </span>
+          <span
+            class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            Loading...
+          </span>
+        </div>
+        <button
+          class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+        >
+          <div
+            class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+          >
+            MAX
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+        data-testid="token-input-destination"
+      >
+        <div
+          class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+        >
+          <div
+            class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+          >
+            <div
+              class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+            >
+              To:
+            </div>
+            <input
+              class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+              inputmode="decimal"
+              min="0"
+              placeholder="0"
+              value=""
+            />
+          </div>
+          <button
+            aria-controls="radix-:r0:"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+            class=""
+            data-state="closed"
+            type="button"
+          >
+            <div
+              class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+            >
+              <div
+                class="aw-relative aw-z-0 aw-mr-2"
+              >
+                <img
+                  alt="token"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                />
+                <div
+                  data-testid="chain-icon"
+                >
+                  <img
+                    alt=""
+                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                  />
+                </div>
+              </div>
+              <span
+                class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+              >
+                APE
+              </span>
+              <svg
+                fill="none"
+                height="35"
+                viewBox="0 0 24 24"
+                width="35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  id="arrow-down"
+                >
+                  <path
+                    d="M8 10L12 14L16 10"
+                    id="Vector"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+        >
+          <div
+            class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            $0
+          </div>
+          <div>
+            <span
+              class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+            >
+              Balance
+              :
+            </span>
+            <span
+              class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+            >
+              Loading...
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+      data-testid="token-input-destination"
+    >
+      <div
+        class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+      >
+        <div
+          class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+        >
+          <div
+            class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+          >
+            To:
+          </div>
+          <input
+            class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+            inputmode="decimal"
+            min="0"
+            placeholder="0"
+            value=""
+          />
+        </div>
+        <button
+          aria-controls="radix-:r0:"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class=""
+          data-state="closed"
+          type="button"
+        >
+          <div
+            class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+          >
+            <div
+              class="aw-relative aw-z-0 aw-mr-2"
+            >
+              <img
+                alt="token"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+              />
+              <div
+                data-testid="chain-icon"
+              >
+                <img
+                  alt=""
+                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                />
+              </div>
+            </div>
+            <span
+              class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+            >
+              APE
+            </span>
+            <svg
+              fill="none"
+              height="35"
+              viewBox="0 0 24 24"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                id="arrow-down"
+              >
+                <path
+                  d="M8 10L12 14L16 10"
+                  id="Vector"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+      >
+        <div
+          class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+        >
+          $0
+        </div>
+        <div>
+          <span
+            class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+          >
+            Balance
+            :
+          </span>
+          <span
+            class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TokenInputModule > should show destination wallet address Balance when srcToken is false 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+        data-testid="token-input-destination"
+      >
+        <div
+          class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+        >
+          <div
+            class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+          >
+            <div
+              class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+            >
+              To:
+            </div>
+            <input
+              class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+              inputmode="decimal"
+              min="0"
+              placeholder="0"
+              value=""
+            />
+          </div>
+          <button
+            aria-controls="radix-:rf:"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+            class=""
+            data-state="closed"
+            type="button"
+          >
+            <div
+              class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+            >
+              <div
+                class="aw-relative aw-z-0 aw-mr-2"
+              >
+                <img
+                  alt="token"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                />
+                <div
+                  data-testid="chain-icon"
+                >
+                  <img
+                    alt=""
+                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                  />
+                </div>
+              </div>
+              <span
+                class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+              >
+                APE
+              </span>
+              <svg
+                fill="none"
+                height="35"
+                viewBox="0 0 24 24"
+                width="35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  id="arrow-down"
+                >
+                  <path
+                    d="M8 10L12 14L16 10"
+                    id="Vector"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+        >
+          <div
+            class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            $0
+          </div>
+          <div>
+            <span
+              class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+            >
+              Balance
+               0xf39F...2266
+              :
+            </span>
+            <span
+              class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+            >
+              Loading...
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]"
+      data-testid="token-input-destination"
+    >
+      <div
+        class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+      >
+        <div
+          class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+        >
+          <div
+            class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+          >
+            To:
+          </div>
+          <input
+            class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+            inputmode="decimal"
+            min="0"
+            placeholder="0"
+            value=""
+          />
+        </div>
+        <button
+          aria-controls="radix-:rf:"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class=""
+          data-state="closed"
+          type="button"
+        >
+          <div
+            class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+          >
+            <div
+              class="aw-relative aw-z-0 aw-mr-2"
+            >
+              <img
+                alt="token"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+              />
+              <div
+                data-testid="chain-icon"
+              >
+                <img
+                  alt=""
+                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                />
+              </div>
+            </div>
+            <span
+              class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+            >
+              APE
+            </span>
+            <svg
+              fill="none"
+              height="35"
+              viewBox="0 0 24 24"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                id="arrow-down"
+              >
+                <path
+                  d="M8 10L12 14L16 10"
+                  id="Vector"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+      >
+        <div
+          class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+        >
+          $0
+        </div>
+        <div>
+          <span
+            class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+          >
+            Balance
+             0xf39F...2266
+            :
+          </span>
+          <span
+            class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

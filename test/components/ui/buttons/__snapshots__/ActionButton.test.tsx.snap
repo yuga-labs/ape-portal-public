@@ -1,0 +1,1368 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`components/ui/buttons/ActionButton > should be disabled when bridgeError is set to HIGH_PRICE_IMPACT 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+        disabled=""
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Price impact too high
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      disabled=""
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Price impact too high
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should be disabled when bridgeError is set to INSUFFICIENT_FUNDS 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+        disabled=""
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Insufficient funds
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      disabled=""
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Insufficient funds
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should be disabled when bridgeError is set to UNKNOWN_ERROR 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+        disabled=""
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Something went wrong
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      disabled=""
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Something went wrong
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should be disabled when bridgeError is set to WRONG_NETWORK 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+        disabled=""
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Bad from or to chains
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      disabled=""
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Bad from or to chains
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should be disabled when disabled prop is true and wallet is connected 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+        disabled=""
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Enter Amount
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      disabled=""
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Enter Amount
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should be disabled when store waitingForTokenApprovalTxConfirm is true 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-gradient-lavender-coral-sunset aw-relative aw-h-[62px] aw-cursor-not-allowed aw-overflow-hidden aw-text-clip"
+        disabled=""
+      >
+        <div
+          class="aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-w-full aw-absolute aw-left-1/2 aw-top-1/2 aw--translate-x-1/2 aw--translate-y-1/2 aw-cursor-not-allowed aw-text-blue-900"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Transaction is confirming...
+        </div>
+        <canvas
+          class="aw-size-full aw-rounded-[5px]"
+          id="aw-button-bg"
+        />
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-gradient-lavender-coral-sunset aw-relative aw-h-[62px] aw-cursor-not-allowed aw-overflow-hidden aw-text-clip"
+      disabled=""
+    >
+      <div
+        class="aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-w-full aw-absolute aw-left-1/2 aw-top-1/2 aw--translate-x-1/2 aw--translate-y-1/2 aw-cursor-not-allowed aw-text-blue-900"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Transaction is confirming...
+      </div>
+      <canvas
+        class="aw-size-full aw-rounded-[5px]"
+        id="aw-button-bg"
+      />
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should be enabled if wallet is not connected 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Connect Wallet
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Connect Wallet
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should be enabled in Connect Wallet state even if prop disabled=true 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Connect Wallet
+        </div>
+      </button>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Connect Wallet
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should say Approve token for spend when isTokenApprovalRequired is true 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Approve token for spend
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Approve token for spend
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should say Bridge when wallet is connected to correct network 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Bridge
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Bridge
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should say Connect Wallet when not wallet is not connected 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Connect Wallet
+        </div>
+      </button>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Connect Wallet
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should say Enter Amount before source and destination token amounts are set 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+        disabled=""
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Enter Amount
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      disabled=""
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Enter Amount
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should say Swap when wallet is connected to correct network 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Swap
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Swap
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should say Switch Network when wallet is connected to wrong network 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Switch Network to 1
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Switch Network to 1
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should say Waiting for signature when waitingForSignature is true 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-gradient-lavender-coral-sunset aw-relative aw-h-[62px] aw-cursor-not-allowed aw-overflow-hidden aw-text-clip"
+      >
+        <div
+          class="aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-w-full aw-absolute aw-left-1/2 aw-top-1/2 aw--translate-x-1/2 aw--translate-y-1/2 aw-cursor-not-allowed aw-text-blue-900"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Waiting for signature
+        </div>
+        <canvas
+          class="aw-size-full aw-rounded-[5px]"
+          id="aw-button-bg"
+        />
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-gradient-lavender-coral-sunset aw-relative aw-h-[62px] aw-cursor-not-allowed aw-overflow-hidden aw-text-clip"
+    >
+      <div
+        class="aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-w-full aw-absolute aw-left-1/2 aw-top-1/2 aw--translate-x-1/2 aw--translate-y-1/2 aw-cursor-not-allowed aw-text-blue-900"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Waiting for signature
+      </div>
+      <canvas
+        class="aw-size-full aw-rounded-[5px]"
+        id="aw-button-bg"
+      />
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

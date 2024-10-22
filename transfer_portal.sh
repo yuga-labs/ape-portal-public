@@ -44,8 +44,8 @@ rsync -av --exclude-from="../ape-portal/.gitignore" --exclude=".git" --exclude="
 # Step 7: Update the package.json file to reflect the new package/repo name
 sed -i '' 's/ape-portal/ape-portal-public/g' package.json
 
-# Step 8: Update the package-lock.json file
-npm install --package-lock-only
+# Step 8: Install the dependencies
+npm install
 
 # Step 9: Update the ci.yml file to remove the badge step
 yq -i 'del( .jobs.test.steps[] | select(.name == "*Badge*" ) )' .github/workflows/ci.yml

@@ -1,0 +1,677 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`components/ui/TransactionWarnings > should render price impact warning only 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+        id=""
+      >
+        <span
+          class="aw-mr-1.5 aw-font-bold"
+        >
+          Warning:
+        </span>
+        <ul
+          class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+        >
+          <li
+            class="aw-text-danger"
+          >
+            You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            Slippage higher than 1% may be frontrun and result in unfavorable prices.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+      id=""
+    >
+      <span
+        class="aw-mr-1.5 aw-font-bold"
+      >
+        Warning:
+      </span>
+      <ul
+        class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+      >
+        <li
+          class="aw-text-danger"
+        >
+          You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          Slippage higher than 1% may be frontrun and result in unfavorable prices.
+        </li>
+      </ul>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionWarnings > should render warnings when isTopTrader is FALSE 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+        id=""
+      >
+        <span
+          class="aw-mr-1.5 aw-font-bold"
+        >
+          Warning:
+        </span>
+        <ul
+          class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+        >
+          <li
+            class="aw-text-danger"
+          >
+            You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            The estimated waiting time to bridge is 7 days.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            Slippage higher than 1% may be frontrun and result in unfavorable prices.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            Funds will be sent to a different wallet address! 0x1234...7890
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+      id=""
+    >
+      <span
+        class="aw-mr-1.5 aw-font-bold"
+      >
+        Warning:
+      </span>
+      <ul
+        class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+      >
+        <li
+          class="aw-text-danger"
+        >
+          You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          The estimated waiting time to bridge is 7 days.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          Slippage higher than 1% may be frontrun and result in unfavorable prices.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          Funds will be sent to a different wallet address! 0x1234...7890
+        </li>
+      </ul>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionWarnings > should render warnings when isTopTrader is TRUE 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+        id="aw-top-trader-warning"
+      >
+        <span
+          class="aw-mr-1.5 aw-font-bold"
+        >
+          Warning:
+        </span>
+        <ul
+          class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+        >
+          <li
+            class="aw-text-danger"
+          >
+            You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            The estimated waiting time to bridge is 7 days.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            Slippage higher than 1% may be frontrun and result in unfavorable prices.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            Funds will arrive in your Top Trader wallet and will be ready for you to enter Top Trader Tournaments
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+      id="aw-top-trader-warning"
+    >
+      <span
+        class="aw-mr-1.5 aw-font-bold"
+      >
+        Warning:
+      </span>
+      <ul
+        class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+      >
+        <li
+          class="aw-text-danger"
+        >
+          You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          The estimated waiting time to bridge is 7 days.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          Slippage higher than 1% may be frontrun and result in unfavorable prices.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          Funds will arrive in your Top Trader wallet and will be ready for you to enter Top Trader Tournaments
+        </li>
+      </ul>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionWarnings > should render warnings without receiver address 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+        id=""
+      >
+        <span
+          class="aw-mr-1.5 aw-font-bold"
+        >
+          Warning:
+        </span>
+        <ul
+          class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+        >
+          <li
+            class="aw-text-danger"
+          >
+            You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            The estimated waiting time to bridge is 7 days.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            Slippage higher than 1% may be frontrun and result in unfavorable prices.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+      id=""
+    >
+      <span
+        class="aw-mr-1.5 aw-font-bold"
+      >
+        Warning:
+      </span>
+      <ul
+        class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+      >
+        <li
+          class="aw-text-danger"
+        >
+          You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          The estimated waiting time to bridge is 7 days.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          Slippage higher than 1% may be frontrun and result in unfavorable prices.
+        </li>
+      </ul>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionWarnings > should render warnings without slippage 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+        id=""
+      >
+        <span
+          class="aw-mr-1.5 aw-font-bold"
+        >
+          Warning:
+        </span>
+        <ul
+          class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+        >
+          <li
+            class="aw-text-danger"
+          >
+            You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            The estimated waiting time to bridge is 7 days.
+          </li>
+          <li
+            class="aw-text-warning"
+          >
+            Funds will be sent to a different wallet address! 0x1234...7890
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="aw-flex aw-flex-col aw-text-left aw-w-full aw-justify-between aw-border-t aw-border-white/10 aw-py-2 aw-text-[14px] aw-leading-[14px] aw-tracking-[0.12px] aw-gap-y-2 aw-text-danger"
+      id=""
+    >
+      <span
+        class="aw-mr-1.5 aw-font-bold"
+      >
+        Warning:
+      </span>
+      <ul
+        class="aw-ml-4 aw-list-disc aw-space-y-2 aw-leading-[18px]"
+      >
+        <li
+          class="aw-text-danger"
+        >
+          You will receive 2.3% less than the amount sent (in USD equivalent). Try sending smaller amounts to reduce price impact.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          The estimated waiting time to bridge is 7 days.
+        </li>
+        <li
+          class="aw-text-warning"
+        >
+          Funds will be sent to a different wallet address! 0x1234...7890
+        </li>
+      </ul>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionWarnings > should return nothing if there are no warnings 2`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div />
+  </body>,
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

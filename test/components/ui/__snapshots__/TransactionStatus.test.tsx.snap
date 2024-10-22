@@ -1,0 +1,1337 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if showCloseButton is FALSE 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+    <div />
+    <div
+      aria-labelledby="radix-:rd:"
+      class="aw-pointer-events-auto aw-size-full"
+      data-state="open"
+      id="radix-:rc:"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div
+        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+      >
+        <span
+          style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
+        >
+          <h2
+            id="radix-:rd:"
+          >
+            Transaction Status
+          </h2>
+        </span>
+        <div
+          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+        >
+          <div
+            class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
+          >
+            <div
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+            >
+              Processing Transaction
+            </div>
+            <h2
+              class="aw-mt-8 aw-text-[16px] aw-text-white"
+            >
+              Bridging
+            </h2>
+            <div
+              class="aw-relative aw-mt-8 aw-flex aw-w-4/5 aw-flex-row aw-justify-center aw-gap-x-4"
+            >
+              <div
+                class="aw-relative aw-flex aw-h-20 aw-w-full aw-flex-row aw-items-center aw-justify-evenly aw-rounded-full aw-animated-gradient"
+                style="width: 60%;"
+              >
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-start"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <img
+                      alt=""
+                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        Ethereum
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                    <div
+                      class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+                      data-testid="animation-pulse-token"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="aw-mx-auto"
+                />
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <img
+                      alt=""
+                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        ApeChain
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                    <div
+                      class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+                      data-testid="animation-pulse-token"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
+            >
+              <div
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white aw-invisible"
+              >
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
+                >
+                  Estimated Time:
+                </div>
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-bold"
+                />
+              </div>
+              <div
+                class="aw-flex aw-flex-col"
+              >
+                <a
+                  href="https://www.decentscan.xyz/?chainId=1&txHash=0x1234567890123456789012345678901234567890"
+                  target="_blank"
+                >
+                  <button
+                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px]"
+                  >
+                    <div
+                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
+                    >
+                      View Transaction
+                      <svg
+                        fill="none"
+                        height="10"
+                        viewBox="0 0 12 12"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 1L1 11M11 1H1M11 1V11"
+                          id="Vector"
+                          stroke="white"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+                <a
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  href="https://help.apeportal.xyz"
+                  target="_blank"
+                >
+                  Bridge
+                   Support
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+  </body>,
+  "connect": [Function],
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionStatus > escape key DOES close modal if showCloseButton is TRUE 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div />
+  </body>,
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionStatus > estimated time is visible in processing state 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+    <div />
+    <div
+      aria-labelledby="radix-:r7:"
+      class="aw-pointer-events-auto aw-size-full"
+      data-state="open"
+      id="radix-:r6:"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div
+        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+      >
+        <span
+          style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
+        >
+          <h2
+            id="radix-:r7:"
+          >
+            Transaction Status
+          </h2>
+        </span>
+        <div
+          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+        >
+          <div
+            class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
+          >
+            <div
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+            >
+              Processing Transaction
+            </div>
+            <h2
+              class="aw-mt-8 aw-text-[16px] aw-text-white"
+            >
+              Bridging
+            </h2>
+            <div
+              class="aw-relative aw-mt-8 aw-flex aw-w-4/5 aw-flex-row aw-justify-center aw-gap-x-4"
+            >
+              <div
+                class="aw-relative aw-flex aw-h-20 aw-w-full aw-flex-row aw-items-center aw-justify-evenly aw-rounded-full aw-animated-gradient"
+                style="width: 60%;"
+              >
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-start"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <img
+                      alt=""
+                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        Ethereum
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                    <div
+                      class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+                      data-testid="animation-pulse-token"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="aw-mx-auto"
+                />
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <img
+                      alt=""
+                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        ApeChain
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                    <div
+                      class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+                      data-testid="animation-pulse-token"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
+            >
+              <div
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white"
+              >
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
+                >
+                  Estimated Time:
+                </div>
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-bold"
+                >
+                  30 seconds
+                </div>
+              </div>
+              <div
+                class="aw-flex aw-flex-col"
+              >
+                <a
+                  href="https://www.decentscan.xyz/?chainId=1&txHash=0x1234567890123456789012345678901234567890"
+                  target="_blank"
+                >
+                  <button
+                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px]"
+                  >
+                    <div
+                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
+                    >
+                      View Transaction
+                      <svg
+                        fill="none"
+                        height="10"
+                        viewBox="0 0 12 12"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 1L1 11M11 1H1M11 1V11"
+                          id="Vector"
+                          stroke="white"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+                <a
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  href="https://help.apeportal.xyz"
+                  target="_blank"
+                >
+                  Bridge
+                   Support
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+  </body>,
+  "connect": [Function],
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionStatus > estimated time is visible in waiting for signature state 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+    <div />
+    <div
+      aria-labelledby="radix-:r4:"
+      class="aw-pointer-events-auto aw-size-full"
+      data-state="open"
+      id="radix-:r3:"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div
+        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+      >
+        <span
+          style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
+        >
+          <h2
+            id="radix-:r4:"
+          >
+            Transaction Status
+          </h2>
+        </span>
+        <div
+          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+        >
+          <div
+            class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
+          >
+            <div
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+            >
+              Check Your Wallet
+            </div>
+            <h2
+              class="aw-mt-8 aw-text-[16px] aw-text-white"
+            >
+              Bridging
+            </h2>
+            <div
+              class="aw-relative aw-mt-8 aw-flex aw-w-4/5 aw-flex-row aw-justify-center aw-gap-x-4"
+            >
+              <div
+                class="aw-relative aw-flex aw-h-20 aw-w-full aw-flex-row aw-items-center aw-justify-evenly aw-rounded-full"
+                style="width: 60%;"
+              >
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-start"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <img
+                      alt=""
+                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        Ethereum
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="aw-mx-auto"
+                />
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <img
+                      alt=""
+                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        ApeChain
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
+            >
+              <div
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white"
+              >
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
+                >
+                  Estimated Time:
+                </div>
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-bold"
+                >
+                  30 seconds
+                </div>
+              </div>
+              <div
+                class="aw-flex aw-flex-col"
+              >
+                <button
+                  class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+                >
+                  <div
+                    class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+                  >
+                    <div
+                      class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+                      style="left: 0px; top: 0px; opacity: 0;"
+                    />
+                    Connect Wallet
+                  </div>
+                </button>
+                <a
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  href="https://help.apeportal.xyz"
+                  target="_blank"
+                >
+                  Bridge
+                   Support
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+  </body>,
+  "connect": [Function],
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionStatus > should render status with bridge copy 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+    <div />
+    <div
+      aria-labelledby="radix-:r1:"
+      class="aw-pointer-events-auto aw-size-full"
+      data-state="open"
+      id="radix-:r0:"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div
+        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+      >
+        <span
+          style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
+        >
+          <h2
+            id="radix-:r1:"
+          >
+            Transaction Status
+          </h2>
+        </span>
+        <div
+          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+        >
+          <div
+            class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
+          >
+            <div
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+            >
+              Processing Transaction
+            </div>
+            <h2
+              class="aw-mt-8 aw-text-[16px] aw-text-white"
+            >
+              Bridging
+            </h2>
+            <div
+              class="aw-relative aw-mt-8 aw-flex aw-w-4/5 aw-flex-row aw-justify-center aw-gap-x-4"
+            >
+              <div
+                class="aw-relative aw-flex aw-h-20 aw-w-full aw-flex-row aw-items-center aw-justify-evenly aw-rounded-full aw-animated-gradient"
+                style="width: 60%;"
+              >
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-start"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <img
+                      alt=""
+                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        Ethereum
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                    <div
+                      class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+                      data-testid="animation-pulse-token"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="aw-mx-auto"
+                />
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <img
+                      alt=""
+                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        ApeChain
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                    <div
+                      class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+                      data-testid="animation-pulse-token"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
+            >
+              <div
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white aw-invisible"
+              >
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
+                >
+                  Estimated Time:
+                </div>
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-bold"
+                />
+              </div>
+              <div
+                class="aw-flex aw-flex-col"
+              >
+                <a
+                  href="https://www.decentscan.xyz/?chainId=1&txHash=0x1234567890123456789012345678901234567890"
+                  target="_blank"
+                >
+                  <button
+                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px]"
+                  >
+                    <div
+                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
+                    >
+                      View Transaction
+                      <svg
+                        fill="none"
+                        height="10"
+                        viewBox="0 0 12 12"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 1L1 11M11 1H1M11 1V11"
+                          id="Vector"
+                          stroke="white"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+                <a
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  href="https://help.apeportal.xyz"
+                  target="_blank"
+                >
+                  Bridge
+                   Support
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+  </body>,
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TransactionStatus > should render status with swap copy 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+    <div />
+    <div
+      aria-labelledby="radix-:ra:"
+      class="aw-pointer-events-auto aw-size-full"
+      data-state="open"
+      id="radix-:r9:"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div
+        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+      >
+        <span
+          style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
+        >
+          <h2
+            id="radix-:ra:"
+          >
+            Transaction Status
+          </h2>
+        </span>
+        <div
+          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+        >
+          <div
+            class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
+          >
+            <div
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+            >
+              Processing Transaction
+            </div>
+            <h2
+              class="aw-mt-8 aw-text-[16px] aw-text-white"
+            >
+              Swapping
+            </h2>
+            <div
+              class="aw-relative aw-mt-8 aw-flex aw-w-4/5 aw-flex-row aw-justify-center aw-gap-x-4"
+            >
+              <div
+                class="aw-relative aw-flex aw-h-20 aw-w-full aw-flex-row aw-items-center aw-justify-evenly aw-rounded-full aw-animated-gradient"
+                style="width: 60%;"
+              >
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-start"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        Ethereum
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                    <div
+                      class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+                      data-testid="animation-pulse-token"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="aw-mx-auto"
+                />
+                <div
+                  class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+                >
+                  <div
+                    class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+                  >
+                    <img
+                      alt="token"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                    />
+                    <div
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                    >
+                      <div
+                        class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+                      >
+                        ApeChain
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+                      >
+                        0
+                         
+                        APE
+                      </div>
+                      <div
+                        class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+                      />
+                    </div>
+                    <div
+                      class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+                      data-testid="animation-pulse-token"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
+            >
+              <div
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white aw-invisible"
+              >
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
+                >
+                  Estimated Time:
+                </div>
+                <div
+                  class="aw-flex aw-min-h-5 aw-justify-center aw-font-bold"
+                />
+              </div>
+              <div
+                class="aw-flex aw-flex-col"
+              >
+                <a
+                  href="https://www.decentscan.xyz/?chainId=1&txHash=0x1234567890123456789012345678901234567890"
+                  target="_blank"
+                >
+                  <button
+                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px]"
+                  >
+                    <div
+                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
+                    >
+                      View Transaction
+                      <svg
+                        fill="none"
+                        height="10"
+                        viewBox="0 0 12 12"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 1L1 11M11 1H1M11 1V11"
+                          id="Vector"
+                          stroke="white"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+                <a
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  href="https://help.apeportal.xyz"
+                  target="_blank"
+                >
+                  Swap
+                   Support
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span
+      data-radix-focus-guard=""
+      style="opacity: 0; position: fixed; pointer-events: none; outline-color: none; outline-style: none; outline-width: initial;"
+      tabindex="0"
+    />
+  </body>,
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

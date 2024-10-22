@@ -1,0 +1,2377 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-overflow-y-hidden"
+      >
+        <div
+          class="aw-relative aw-z-50 aw-flex aw-max-w-[500px] aw-items-center aw-justify-center aw-text-clip aw-rounded-[10px] aw-p-1 md:aw-w-[550px]"
+        >
+          <canvas
+            class="aw-absolute aw-size-full aw-rounded-[10px]"
+            id="aw-gradient-bg"
+            style="opacity: 0;"
+          />
+          <div
+            class="aw-pointer-events-none aw-absolute aw-z-100 aw-size-full aw-p-3"
+            id="portal-modal-portal"
+          />
+          <div
+            class="aw-relative aw-z-50 aw-flex aw-size-full aw-flex-col aw-text-clip"
+          >
+            <div
+              class="aw-shadow-tab-header"
+            >
+              <img
+                alt="Ape Portal"
+                class="aw-z-40 aw-h-[88px] aw-w-full aw-rounded-t-[5px] aw-bg-ape-portal-logo aw-py-4"
+                src="/lib/assets/svg/ape-portal-logo.svg"
+              />
+              <div
+                aria-orientation="horizontal"
+                class="aw-z-40 aw-flex aw-w-full aw-flex-row aw-gap-x-0.5 aw-border-b aw-border-b-apeAccent aw-bg-ape-blue-700 aw-px-0.5 aw-pt-0.5"
+                role="tablist"
+              >
+                <button
+                  aria-controls="headlessui-tabs-panel-:r7:"
+                  aria-selected="true"
+                  class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-tab-button-selected disabled:aw-cursor-auto aw-shadow-tab-button-selected"
+                  data-headlessui-state="selected"
+                  data-selected=""
+                  data-testid="tab-0"
+                  id="headlessui-tabs-tab-:r3:"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  bridge
+                </button>
+                <button
+                  aria-selected="false"
+                  class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] disabled:aw-cursor-not-allowed aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-ape-blue-700 aw-opacity-90 aw-shadow-tab-button"
+                  data-headlessui-state=""
+                  data-testid="tab-1"
+                  id="headlessui-tabs-tab-:r5:"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  swap
+                </button>
+              </div>
+            </div>
+            <div
+              class="aw-relative aw-z-50 aw-size-full aw-min-h-[470px]"
+            >
+              <div
+                aria-labelledby="headlessui-tabs-tab-:r3:"
+                data-headlessui-state="selected"
+                data-selected=""
+                id="headlessui-tabs-panel-:r7:"
+                role="tabpanel"
+                tabindex="0"
+              >
+                <div
+                  class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
+                >
+                  <canvas
+                    class="aw-absolute aw-size-full aw-rounded-[10px]"
+                    id="aw-ape-container-bg"
+                  />
+                  <div
+                    class="aw-relative aw-z-40 aw-flex aw-overflow-hidden aw-rounded-b-[5px]"
+                    style="transition: background 0.4s ease-out;"
+                  >
+                    <img
+                      alt="Background Ape"
+                      class="aw-absolute aw-top-[-45%] aw-object-cover aw-size-[150%]"
+                      src="/lib/assets/svg/ape-logo-outline.svg"
+                    />
+                    <div
+                      class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-pt-6"
+                    >
+                      <div
+                        class="aw-relative aw-flex aw-flex-1 aw-flex-col aw-gap-y-3"
+                        style="opacity: 0.5; transform: translateY(-50px) translateZ(0);"
+                      >
+                        <div
+                          class="aw-relative aw-flex aw-w-full aw-flex-col aw-items-center aw-gap-y-3"
+                        >
+                          <div
+                            class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px] aw-z-50"
+                            data-testid="token-input-source"
+                          >
+                            <div
+                              class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+                            >
+                              <div
+                                class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+                              >
+                                <div
+                                  class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+                                >
+                                  From:
+                                </div>
+                                <input
+                                  class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+                                  inputmode="decimal"
+                                  min="0"
+                                  placeholder="0"
+                                  value=""
+                                />
+                              </div>
+                              <button
+                                aria-controls="radix-:re:"
+                                aria-expanded="false"
+                                aria-haspopup="dialog"
+                                class=""
+                                data-state="closed"
+                                type="button"
+                              >
+                                <div
+                                  class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+                                >
+                                  <div
+                                    class="aw-relative aw-z-0 aw-mr-2"
+                                  >
+                                    <img
+                                      alt="token"
+                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                                    />
+                                    <div
+                                      data-testid="chain-icon"
+                                    >
+                                      <img
+                                        alt=""
+                                        class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                                        src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                                      />
+                                    </div>
+                                  </div>
+                                  <span
+                                    class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+                                  >
+                                    APE
+                                  </span>
+                                  <svg
+                                    fill="none"
+                                    height="35"
+                                    viewBox="0 0 24 24"
+                                    width="35"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g
+                                      id="arrow-down"
+                                    >
+                                      <path
+                                        d="M8 10L12 14L16 10"
+                                        id="Vector"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                      />
+                                    </g>
+                                  </svg>
+                                </div>
+                              </button>
+                            </div>
+                            <div
+                              class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+                            >
+                              <div
+                                class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              >
+                                $0
+                              </div>
+                              <div>
+                                <span
+                                  class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+                                >
+                                  Balance
+                                  :
+                                </span>
+                                <span
+                                  class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                                >
+                                  Loading...
+                                </span>
+                              </div>
+                              <button
+                                class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+                                disabled=""
+                              >
+                                <div
+                                  class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+                                >
+                                  MAX
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="aw-absolute aw-left-1/2 aw-top-1/2 aw-z-60 aw-size-10 aw--translate-x-1/2 aw--translate-y-1/2 md:aw-size-[48px]"
+                          >
+                            <button
+                              aria-label="swap-source-destination"
+                              class="aw-gradient-lavender-coral-sunset aw-relative aw-flex aw-size-full aw-items-center aw-justify-center aw-rounded-full aw-bg-apeCtaBlue aw-p-[3px] aw-duration-500 hover:aw-scale-110 disabled:aw-cursor-not-allowed"
+                            >
+                              <svg
+                                class="aw-z-60 aw-size-full aw-rounded-full aw-bg-apeCtaBlue aw-p-2 aw-duration-1000 aw-animate-in hover:aw-rotate-180"
+                                fill="none"
+                                viewBox="0 0 24 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  id="Group 387"
+                                >
+                                  <g
+                                    id="Group 378"
+                                  >
+                                    <path
+                                      d="M5.95119 17.7317V4.07318"
+                                      id="Path"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <path
+                                      d="M11.2439 13.2927L6.12195 18.4146L1 13.2927"
+                                      id="Path_2"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                  <g
+                                    id="Group 379"
+                                  >
+                                    <path
+                                      d="M17.561 1.68289L17.561 15.3414"
+                                      id="Path_3"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <path
+                                      d="M12.2683 6.12195L17.3903 0.999997L22.5122 6.12195"
+                                      id="Path_4"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </g>
+                              </svg>
+                            </button>
+                          </div>
+                          <div
+                            class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px] aw-z-30"
+                            data-testid="token-input-destination"
+                          >
+                            <div
+                              class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+                            >
+                              <div
+                                class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+                              >
+                                <div
+                                  class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+                                >
+                                  To:
+                                </div>
+                                <input
+                                  class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+                                  inputmode="decimal"
+                                  min="0"
+                                  placeholder="0"
+                                  value=""
+                                />
+                              </div>
+                              <button
+                                aria-controls="radix-:rh:"
+                                aria-expanded="false"
+                                aria-haspopup="dialog"
+                                class=""
+                                data-state="closed"
+                                type="button"
+                              >
+                                <div
+                                  class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+                                >
+                                  <div
+                                    class="aw-relative aw-z-0 aw-mr-2"
+                                  >
+                                    <img
+                                      alt="token"
+                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                                    />
+                                    <div
+                                      data-testid="chain-icon"
+                                    >
+                                      <img
+                                        alt=""
+                                        class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                                        src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                                      />
+                                    </div>
+                                  </div>
+                                  <span
+                                    class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+                                  >
+                                    APE
+                                  </span>
+                                  <svg
+                                    fill="none"
+                                    height="35"
+                                    viewBox="0 0 24 24"
+                                    width="35"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g
+                                      id="arrow-down"
+                                    >
+                                      <path
+                                        d="M8 10L12 14L16 10"
+                                        id="Vector"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                      />
+                                    </g>
+                                  </svg>
+                                </div>
+                              </button>
+                            </div>
+                            <div
+                              class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+                            >
+                              <div
+                                class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              >
+                                $0
+                              </div>
+                              <div>
+                                <span
+                                  class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+                                >
+                                  Balance
+                                  :
+                                </span>
+                                <span
+                                  class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                                >
+                                  Loading...
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="aw-mb-auto aw-w-full aw-rounded-[5px] aw-border-2 aw-border-white/20 aw-bg-blue-700 aw-px-3 aw-pt-1 aw-font-dmsans"
+                          data-headlessui-state=""
+                        >
+                          <button
+                            aria-expanded="false"
+                            class="aw-mb-2 aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-end aw-rounded aw-border-b-2 aw-border-white/10 aw-text-right"
+                            data-headlessui-state=""
+                            id="headlessui-disclosure-button-:rl:"
+                            type="button"
+                          >
+                            <div
+                              class="aw-flex aw-w-full aw-flex-row aw-items-center aw-justify-between"
+                            >
+                              <span
+                                class="aw-font-dmsans aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70"
+                              >
+                                Fees:
+                              </span>
+                              <div
+                                class="aw-flex aw-flex-row aw-items-center"
+                              >
+                                <span
+                                  class="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
+                                >
+                                  $0
+                                </span>
+                                <svg
+                                  class="aw-transition-transform aw-duration-500"
+                                  fill="none"
+                                  height="35"
+                                  viewBox="0 0 24 24"
+                                  width="35"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="arrow-down"
+                                  >
+                                    <path
+                                      d="M8 10L12 14L16 10"
+                                      id="Vector"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                          </button>
+                          <div
+                            class="aw-mb-2 aw-flex aw-flex-row aw-items-center aw-justify-between"
+                          >
+                            <div
+                              class="aw-font-dmsans aw-text-[15px] aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70"
+                            >
+                              Max slippage:
+                            </div>
+                            <div
+                              class="aw-relative"
+                              data-headlessui-state=""
+                            >
+                              <button
+                                aria-expanded="false"
+                                data-headlessui-state=""
+                                id="headlessui-popover-button-:ro:"
+                                type="button"
+                              >
+                                <div
+                                  class="aw-transition-colors aw-flex aw-flex-row aw-items-center aw-justify-end aw-gap-[3px] aw-gap-x-2 aw-rounded-[5px] aw-bg-apeDarkBlue/25 aw-py-0.5 aw-pl-4 aw-pr-1"
+                                >
+                                  <div
+                                    class="aw-text-center aw-font-dmsans aw-text-[14px] aw-tracking-wide aw-text-white"
+                                  >
+                                    1
+                                    %
+                                     
+                                    Auto
+                                  </div>
+                                  <div
+                                    class="aw-flex aw-items-center aw-justify-start aw-gap-2.5 aw-rounded-[60px] aw-bg-[#002775] aw-p-1.5"
+                                  >
+                                    <svg
+                                      class="aw-size-3 aw-text-white"
+                                      fill="none"
+                                      height="24"
+                                      viewBox="0 0 10 10"
+                                      width="24"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M1.11111 8.88889H1.90278L7.33333 3.45833L6.54167 2.66667L1.11111 8.09722V8.88889ZM0 10V7.63889L7.33333 0.319444C7.44444 0.217593 7.56713 0.138889 7.70139 0.0833333C7.83565 0.0277778 7.97685 0 8.125 0C8.27315 0 8.41667 0.0277778 8.55556 0.0833333C8.69444 0.138889 8.81481 0.222222 8.91667 0.333333L9.68056 1.11111C9.79167 1.21296 9.87269 1.33333 9.92361 1.47222C9.97454 1.61111 10 1.75 10 1.88889C10 2.03704 9.97454 2.17824 9.92361 2.3125C9.87269 2.44676 9.79167 2.56944 9.68056 2.68056L2.36111 10H0ZM6.93056 3.06944L6.54167 2.66667L7.33333 3.45833L6.93056 3.06944Z"
+                                        fill="white"
+                                        fill-opacity="0.9"
+                                        id="Vector"
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                            <div
+                              hidden=""
+                              style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0px; display: none;"
+                            />
+                          </div>
+                          <div
+                            class="aw-overflow-hidden"
+                          />
+                        </div>
+                        <button
+                          class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+                        >
+                          <div
+                            class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+                          >
+                            <div
+                              class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+                              style="left: 0px; top: 0px; opacity: 0;"
+                            />
+                            Connect Wallet
+                          </div>
+                        </button>
+                        <div
+                          class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
+                        >
+                          <div
+                            class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+                          >
+                            <a
+                              href="https://terms.apeportal.xyz"
+                              target="_blank"
+                            >
+                              Terms
+                            </a>
+                            <a
+                              href="https://help.apeportal.xyz"
+                              target="_blank"
+                            >
+                              Support
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-overflow-y-hidden"
+    >
+      <div
+        class="aw-relative aw-z-50 aw-flex aw-max-w-[500px] aw-items-center aw-justify-center aw-text-clip aw-rounded-[10px] aw-p-1 md:aw-w-[550px]"
+      >
+        <canvas
+          class="aw-absolute aw-size-full aw-rounded-[10px]"
+          id="aw-gradient-bg"
+          style="opacity: 0;"
+        />
+        <div
+          class="aw-pointer-events-none aw-absolute aw-z-100 aw-size-full aw-p-3"
+          id="portal-modal-portal"
+        />
+        <div
+          class="aw-relative aw-z-50 aw-flex aw-size-full aw-flex-col aw-text-clip"
+        >
+          <div
+            class="aw-shadow-tab-header"
+          >
+            <img
+              alt="Ape Portal"
+              class="aw-z-40 aw-h-[88px] aw-w-full aw-rounded-t-[5px] aw-bg-ape-portal-logo aw-py-4"
+              src="/lib/assets/svg/ape-portal-logo.svg"
+            />
+            <div
+              aria-orientation="horizontal"
+              class="aw-z-40 aw-flex aw-w-full aw-flex-row aw-gap-x-0.5 aw-border-b aw-border-b-apeAccent aw-bg-ape-blue-700 aw-px-0.5 aw-pt-0.5"
+              role="tablist"
+            >
+              <button
+                aria-controls="headlessui-tabs-panel-:r7:"
+                aria-selected="true"
+                class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-tab-button-selected disabled:aw-cursor-auto aw-shadow-tab-button-selected"
+                data-headlessui-state="selected"
+                data-selected=""
+                data-testid="tab-0"
+                id="headlessui-tabs-tab-:r3:"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                bridge
+              </button>
+              <button
+                aria-selected="false"
+                class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] disabled:aw-cursor-not-allowed aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-ape-blue-700 aw-opacity-90 aw-shadow-tab-button"
+                data-headlessui-state=""
+                data-testid="tab-1"
+                id="headlessui-tabs-tab-:r5:"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                swap
+              </button>
+            </div>
+          </div>
+          <div
+            class="aw-relative aw-z-50 aw-size-full aw-min-h-[470px]"
+          >
+            <div
+              aria-labelledby="headlessui-tabs-tab-:r3:"
+              data-headlessui-state="selected"
+              data-selected=""
+              id="headlessui-tabs-panel-:r7:"
+              role="tabpanel"
+              tabindex="0"
+            >
+              <div
+                class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
+              >
+                <canvas
+                  class="aw-absolute aw-size-full aw-rounded-[10px]"
+                  id="aw-ape-container-bg"
+                />
+                <div
+                  class="aw-relative aw-z-40 aw-flex aw-overflow-hidden aw-rounded-b-[5px]"
+                  style="transition: background 0.4s ease-out;"
+                >
+                  <img
+                    alt="Background Ape"
+                    class="aw-absolute aw-top-[-45%] aw-object-cover aw-size-[150%]"
+                    src="/lib/assets/svg/ape-logo-outline.svg"
+                  />
+                  <div
+                    class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-pt-6"
+                  >
+                    <div
+                      class="aw-relative aw-flex aw-flex-1 aw-flex-col aw-gap-y-3"
+                      style="opacity: 0.5; transform: translateY(-50px) translateZ(0);"
+                    >
+                      <div
+                        class="aw-relative aw-flex aw-w-full aw-flex-col aw-items-center aw-gap-y-3"
+                      >
+                        <div
+                          class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px] aw-z-50"
+                          data-testid="token-input-source"
+                        >
+                          <div
+                            class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+                          >
+                            <div
+                              class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+                            >
+                              <div
+                                class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+                              >
+                                From:
+                              </div>
+                              <input
+                                class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+                                inputmode="decimal"
+                                min="0"
+                                placeholder="0"
+                                value=""
+                              />
+                            </div>
+                            <button
+                              aria-controls="radix-:re:"
+                              aria-expanded="false"
+                              aria-haspopup="dialog"
+                              class=""
+                              data-state="closed"
+                              type="button"
+                            >
+                              <div
+                                class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+                              >
+                                <div
+                                  class="aw-relative aw-z-0 aw-mr-2"
+                                >
+                                  <img
+                                    alt="token"
+                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                    src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                                  />
+                                  <div
+                                    data-testid="chain-icon"
+                                  >
+                                    <img
+                                      alt=""
+                                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                                    />
+                                  </div>
+                                </div>
+                                <span
+                                  class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+                                >
+                                  APE
+                                </span>
+                                <svg
+                                  fill="none"
+                                  height="35"
+                                  viewBox="0 0 24 24"
+                                  width="35"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="arrow-down"
+                                  >
+                                    <path
+                                      d="M8 10L12 14L16 10"
+                                      id="Vector"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+                          >
+                            <div
+                              class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                            >
+                              $0
+                            </div>
+                            <div>
+                              <span
+                                class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+                              >
+                                Balance
+                                :
+                              </span>
+                              <span
+                                class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              >
+                                Loading...
+                              </span>
+                            </div>
+                            <button
+                              class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+                              disabled=""
+                            >
+                              <div
+                                class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+                              >
+                                MAX
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="aw-absolute aw-left-1/2 aw-top-1/2 aw-z-60 aw-size-10 aw--translate-x-1/2 aw--translate-y-1/2 md:aw-size-[48px]"
+                        >
+                          <button
+                            aria-label="swap-source-destination"
+                            class="aw-gradient-lavender-coral-sunset aw-relative aw-flex aw-size-full aw-items-center aw-justify-center aw-rounded-full aw-bg-apeCtaBlue aw-p-[3px] aw-duration-500 hover:aw-scale-110 disabled:aw-cursor-not-allowed"
+                          >
+                            <svg
+                              class="aw-z-60 aw-size-full aw-rounded-full aw-bg-apeCtaBlue aw-p-2 aw-duration-1000 aw-animate-in hover:aw-rotate-180"
+                              fill="none"
+                              viewBox="0 0 24 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                id="Group 387"
+                              >
+                                <g
+                                  id="Group 378"
+                                >
+                                  <path
+                                    d="M5.95119 17.7317V4.07318"
+                                    id="Path"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                  <path
+                                    d="M11.2439 13.2927L6.12195 18.4146L1 13.2927"
+                                    id="Path_2"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                </g>
+                                <g
+                                  id="Group 379"
+                                >
+                                  <path
+                                    d="M17.561 1.68289L17.561 15.3414"
+                                    id="Path_3"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                  <path
+                                    d="M12.2683 6.12195L17.3903 0.999997L22.5122 6.12195"
+                                    id="Path_4"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                </g>
+                              </g>
+                            </svg>
+                          </button>
+                        </div>
+                        <div
+                          class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px] aw-z-30"
+                          data-testid="token-input-destination"
+                        >
+                          <div
+                            class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+                          >
+                            <div
+                              class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+                            >
+                              <div
+                                class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+                              >
+                                To:
+                              </div>
+                              <input
+                                class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+                                inputmode="decimal"
+                                min="0"
+                                placeholder="0"
+                                value=""
+                              />
+                            </div>
+                            <button
+                              aria-controls="radix-:rh:"
+                              aria-expanded="false"
+                              aria-haspopup="dialog"
+                              class=""
+                              data-state="closed"
+                              type="button"
+                            >
+                              <div
+                                class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+                              >
+                                <div
+                                  class="aw-relative aw-z-0 aw-mr-2"
+                                >
+                                  <img
+                                    alt="token"
+                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                    src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                                  />
+                                  <div
+                                    data-testid="chain-icon"
+                                  >
+                                    <img
+                                      alt=""
+                                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                                    />
+                                  </div>
+                                </div>
+                                <span
+                                  class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+                                >
+                                  APE
+                                </span>
+                                <svg
+                                  fill="none"
+                                  height="35"
+                                  viewBox="0 0 24 24"
+                                  width="35"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="arrow-down"
+                                  >
+                                    <path
+                                      d="M8 10L12 14L16 10"
+                                      id="Vector"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+                          >
+                            <div
+                              class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                            >
+                              $0
+                            </div>
+                            <div>
+                              <span
+                                class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+                              >
+                                Balance
+                                :
+                              </span>
+                              <span
+                                class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              >
+                                Loading...
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="aw-mb-auto aw-w-full aw-rounded-[5px] aw-border-2 aw-border-white/20 aw-bg-blue-700 aw-px-3 aw-pt-1 aw-font-dmsans"
+                        data-headlessui-state=""
+                      >
+                        <button
+                          aria-expanded="false"
+                          class="aw-mb-2 aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-end aw-rounded aw-border-b-2 aw-border-white/10 aw-text-right"
+                          data-headlessui-state=""
+                          id="headlessui-disclosure-button-:rl:"
+                          type="button"
+                        >
+                          <div
+                            class="aw-flex aw-w-full aw-flex-row aw-items-center aw-justify-between"
+                          >
+                            <span
+                              class="aw-font-dmsans aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70"
+                            >
+                              Fees:
+                            </span>
+                            <div
+                              class="aw-flex aw-flex-row aw-items-center"
+                            >
+                              <span
+                                class="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
+                              >
+                                $0
+                              </span>
+                              <svg
+                                class="aw-transition-transform aw-duration-500"
+                                fill="none"
+                                height="35"
+                                viewBox="0 0 24 24"
+                                width="35"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  id="arrow-down"
+                                >
+                                  <path
+                                    d="M8 10L12 14L16 10"
+                                    id="Vector"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </button>
+                        <div
+                          class="aw-mb-2 aw-flex aw-flex-row aw-items-center aw-justify-between"
+                        >
+                          <div
+                            class="aw-font-dmsans aw-text-[15px] aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70"
+                          >
+                            Max slippage:
+                          </div>
+                          <div
+                            class="aw-relative"
+                            data-headlessui-state=""
+                          >
+                            <button
+                              aria-expanded="false"
+                              data-headlessui-state=""
+                              id="headlessui-popover-button-:ro:"
+                              type="button"
+                            >
+                              <div
+                                class="aw-transition-colors aw-flex aw-flex-row aw-items-center aw-justify-end aw-gap-[3px] aw-gap-x-2 aw-rounded-[5px] aw-bg-apeDarkBlue/25 aw-py-0.5 aw-pl-4 aw-pr-1"
+                              >
+                                <div
+                                  class="aw-text-center aw-font-dmsans aw-text-[14px] aw-tracking-wide aw-text-white"
+                                >
+                                  1
+                                  %
+                                   
+                                  Auto
+                                </div>
+                                <div
+                                  class="aw-flex aw-items-center aw-justify-start aw-gap-2.5 aw-rounded-[60px] aw-bg-[#002775] aw-p-1.5"
+                                >
+                                  <svg
+                                    class="aw-size-3 aw-text-white"
+                                    fill="none"
+                                    height="24"
+                                    viewBox="0 0 10 10"
+                                    width="24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.11111 8.88889H1.90278L7.33333 3.45833L6.54167 2.66667L1.11111 8.09722V8.88889ZM0 10V7.63889L7.33333 0.319444C7.44444 0.217593 7.56713 0.138889 7.70139 0.0833333C7.83565 0.0277778 7.97685 0 8.125 0C8.27315 0 8.41667 0.0277778 8.55556 0.0833333C8.69444 0.138889 8.81481 0.222222 8.91667 0.333333L9.68056 1.11111C9.79167 1.21296 9.87269 1.33333 9.92361 1.47222C9.97454 1.61111 10 1.75 10 1.88889C10 2.03704 9.97454 2.17824 9.92361 2.3125C9.87269 2.44676 9.79167 2.56944 9.68056 2.68056L2.36111 10H0ZM6.93056 3.06944L6.54167 2.66667L7.33333 3.45833L6.93056 3.06944Z"
+                                      fill="white"
+                                      fill-opacity="0.9"
+                                      id="Vector"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            hidden=""
+                            style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0px; display: none;"
+                          />
+                        </div>
+                        <div
+                          class="aw-overflow-hidden"
+                        />
+                      </div>
+                      <button
+                        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+                      >
+                        <div
+                          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+                        >
+                          <div
+                            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+                            style="left: 0px; top: 0px; opacity: 0;"
+                          />
+                          Connect Wallet
+                        </div>
+                      </button>
+                      <div
+                        class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
+                      >
+                        <div
+                          class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+                        >
+                          <a
+                            href="https://terms.apeportal.xyz"
+                            target="_blank"
+                          >
+                            Terms
+                          </a>
+                          <a
+                            href="https://help.apeportal.xyz"
+                            target="_blank"
+                          >
+                            Support
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-overflow-y-hidden"
+      >
+        <div
+          class="aw-relative aw-z-50 aw-flex aw-max-w-[500px] aw-items-center aw-justify-center aw-text-clip aw-rounded-[10px] aw-p-1 md:aw-w-[550px]"
+        >
+          <canvas
+            class="aw-absolute aw-size-full aw-rounded-[10px]"
+            id="aw-gradient-bg"
+            style="opacity: 0;"
+          />
+          <div
+            class="aw-pointer-events-none aw-absolute aw-z-100 aw-size-full aw-p-3"
+            id="portal-modal-portal"
+          />
+          <div
+            class="aw-relative aw-z-50 aw-flex aw-size-full aw-flex-col aw-text-clip"
+          >
+            <div
+              class="aw-shadow-tab-header"
+            >
+              <img
+                alt="Ape Portal"
+                class="aw-z-40 aw-h-[88px] aw-w-full aw-rounded-t-[5px] aw-bg-ape-portal-logo aw-py-4"
+                src="/lib/assets/svg/ape-portal-logo.svg"
+              />
+              <div
+                aria-orientation="horizontal"
+                class="aw-z-40 aw-flex aw-w-full aw-flex-row aw-gap-x-0.5 aw-border-b aw-border-b-apeAccent aw-bg-ape-blue-700 aw-px-0.5 aw-pt-0.5"
+                role="tablist"
+              >
+                <button
+                  aria-controls="headlessui-tabs-panel-:r3e:"
+                  aria-selected="true"
+                  class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-tab-button-selected disabled:aw-cursor-auto aw-shadow-tab-button-selected"
+                  data-headlessui-state="selected"
+                  data-selected=""
+                  data-testid="tab-0"
+                  id="headlessui-tabs-tab-:r38:"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  bridge
+                </button>
+                <button
+                  aria-controls="headlessui-tabs-panel-:r3g:"
+                  aria-selected="false"
+                  class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] disabled:aw-cursor-not-allowed aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-ape-blue-700 aw-opacity-90 aw-shadow-tab-button"
+                  data-headlessui-state=""
+                  data-testid="tab-1"
+                  id="headlessui-tabs-tab-:r3a:"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  swap
+                </button>
+                <button
+                  aria-selected="false"
+                  class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] disabled:aw-cursor-not-allowed aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-ape-blue-700 aw-opacity-90 aw-shadow-tab-button"
+                  data-headlessui-state=""
+                  data-testid="tab-2"
+                  id="headlessui-tabs-tab-:r3c:"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  onramp
+                </button>
+              </div>
+            </div>
+            <div
+              class="aw-relative aw-z-50 aw-size-full aw-min-h-[470px]"
+            >
+              <div
+                aria-labelledby="headlessui-tabs-tab-:r38:"
+                data-headlessui-state="selected"
+                data-selected=""
+                id="headlessui-tabs-panel-:r3e:"
+                role="tabpanel"
+                tabindex="0"
+              >
+                <div
+                  class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
+                >
+                  <canvas
+                    class="aw-absolute aw-size-full aw-rounded-[10px]"
+                    id="aw-ape-container-bg"
+                  />
+                  <div
+                    class="aw-relative aw-z-40 aw-flex aw-overflow-hidden aw-rounded-b-[5px]"
+                    style="transition: background 0.4s ease-out;"
+                  >
+                    <img
+                      alt="Background Ape"
+                      class="aw-absolute aw-top-[-45%] aw-object-cover aw-size-[150%]"
+                      src="/lib/assets/svg/ape-logo-outline.svg"
+                    />
+                    <div
+                      class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-pt-6"
+                    >
+                      <div
+                        class="aw-relative aw-flex aw-flex-1 aw-flex-col aw-gap-y-3"
+                        style="opacity: 0.5; transform: translateY(-50px) translateZ(0);"
+                      >
+                        <div
+                          class="aw-relative aw-flex aw-w-full aw-flex-col aw-items-center aw-gap-y-3"
+                        >
+                          <div
+                            class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px] aw-z-50"
+                            data-testid="token-input-source"
+                          >
+                            <div
+                              class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+                            >
+                              <div
+                                class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+                              >
+                                <div
+                                  class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+                                >
+                                  From:
+                                </div>
+                                <input
+                                  class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+                                  inputmode="decimal"
+                                  min="0"
+                                  placeholder="0"
+                                  value=""
+                                />
+                              </div>
+                              <button
+                                aria-controls="radix-:r3n:"
+                                aria-expanded="false"
+                                aria-haspopup="dialog"
+                                class=""
+                                data-state="closed"
+                                type="button"
+                              >
+                                <div
+                                  class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+                                >
+                                  <div
+                                    class="aw-relative aw-z-0 aw-mr-2"
+                                  >
+                                    <img
+                                      alt="token"
+                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                                    />
+                                    <div
+                                      data-testid="chain-icon"
+                                    >
+                                      <img
+                                        alt=""
+                                        class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                                        src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                                      />
+                                    </div>
+                                  </div>
+                                  <span
+                                    class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+                                  >
+                                    APE
+                                  </span>
+                                  <svg
+                                    fill="none"
+                                    height="35"
+                                    viewBox="0 0 24 24"
+                                    width="35"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g
+                                      id="arrow-down"
+                                    >
+                                      <path
+                                        d="M8 10L12 14L16 10"
+                                        id="Vector"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                      />
+                                    </g>
+                                  </svg>
+                                </div>
+                              </button>
+                            </div>
+                            <div
+                              class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+                            >
+                              <div
+                                class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              >
+                                $0
+                              </div>
+                              <div>
+                                <span
+                                  class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+                                >
+                                  Balance
+                                  :
+                                </span>
+                                <span
+                                  class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                                >
+                                  Loading...
+                                </span>
+                              </div>
+                              <button
+                                class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+                                disabled=""
+                              >
+                                <div
+                                  class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+                                >
+                                  MAX
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="aw-absolute aw-left-1/2 aw-top-1/2 aw-z-60 aw-size-10 aw--translate-x-1/2 aw--translate-y-1/2 md:aw-size-[48px]"
+                          >
+                            <button
+                              aria-label="swap-source-destination"
+                              class="aw-gradient-lavender-coral-sunset aw-relative aw-flex aw-size-full aw-items-center aw-justify-center aw-rounded-full aw-bg-apeCtaBlue aw-p-[3px] aw-duration-500 hover:aw-scale-110 disabled:aw-cursor-not-allowed"
+                            >
+                              <svg
+                                class="aw-z-60 aw-size-full aw-rounded-full aw-bg-apeCtaBlue aw-p-2 aw-duration-1000 aw-animate-in hover:aw-rotate-180"
+                                fill="none"
+                                viewBox="0 0 24 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  id="Group 387"
+                                >
+                                  <g
+                                    id="Group 378"
+                                  >
+                                    <path
+                                      d="M5.95119 17.7317V4.07318"
+                                      id="Path"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <path
+                                      d="M11.2439 13.2927L6.12195 18.4146L1 13.2927"
+                                      id="Path_2"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                  <g
+                                    id="Group 379"
+                                  >
+                                    <path
+                                      d="M17.561 1.68289L17.561 15.3414"
+                                      id="Path_3"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <path
+                                      d="M12.2683 6.12195L17.3903 0.999997L22.5122 6.12195"
+                                      id="Path_4"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </g>
+                              </svg>
+                            </button>
+                          </div>
+                          <div
+                            class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px] aw-z-30"
+                            data-testid="token-input-destination"
+                          >
+                            <div
+                              class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+                            >
+                              <div
+                                class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+                              >
+                                <div
+                                  class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+                                >
+                                  To:
+                                </div>
+                                <input
+                                  class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+                                  inputmode="decimal"
+                                  min="0"
+                                  placeholder="0"
+                                  value=""
+                                />
+                              </div>
+                              <button
+                                aria-controls="radix-:r3q:"
+                                aria-expanded="false"
+                                aria-haspopup="dialog"
+                                class=""
+                                data-state="closed"
+                                type="button"
+                              >
+                                <div
+                                  class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+                                >
+                                  <div
+                                    class="aw-relative aw-z-0 aw-mr-2"
+                                  >
+                                    <img
+                                      alt="token"
+                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                                    />
+                                    <div
+                                      data-testid="chain-icon"
+                                    >
+                                      <img
+                                        alt=""
+                                        class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                                        src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                                      />
+                                    </div>
+                                  </div>
+                                  <span
+                                    class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+                                  >
+                                    APE
+                                  </span>
+                                  <svg
+                                    fill="none"
+                                    height="35"
+                                    viewBox="0 0 24 24"
+                                    width="35"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g
+                                      id="arrow-down"
+                                    >
+                                      <path
+                                        d="M8 10L12 14L16 10"
+                                        id="Vector"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                      />
+                                    </g>
+                                  </svg>
+                                </div>
+                              </button>
+                            </div>
+                            <div
+                              class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+                            >
+                              <div
+                                class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              >
+                                $0
+                              </div>
+                              <div>
+                                <span
+                                  class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+                                >
+                                  Balance
+                                  :
+                                </span>
+                                <span
+                                  class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                                >
+                                  Loading...
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="aw-mb-auto aw-w-full aw-rounded-[5px] aw-border-2 aw-border-white/20 aw-bg-blue-700 aw-px-3 aw-pt-1 aw-font-dmsans"
+                          data-headlessui-state=""
+                        >
+                          <button
+                            aria-expanded="false"
+                            class="aw-mb-2 aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-end aw-rounded aw-border-b-2 aw-border-white/10 aw-text-right"
+                            data-headlessui-state=""
+                            id="headlessui-disclosure-button-:r3u:"
+                            type="button"
+                          >
+                            <div
+                              class="aw-flex aw-w-full aw-flex-row aw-items-center aw-justify-between"
+                            >
+                              <span
+                                class="aw-font-dmsans aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70"
+                              >
+                                Fees:
+                              </span>
+                              <div
+                                class="aw-flex aw-flex-row aw-items-center"
+                              >
+                                <span
+                                  class="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
+                                >
+                                  $0
+                                </span>
+                                <svg
+                                  class="aw-transition-transform aw-duration-500"
+                                  fill="none"
+                                  height="35"
+                                  viewBox="0 0 24 24"
+                                  width="35"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="arrow-down"
+                                  >
+                                    <path
+                                      d="M8 10L12 14L16 10"
+                                      id="Vector"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                          </button>
+                          <div
+                            class="aw-mb-2 aw-flex aw-flex-row aw-items-center aw-justify-between"
+                          >
+                            <div
+                              class="aw-font-dmsans aw-text-[15px] aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70"
+                            >
+                              Max slippage:
+                            </div>
+                            <div
+                              class="aw-relative"
+                              data-headlessui-state=""
+                            >
+                              <button
+                                aria-expanded="false"
+                                data-headlessui-state=""
+                                id="headlessui-popover-button-:r41:"
+                                type="button"
+                              >
+                                <div
+                                  class="aw-transition-colors aw-flex aw-flex-row aw-items-center aw-justify-end aw-gap-[3px] aw-gap-x-2 aw-rounded-[5px] aw-bg-apeDarkBlue/25 aw-py-0.5 aw-pl-4 aw-pr-1"
+                                >
+                                  <div
+                                    class="aw-text-center aw-font-dmsans aw-text-[14px] aw-tracking-wide aw-text-white"
+                                  >
+                                    1
+                                    %
+                                     
+                                    Auto
+                                  </div>
+                                  <div
+                                    class="aw-flex aw-items-center aw-justify-start aw-gap-2.5 aw-rounded-[60px] aw-bg-[#002775] aw-p-1.5"
+                                  >
+                                    <svg
+                                      class="aw-size-3 aw-text-white"
+                                      fill="none"
+                                      height="24"
+                                      viewBox="0 0 10 10"
+                                      width="24"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M1.11111 8.88889H1.90278L7.33333 3.45833L6.54167 2.66667L1.11111 8.09722V8.88889ZM0 10V7.63889L7.33333 0.319444C7.44444 0.217593 7.56713 0.138889 7.70139 0.0833333C7.83565 0.0277778 7.97685 0 8.125 0C8.27315 0 8.41667 0.0277778 8.55556 0.0833333C8.69444 0.138889 8.81481 0.222222 8.91667 0.333333L9.68056 1.11111C9.79167 1.21296 9.87269 1.33333 9.92361 1.47222C9.97454 1.61111 10 1.75 10 1.88889C10 2.03704 9.97454 2.17824 9.92361 2.3125C9.87269 2.44676 9.79167 2.56944 9.68056 2.68056L2.36111 10H0ZM6.93056 3.06944L6.54167 2.66667L7.33333 3.45833L6.93056 3.06944Z"
+                                        fill="white"
+                                        fill-opacity="0.9"
+                                        id="Vector"
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                            <div
+                              hidden=""
+                              style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0px; display: none;"
+                            />
+                          </div>
+                          <div
+                            class="aw-overflow-hidden"
+                          />
+                        </div>
+                        <button
+                          class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+                        >
+                          <div
+                            class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+                          >
+                            <div
+                              class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+                              style="left: 0px; top: 0px; opacity: 0;"
+                            />
+                            Connect Wallet
+                          </div>
+                        </button>
+                        <div
+                          class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
+                        >
+                          <div
+                            class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+                          >
+                            <a
+                              href="https://terms.apeportal.xyz"
+                              target="_blank"
+                            >
+                              Terms
+                            </a>
+                            <a
+                              href="https://help.apeportal.xyz"
+                              target="_blank"
+                            >
+                              Support
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-labelledby="headlessui-tabs-tab-:r3a:"
+                data-headlessui-state=""
+                hidden=""
+                id="headlessui-tabs-panel-:r3g:"
+                role="tabpanel"
+                style="display: none;"
+                tabindex="-1"
+              >
+                <div
+                  class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
+                >
+                  <div
+                    class="aw-flex aw-min-h-[470px] aw-justify-center aw-bg-apeBlue"
+                    data-testid="aw-onramp-container"
+                  >
+                    <div
+                      class="aw-w-[90vw] aw-hidden"
+                      data-testid="aw-onramp-halliday"
+                      id="aw-onramp-halliday"
+                    />
+                    <div
+                      class="aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16"
+                    >
+                      <div
+                        class="aw-font-dmsans aw-text-white"
+                      >
+                        <div
+                          class="aw-mb-6 aw-text-center aw-text-3xl aw-capitalize aw-leading-[37px] aw-tracking-wide"
+                        >
+                          Connect 
+                          <br />
+                          your wallet
+                        </div>
+                        <div
+                          class="aw-text-center aw-font-bold aw-leading-[25px]"
+                        >
+                          Please connect your wallet to
+                          <br />
+                          proceed with the onramp.
+                        </div>
+                      </div>
+                      <button
+                        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+                      >
+                        <div
+                          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+                        >
+                          <div
+                            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+                            style="left: 0px; top: 0px; opacity: 0;"
+                          />
+                          Connect Wallet
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-overflow-y-hidden"
+    >
+      <div
+        class="aw-relative aw-z-50 aw-flex aw-max-w-[500px] aw-items-center aw-justify-center aw-text-clip aw-rounded-[10px] aw-p-1 md:aw-w-[550px]"
+      >
+        <canvas
+          class="aw-absolute aw-size-full aw-rounded-[10px]"
+          id="aw-gradient-bg"
+          style="opacity: 0;"
+        />
+        <div
+          class="aw-pointer-events-none aw-absolute aw-z-100 aw-size-full aw-p-3"
+          id="portal-modal-portal"
+        />
+        <div
+          class="aw-relative aw-z-50 aw-flex aw-size-full aw-flex-col aw-text-clip"
+        >
+          <div
+            class="aw-shadow-tab-header"
+          >
+            <img
+              alt="Ape Portal"
+              class="aw-z-40 aw-h-[88px] aw-w-full aw-rounded-t-[5px] aw-bg-ape-portal-logo aw-py-4"
+              src="/lib/assets/svg/ape-portal-logo.svg"
+            />
+            <div
+              aria-orientation="horizontal"
+              class="aw-z-40 aw-flex aw-w-full aw-flex-row aw-gap-x-0.5 aw-border-b aw-border-b-apeAccent aw-bg-ape-blue-700 aw-px-0.5 aw-pt-0.5"
+              role="tablist"
+            >
+              <button
+                aria-controls="headlessui-tabs-panel-:r3e:"
+                aria-selected="true"
+                class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-tab-button-selected disabled:aw-cursor-auto aw-shadow-tab-button-selected"
+                data-headlessui-state="selected"
+                data-selected=""
+                data-testid="tab-0"
+                id="headlessui-tabs-tab-:r38:"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                bridge
+              </button>
+              <button
+                aria-controls="headlessui-tabs-panel-:r3g:"
+                aria-selected="false"
+                class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] disabled:aw-cursor-not-allowed aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-ape-blue-700 aw-opacity-90 aw-shadow-tab-button"
+                data-headlessui-state=""
+                data-testid="tab-1"
+                id="headlessui-tabs-tab-:r3a:"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                swap
+              </button>
+              <button
+                aria-selected="false"
+                class="aw-h-14 aw-rounded-[2px] disabled:aw-opacity-80 aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] disabled:aw-cursor-not-allowed aw-z-20 hover:enabled:aw-underline focus:aw-outline-none aw-bg-ape-blue-700 aw-opacity-90 aw-shadow-tab-button"
+                data-headlessui-state=""
+                data-testid="tab-2"
+                id="headlessui-tabs-tab-:r3c:"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                onramp
+              </button>
+            </div>
+          </div>
+          <div
+            class="aw-relative aw-z-50 aw-size-full aw-min-h-[470px]"
+          >
+            <div
+              aria-labelledby="headlessui-tabs-tab-:r38:"
+              data-headlessui-state="selected"
+              data-selected=""
+              id="headlessui-tabs-panel-:r3e:"
+              role="tabpanel"
+              tabindex="0"
+            >
+              <div
+                class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
+              >
+                <canvas
+                  class="aw-absolute aw-size-full aw-rounded-[10px]"
+                  id="aw-ape-container-bg"
+                />
+                <div
+                  class="aw-relative aw-z-40 aw-flex aw-overflow-hidden aw-rounded-b-[5px]"
+                  style="transition: background 0.4s ease-out;"
+                >
+                  <img
+                    alt="Background Ape"
+                    class="aw-absolute aw-top-[-45%] aw-object-cover aw-size-[150%]"
+                    src="/lib/assets/svg/ape-logo-outline.svg"
+                  />
+                  <div
+                    class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-pt-6"
+                  >
+                    <div
+                      class="aw-relative aw-flex aw-flex-1 aw-flex-col aw-gap-y-3"
+                      style="opacity: 0.5; transform: translateY(-50px) translateZ(0);"
+                    >
+                      <div
+                        class="aw-relative aw-flex aw-w-full aw-flex-col aw-items-center aw-gap-y-3"
+                      >
+                        <div
+                          class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px] aw-z-50"
+                          data-testid="token-input-source"
+                        >
+                          <div
+                            class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+                          >
+                            <div
+                              class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+                            >
+                              <div
+                                class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+                              >
+                                From:
+                              </div>
+                              <input
+                                class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+                                inputmode="decimal"
+                                min="0"
+                                placeholder="0"
+                                value=""
+                              />
+                            </div>
+                            <button
+                              aria-controls="radix-:r3n:"
+                              aria-expanded="false"
+                              aria-haspopup="dialog"
+                              class=""
+                              data-state="closed"
+                              type="button"
+                            >
+                              <div
+                                class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+                              >
+                                <div
+                                  class="aw-relative aw-z-0 aw-mr-2"
+                                >
+                                  <img
+                                    alt="token"
+                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                    src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                                  />
+                                  <div
+                                    data-testid="chain-icon"
+                                  >
+                                    <img
+                                      alt=""
+                                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                                    />
+                                  </div>
+                                </div>
+                                <span
+                                  class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+                                >
+                                  APE
+                                </span>
+                                <svg
+                                  fill="none"
+                                  height="35"
+                                  viewBox="0 0 24 24"
+                                  width="35"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="arrow-down"
+                                  >
+                                    <path
+                                      d="M8 10L12 14L16 10"
+                                      id="Vector"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+                          >
+                            <div
+                              class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                            >
+                              $0
+                            </div>
+                            <div>
+                              <span
+                                class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+                              >
+                                Balance
+                                :
+                              </span>
+                              <span
+                                class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              >
+                                Loading...
+                              </span>
+                            </div>
+                            <button
+                              class="aw-justify-center aw-rounded-lg aw-bg-black/80 aw-p-1.5 hover:aw-scale-105 disabled:aw-cursor-not-allowed"
+                              disabled=""
+                            >
+                              <div
+                                class="aw-text-center aw-text-sm aw-font-bold aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-blue-500"
+                              >
+                                MAX
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="aw-absolute aw-left-1/2 aw-top-1/2 aw-z-60 aw-size-10 aw--translate-x-1/2 aw--translate-y-1/2 md:aw-size-[48px]"
+                        >
+                          <button
+                            aria-label="swap-source-destination"
+                            class="aw-gradient-lavender-coral-sunset aw-relative aw-flex aw-size-full aw-items-center aw-justify-center aw-rounded-full aw-bg-apeCtaBlue aw-p-[3px] aw-duration-500 hover:aw-scale-110 disabled:aw-cursor-not-allowed"
+                          >
+                            <svg
+                              class="aw-z-60 aw-size-full aw-rounded-full aw-bg-apeCtaBlue aw-p-2 aw-duration-1000 aw-animate-in hover:aw-rotate-180"
+                              fill="none"
+                              viewBox="0 0 24 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                id="Group 387"
+                              >
+                                <g
+                                  id="Group 378"
+                                >
+                                  <path
+                                    d="M5.95119 17.7317V4.07318"
+                                    id="Path"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                  <path
+                                    d="M11.2439 13.2927L6.12195 18.4146L1 13.2927"
+                                    id="Path_2"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                </g>
+                                <g
+                                  id="Group 379"
+                                >
+                                  <path
+                                    d="M17.561 1.68289L17.561 15.3414"
+                                    id="Path_3"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                  <path
+                                    d="M12.2683 6.12195L17.3903 0.999997L22.5122 6.12195"
+                                    id="Path_4"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                </g>
+                              </g>
+                            </svg>
+                          </button>
+                        </div>
+                        <div
+                          class="aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px] aw-z-30"
+                          data-testid="token-input-destination"
+                        >
+                          <div
+                            class="aw-z-50 aw-flex aw-flex-row aw-gap-2"
+                          >
+                            <div
+                              class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+                            >
+                              <div
+                                class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+                              >
+                                To:
+                              </div>
+                              <input
+                                class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+                                inputmode="decimal"
+                                min="0"
+                                placeholder="0"
+                                value=""
+                              />
+                            </div>
+                            <button
+                              aria-controls="radix-:r3q:"
+                              aria-expanded="false"
+                              aria-haspopup="dialog"
+                              class=""
+                              data-state="closed"
+                              type="button"
+                            >
+                              <div
+                                class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+                              >
+                                <div
+                                  class="aw-relative aw-z-0 aw-mr-2"
+                                >
+                                  <img
+                                    alt="token"
+                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                    src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                                  />
+                                  <div
+                                    data-testid="chain-icon"
+                                  >
+                                    <img
+                                      alt=""
+                                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                                    />
+                                  </div>
+                                </div>
+                                <span
+                                  class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+                                >
+                                  APE
+                                </span>
+                                <svg
+                                  fill="none"
+                                  height="35"
+                                  viewBox="0 0 24 24"
+                                  width="35"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="arrow-down"
+                                  >
+                                    <path
+                                      d="M8 10L12 14L16 10"
+                                      id="Vector"
+                                      stroke="white"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
+                          >
+                            <div
+                              class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                            >
+                              $0
+                            </div>
+                            <div>
+                              <span
+                                class="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40"
+                              >
+                                Balance
+                                :
+                              </span>
+                              <span
+                                class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              >
+                                Loading...
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="aw-mb-auto aw-w-full aw-rounded-[5px] aw-border-2 aw-border-white/20 aw-bg-blue-700 aw-px-3 aw-pt-1 aw-font-dmsans"
+                        data-headlessui-state=""
+                      >
+                        <button
+                          aria-expanded="false"
+                          class="aw-mb-2 aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-end aw-rounded aw-border-b-2 aw-border-white/10 aw-text-right"
+                          data-headlessui-state=""
+                          id="headlessui-disclosure-button-:r3u:"
+                          type="button"
+                        >
+                          <div
+                            class="aw-flex aw-w-full aw-flex-row aw-items-center aw-justify-between"
+                          >
+                            <span
+                              class="aw-font-dmsans aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70"
+                            >
+                              Fees:
+                            </span>
+                            <div
+                              class="aw-flex aw-flex-row aw-items-center"
+                            >
+                              <span
+                                class="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
+                              >
+                                $0
+                              </span>
+                              <svg
+                                class="aw-transition-transform aw-duration-500"
+                                fill="none"
+                                height="35"
+                                viewBox="0 0 24 24"
+                                width="35"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  id="arrow-down"
+                                >
+                                  <path
+                                    d="M8 10L12 14L16 10"
+                                    id="Vector"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </button>
+                        <div
+                          class="aw-mb-2 aw-flex aw-flex-row aw-items-center aw-justify-between"
+                        >
+                          <div
+                            class="aw-font-dmsans aw-text-[15px] aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70"
+                          >
+                            Max slippage:
+                          </div>
+                          <div
+                            class="aw-relative"
+                            data-headlessui-state=""
+                          >
+                            <button
+                              aria-expanded="false"
+                              data-headlessui-state=""
+                              id="headlessui-popover-button-:r41:"
+                              type="button"
+                            >
+                              <div
+                                class="aw-transition-colors aw-flex aw-flex-row aw-items-center aw-justify-end aw-gap-[3px] aw-gap-x-2 aw-rounded-[5px] aw-bg-apeDarkBlue/25 aw-py-0.5 aw-pl-4 aw-pr-1"
+                              >
+                                <div
+                                  class="aw-text-center aw-font-dmsans aw-text-[14px] aw-tracking-wide aw-text-white"
+                                >
+                                  1
+                                  %
+                                   
+                                  Auto
+                                </div>
+                                <div
+                                  class="aw-flex aw-items-center aw-justify-start aw-gap-2.5 aw-rounded-[60px] aw-bg-[#002775] aw-p-1.5"
+                                >
+                                  <svg
+                                    class="aw-size-3 aw-text-white"
+                                    fill="none"
+                                    height="24"
+                                    viewBox="0 0 10 10"
+                                    width="24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.11111 8.88889H1.90278L7.33333 3.45833L6.54167 2.66667L1.11111 8.09722V8.88889ZM0 10V7.63889L7.33333 0.319444C7.44444 0.217593 7.56713 0.138889 7.70139 0.0833333C7.83565 0.0277778 7.97685 0 8.125 0C8.27315 0 8.41667 0.0277778 8.55556 0.0833333C8.69444 0.138889 8.81481 0.222222 8.91667 0.333333L9.68056 1.11111C9.79167 1.21296 9.87269 1.33333 9.92361 1.47222C9.97454 1.61111 10 1.75 10 1.88889C10 2.03704 9.97454 2.17824 9.92361 2.3125C9.87269 2.44676 9.79167 2.56944 9.68056 2.68056L2.36111 10H0ZM6.93056 3.06944L6.54167 2.66667L7.33333 3.45833L6.93056 3.06944Z"
+                                      fill="white"
+                                      fill-opacity="0.9"
+                                      id="Vector"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            hidden=""
+                            style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0px; display: none;"
+                          />
+                        </div>
+                        <div
+                          class="aw-overflow-hidden"
+                        />
+                      </div>
+                      <button
+                        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+                      >
+                        <div
+                          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+                        >
+                          <div
+                            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+                            style="left: 0px; top: 0px; opacity: 0;"
+                          />
+                          Connect Wallet
+                        </div>
+                      </button>
+                      <div
+                        class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
+                      >
+                        <div
+                          class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+                        >
+                          <a
+                            href="https://terms.apeportal.xyz"
+                            target="_blank"
+                          >
+                            Terms
+                          </a>
+                          <a
+                            href="https://help.apeportal.xyz"
+                            target="_blank"
+                          >
+                            Support
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-labelledby="headlessui-tabs-tab-:r3a:"
+              data-headlessui-state=""
+              hidden=""
+              id="headlessui-tabs-panel-:r3g:"
+              role="tabpanel"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <div
+                class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
+              >
+                <div
+                  class="aw-flex aw-min-h-[470px] aw-justify-center aw-bg-apeBlue"
+                  data-testid="aw-onramp-container"
+                >
+                  <div
+                    class="aw-w-[90vw] aw-hidden"
+                    data-testid="aw-onramp-halliday"
+                    id="aw-onramp-halliday"
+                  />
+                  <div
+                    class="aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16"
+                  >
+                    <div
+                      class="aw-font-dmsans aw-text-white"
+                    >
+                      <div
+                        class="aw-mb-6 aw-text-center aw-text-3xl aw-capitalize aw-leading-[37px] aw-tracking-wide"
+                      >
+                        Connect 
+                        <br />
+                        your wallet
+                      </div>
+                      <div
+                        class="aw-text-center aw-font-bold aw-leading-[25px]"
+                      >
+                        Please connect your wallet to
+                        <br />
+                        proceed with the onramp.
+                      </div>
+                    </div>
+                    <button
+                      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+                    >
+                      <div
+                        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+                      >
+                        <div
+                          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+                          style="left: 0px; top: 0px; opacity: 0;"
+                        />
+                        Connect Wallet
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

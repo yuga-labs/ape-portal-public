@@ -1,0 +1,293 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`components/ui/TokenDisplay > should not render animation if animationVisible is false 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+      >
+        <div
+          class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+        >
+          <img
+            alt="token"
+            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+            src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+          />
+          <img
+            alt=""
+            class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+            src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+          />
+          <div
+            class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+          >
+            <div
+              class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+            >
+              Ethereum
+            </div>
+            <div
+              class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+            >
+              1.0
+               
+              ETH
+            </div>
+            <div
+              class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+            >
+              $100.00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+    >
+      <div
+        class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+      >
+        <img
+          alt="token"
+          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+          src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+        />
+        <img
+          alt=""
+          class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+          src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+        />
+        <div
+          class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+        >
+          <div
+            class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+          >
+            Ethereum
+          </div>
+          <div
+            class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+          >
+            1.0
+             
+            ETH
+          </div>
+          <div
+            class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+          >
+            $100.00
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/TokenDisplay > should render TokenDisplay 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+      >
+        <div
+          class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+        >
+          <img
+            alt="token"
+            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+            src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+          />
+          <img
+            alt=""
+            class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+            src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+          />
+          <div
+            class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+          >
+            <div
+              class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+            >
+              Ethereum
+            </div>
+            <div
+              class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+            >
+              1.0
+               
+              ETH
+            </div>
+            <div
+              class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+            >
+              $100.00
+            </div>
+          </div>
+          <div
+            class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+            data-testid="animation-pulse-token"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "connect": [Function],
+  "container": <div>
+    <div
+      class="aw-relative aw-flex aw-w-1/2 aw-items-center aw-justify-end"
+    >
+      <div
+        class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
+      >
+        <img
+          alt="token"
+          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+          src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+        />
+        <img
+          alt=""
+          class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+          src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+        />
+        <div
+          class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+        >
+          <div
+            class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
+          >
+            Ethereum
+          </div>
+          <div
+            class="aw-flex aw-justify-center aw-font-dmsans aw-text-[16px] aw-leading-[14px] aw-tracking-[0.32px]"
+          >
+            1.0
+             
+            ETH
+          </div>
+          <div
+            class="aw-flex aw-justify-center aw-font-dmsans aw-text-[12px] aw-leading-[14px] aw-tracking-[1.2px] aw-opacity-50"
+          >
+            $100.00
+          </div>
+        </div>
+        <div
+          class="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
+          data-testid="animation-pulse-token"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

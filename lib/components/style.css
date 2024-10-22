@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'DMMono';
+  src: local('DMMono-Regular.ttf'), url('../assets/fonts/DMMono-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: local('DMSans-Regular.ttf'),
+    url('../assets/fonts/DMSans-VariableFont_opsz,wght.woff2');
+  font-weight: 100 900;
+}
+
+.aw-gradient-lavender-coral-sunset {
+  background-image: linear-gradient(
+    to bottom right,
+    #89d0ff 20%,
+    #ebbf9a,
+    #eb8280,
+    #a281ff 80%
+  );
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.aw-animated-gradient {
+  background-image: linear-gradient(
+    90deg,
+    #a281ff,
+    #eb8280,
+    #ebbf9a,
+    #89d0ff,
+    #a281ff,
+    #eb8280,
+    #ebbf9a,
+    #89d0ff
+  );
+  background-size: 230% 100%;
+  animation: gradientAnimation 2s infinite linear;
+}
+
+/* These are used to override the styles in the Decent Dialog */
+/* Unset icon height so we can manipulate it freely with tailwind */
+.box-img-icon {
+  height: unset !important;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translatex(100%);
+  }
+}
+
+.decent-dialog .box-load-shine {
+  background: linear-gradient(
+    90deg,
+    theme('colors.apeBlue') 0%,
+    theme('colors.apeDarkBlue') 50%,
+    theme('colors.apeBlue') 100%
+  ) !important;
+  background-size: 400% 400% !important;
+  animation: slide 1s infinite alternate !important;
+}
+
+.decent-dialog .box-address-search-box {
+  width: 100% !important;
+  height: 3.5em;
+  border-radius: 0.6em !important;
+  border-top: 2px solid rgb(2, 70, 205, 0.4);
+  font-family: DMSans, serif;
+  background: linear-gradient(
+    180deg,
+    rgba(153, 153, 153, 0) 0%,
+    rgba(255, 255, 255, 0.09) 100%
+  ) !important;
+  margin-top: 0 !important;
+  font-weight: 300 !important;
+  padding: 20px 20px !important;
+  align-items: center !important;
+}
+
+.decent-dialog .box-address-search-box > input {
+  width: 100%;
+  background-color: transparent;
+  margin-left: 10px;
+  color: #ffffff;
+  text-overflow: ellipsis;
+}
+
+.decent-dialog .box-address-search-box > input::placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+
+.decent-dialog > div {
+  padding: 0;
+  width: 100%;
+}
+
+.decent-dialog > :nth-child(3) {
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+.decent-dialog > :nth-child(3) > :nth-child(1) {
+  top: 0;
+  position: sticky;
+  padding-bottom: 1px;
+  z-index: 50;
+  backdrop-filter: blur(5px);
+  padding-left: 0;
+}
+
+.decent-dialog .box-address-search-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.decent-dialog .box-section-title span,
+.decent-dialog .box-section-title div,
+.aw-chain-select-title {
+  font-family: DMSans, serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: rgba(157, 190, 255, 1) !important;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+.decent-dialog .box-section-title {
+  padding-bottom: 2px !important;
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+}
+
+.decent-dialog .box-section-title::after {
+  content: ':';
+  color: #7dd3fc !important;
+}
+
+.decent-dialog .box-token-row div {
+  text-transform: uppercase;
+}
+
+.decent-dialog .box-popular-token-row {
+  gap: 10px !important;
+}
+
+.decent-dialog .box-token-row {
+  font-family: DMSans, serif;
+  font-weight: 300 !important;
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+  z-index: 40;
+  text-align: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.aw-font-dmmono {
+  word-spacing: -2px;
+}
+
+/* My Tokens Token Name */
+.decent-dialog .box-items-start > :nth-child(1) {
+  font-family: DMMono, serif;
+  word-spacing: -2px;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/* My Tokens Token Symbol */
+.decent-dialog .box-items-start > :nth-child(2) {
+  font-family: DMSans, serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 0.85em;
+}
+
+.decent-dialog .box-token-row:hover {
+  background: theme('colors.apeDarkBlue');
+}
+
+.decent-dialog .box-popular-chip {
+  background: theme('colors.apeBlue');
+  padding: 6px 12px !important;
+  border: none;
+}
+
+.decent-dialog .box-popular-chip:hover {
+  background: theme('colors.apeDarkBlue');
+}
+
+.decent-dialog .box-popular-chip span {
+  color: white;
+  font-family: DMMono, serif;
+  word-spacing: -2px;
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.decent-dialog .box-popular-chip div img {
+  height: 25px;
+  width: 25px;
+}
+
+.decent-dialog ::-webkit-scrollbar {
+  display: none;
+}
+
+.box-missing-img {
+  object-fit: none;
+  background-image: linear-gradient(
+    to bottom right,
+    #89d0ff 20%,
+    #ebbf9a,
+    #eb8280,
+    #a281ff 80%
+  ) !important;
+}
+
+#aw-onramp-halliday > iframe {
+  width: 100% !important;
+}

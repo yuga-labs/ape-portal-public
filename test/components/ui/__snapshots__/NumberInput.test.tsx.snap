@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`components/ui/NumberInput > should render number input with default value 1`] = `
+<div>
+  <div
+    class="aw-flex aw-flex-1 aw-flex-col aw-justify-between"
+  >
+    <div
+      class="aw-font-dmmono aw-text-[14px] aw-font-medium aw-uppercase aw-leading-normal aw-tracking-widest aw-text-indigo-200"
+    >
+      Amount
+    </div>
+    <input
+      class="aw-block aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-font-dmsans aw-text-[25px] md:aw-text-[35px] aw-font-medium aw-leading-[14px] aw-text-white [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none"
+      inputmode="decimal"
+      min="0"
+      placeholder="0"
+      value="0"
+    />
+  </div>
+</div>
+`;

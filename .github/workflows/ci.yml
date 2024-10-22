@@ -1,0 +1,91 @@
+name: CI
+on:
+  push:
+    branches:
+      - '**'
+permissions:
+  contents: write
+  packages: write
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint code
+        run: npm run format && npm run lint
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: 'chore: format'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: 'github-actions[bot]@users.noreply.github.com'
+  build:
+    name: Build
+    needs: lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+  test:
+    name: Test
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Test and get coverage for badge
+        run: |
+          # var SUMMARY = [
+          #   '',
+          #   '=============================== Coverage summary ===============================',
+          #   'Statements   : 32.5% ( 39/120 )',
+          #   'Branches     : 38.89% ( 21/54 )',
+          #   'Functions    : 21.74% ( 5/23 )',
+          #   'Lines        : 31.93% ( 38/119 )',
+          #   '================================================================================',
+          #   ''
+          # ];
+          # Run the tests and capture the output
+          OUTPUT=$(npm run test:coverage)
+          # Print the entire test output to the terminal
+          echo "$OUTPUT"
+          # Extract coverage summary (specifically the line you want)
+          SUMMARY=$(echo "$OUTPUT" | tail -2 | head -1)
+          TOKENS=($SUMMARY)
+          # process.env.COVERAGE = '31.93%';
+          echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
+          # var REF = 'refs/pull/27/merge.json';
+          REF=${{ github.ref }}
+          # console.log('github.ref: ' + REF);
+          echo "github.ref: $REF"
+          # var PATHS = REF.split('/');
+          IFS='/' read -ra PATHS <<< "$REF"
+          # var BRANCH_NAME = PATHS[1] + PATHS[2];
+          BRANCH_NAME="${PATHS[1]}_${PATHS[2]}"
+          # console.log(BRANCH_NAME); // 'pull_27'
+          echo $BRANCH_NAME
+          # process.env.BRANCH = 'pull_27';
+          echo "BRANCH=$(echo ${BRANCH_NAME})" >> $GITHUB_ENV

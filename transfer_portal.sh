@@ -6,7 +6,8 @@ set -e
 # Step 1: Navigate to the adjacent folder
 cd ../ape-portal || exit
 # Step 2: Ensure the git directory is clean
-if ! git diff-index --quiet HEAD --; then
+
+if [[ $(git status --porcelain 2> /dev/null) ]]; then
   echo "Error: Git directory is dirty. Please use a clean git directory for updating ape-portal-public."
   exit 1
 else

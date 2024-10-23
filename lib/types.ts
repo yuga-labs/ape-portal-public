@@ -21,8 +21,7 @@ export type DecentBridgeStatus = {
 export type BridgeError =
   | 'INSUFFICIENT_FUNDS'
   | 'WRONG_NETWORK'
-  | 'UNKNOWN_ERROR'
-  | 'HIGH_PRICE_IMPACT';
+  | 'UNKNOWN_ERROR';
 export type BridgeErrorDescriptions = {
   [key in BridgeError]: string;
 };
@@ -30,8 +29,8 @@ export const humanReadableBridgeError: BridgeErrorDescriptions = {
   INSUFFICIENT_FUNDS: 'Insufficient funds',
   UNKNOWN_ERROR: 'Something went wrong',
   WRONG_NETWORK: 'Bad from or to chains',
-  HIGH_PRICE_IMPACT: 'Price impact too high',
 };
+export const HIGH_IMPACT_ERROR = 'Price impact too high';
 
 export interface DefaultTokenAmount {
   type: InputType;

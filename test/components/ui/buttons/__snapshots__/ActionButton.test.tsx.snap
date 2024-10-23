@@ -1,96 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`components/ui/buttons/ActionButton > should be disabled when bridgeError is set to HIGH_PRICE_IMPACT 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <button
-        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
-        disabled=""
-      >
-        <div
-          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
-        >
-          <div
-            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
-            style="left: 0px; top: 0px; opacity: 0;"
-          />
-          Price impact too high
-        </div>
-      </button>
-    </div>
-  </body>,
-  "container": <div>
-    <button
-      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
-      disabled=""
-    >
-      <div
-        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
-      >
-        <div
-          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
-          style="left: 0px; top: 0px; opacity: 0;"
-        />
-        Price impact too high
-      </div>
-    </button>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
 exports[`components/ui/buttons/ActionButton > should be disabled when bridgeError is set to INSUFFICIENT_FUNDS 1`] = `
 {
   "asFragment": [Function],
@@ -1311,6 +1220,188 @@ exports[`components/ui/buttons/ActionButton > should say Waiting for signature w
         class="aw-size-full aw-rounded-[5px]"
         id="aw-button-bg"
       />
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should show price impact warning even if token requires approval 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+        disabled=""
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Price impact too high
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      disabled=""
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Price impact too high
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`components/ui/buttons/ActionButton > should show price impact warning when bridgeErrorMessage is set 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+        disabled=""
+      >
+        <div
+          class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+        >
+          <div
+            class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style="left: 0px; top: 0px; opacity: 0;"
+          />
+          Price impact too high
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+      disabled=""
+    >
+      <div
+        class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-text-center aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled"
+      >
+        <div
+          class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+          style="left: 0px; top: 0px; opacity: 0;"
+        />
+        Price impact too high
+      </div>
     </button>
   </div>,
   "debug": [Function],

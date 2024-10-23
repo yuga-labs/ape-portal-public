@@ -46,20 +46,27 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
     setTxTimeWarning,
     setPriceImpactWarning,
     updateTransactionData,
+    resetTransactionData,
   } = usePortalStore(
     useShallow((state) => ({
       sourceToken: state.sourceToken,
       setPriceImpactWarning: state.setPriceImpactWarning,
       setTxTimeWarning: state.setTxTimeWarning,
       updateTransactionData: state.updateTransactionData,
+      resetTransactionData: state.resetTransactionData,
     })),
   );
-  const { setBridgeError, clearBridgeError, setIsTokenApprovalRequired } =
-    useBridgeStore((state) => ({
-      setBridgeError: state.setBridgeError,
-      clearBridgeError: state.resetBridgeError,
-      setIsTokenApprovalRequired: state.setIsTokenApprovalRequired,
-    }));
+  const {
+    setBridgeError,
+    resetBridgeError,
+    setIsTokenApprovalRequired,
+    setHighImpactError,
+  } = useBridgeStore((state) => ({
+    setBridgeError: state.setBridgeError,
+    setHighImpactError: state.setHighImpactError,
+    resetBridgeError: state.resetBridgeError,
+    setIsTokenApprovalRequired: state.setIsTokenApprovalRequired,
+  }));
   const sourceChainGasToken = useMemo(
     () => getNativeTokenInfo(sourceToken.token.chainId),
     [sourceToken.token.chainId],
@@ -133,6 +140,16 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
     }
   }, [gasEstimate]);
 
+  const setUnknownErrorClearOutputs = useCallback(() => {
+    setBridgeError('UNKNOWN_ERROR');
+    resetTransactionData();
+  }, [setBridgeError, resetTransactionData]);
+
+  /** Triggered if gas estimation fails.
+   *  - Checks if the token being swapped requires spending approval.
+   *  - If approval is required, sets an error specific to approvals.
+   *  - Otherwise, sets "unknown error".
+   * */
   const setErrorAndCheckForApproval = useCallback(
     async (
       boxActionResponse: BoxActionResponse,
@@ -162,16 +179,14 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
   );
 
   useEffect(() => {
-    // As long as balance is sufficient, clear all previous errors
+    // As long as balance is sufficient, reset all previous errors
     if (balanceSufficient.current) {
-      clearBridgeError();
+      resetBridgeError();
     }
 
     setIsTokenApprovalRequired(false);
 
     if (prepareTransactionErrorData) {
-      // Decent.xyz API returned an error.
-      // TODO - should we zero out the source or destination amount in this case? probably related to APEW-301.
       if (
         prepareTransactionErrorData instanceof Error &&
         /wrong network/i.test(prepareTransactionErrorData.message)
@@ -183,7 +198,9 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
         'Transaction Data Error:',
         JSON.stringify(prepareTransactionErrorData, undefined, 2),
       );
-      setBridgeError('UNKNOWN_ERROR');
+      // Decent.xyz API returned an error.
+      setUnknownErrorClearOutputs();
+      return;
     } else if (
       balanceSufficient.current &&
       gasEstimateErrorData &&
@@ -199,17 +216,9 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
           InsufficientFundsError.nodeMessage.test(
             gasEstimateErrorData.cause.details,
           ) ||
-          /amount exceeds balance/.test(gasEstimateErrorData.cause.details) ||
-          /insufficient/i.test(gasEstimateErrorData.cause.details)
+          /amount exceeds balance/.test(gasEstimateErrorData.cause.details)
         ) {
           setBridgeError('INSUFFICIENT_FUNDS');
-        } else if (/allowance/i.test(gasEstimateErrorData.cause.details)) {
-          console.log(
-            'ERC20 token not approved, so we cannot estimate the gas cost',
-          );
-          // ERC20 token not approved, so we cannot estimate the gas cost
-          setBridgeError(undefined);
-          setIsTokenApprovalRequired(true);
         } else {
           console.error(JSON.stringify(gasEstimateErrorData, undefined, 2));
 
@@ -271,8 +280,8 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
         amountOut?.decimals === undefined ||
         apiExchangeRate === undefined
       ) {
-        // invalid response
-        setBridgeError('UNKNOWN_ERROR');
+        // Decent.xyz API returned an error.
+        setUnknownErrorClearOutputs();
         return;
       }
 
@@ -314,32 +323,35 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
         setPriceImpactWarning(undefined);
       }
 
-      if (
-        estimatedPriceImpact &&
-        estimatedPriceImpact >= DISABLE_BUTTON_THRESHOLD_PRICE_IMPACT
-      ) {
-        setBridgeError('HIGH_PRICE_IMPACT');
-      }
+      setHighImpactError(
+        Boolean(
+          estimatedPriceImpact &&
+            estimatedPriceImpact >= DISABLE_BUTTON_THRESHOLD_PRICE_IMPACT,
+        ),
+      );
     }
   }, [
-    preparedTransaction,
-    prepareTransactionErrorData,
-    gasEstimate,
-    maxFeesPerGas,
-    setBridgeError,
-    setTxTimeWarning,
-    setPriceImpactWarning,
-    sourceToken,
-    updateTransactionData,
-    clearBridgeError,
-    setIsTokenApprovalRequired,
-    gasEstimateErrorData,
-    sourceChainGasToken,
-    isWrongChain,
     address,
-    wagmiConfig,
-    setErrorAndCheckForApproval,
     balanceSufficient,
+    gasEstimate,
+    gasEstimateErrorData,
+    isWrongChain,
+    maxFeesPerGas,
+    prepareTransactionErrorData,
+    preparedTransaction,
+    resetBridgeError,
+    setBridgeError,
+    setErrorAndCheckForApproval,
+    setHighImpactError,
+    setIsTokenApprovalRequired,
+    setPriceImpactWarning,
+    setTxTimeWarning,
+    setUnknownErrorClearOutputs,
+    sourceChainGasToken,
+    sourceToken.token.chainId,
+    sourceToken.token.decimals,
+    sourceToken.token.isNative,
+    updateTransactionData,
   ]);
 
   return {

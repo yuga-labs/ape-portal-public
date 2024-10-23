@@ -22,11 +22,13 @@ export class BridgeTransactionData {
 
   constructor() {}
 
-  clearTransactionData() {
+  resetTransactionData() {
     this.applicationFee = 0;
     this.applicationFeeUsd = 0;
     this.gasFee = 0;
     this.gasFeeUsd = 0;
+    this.timeWarning = undefined;
+    this.priceImpactWarning = undefined;
   }
 
   resetSlippage() {

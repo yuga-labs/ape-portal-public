@@ -60,13 +60,13 @@ export const useTransactionConfig = (): UseBoxActionArgs => {
     destinationToken,
     bridgeTransactionData,
     lastChanged,
-    clearTransactionData,
+    resetTransactionData,
   } = usePortalStore((state) => ({
     bridgeTransactionData: state.bridgeTransactionData,
     lastChanged: state.lastChanged,
     sourceToken: state.sourceToken,
     destinationToken: state.destinationToken,
-    clearTransactionData: state.clearTransactionData,
+    resetTransactionData: state.resetTransactionData,
   }));
 
   const sourceAmount = useRef<string | undefined>();
@@ -80,7 +80,7 @@ export const useTransactionConfig = (): UseBoxActionArgs => {
       ) {
         sourceAmount.current = undefined;
         setUseBoxActionArgs(undefined);
-        clearTransactionData();
+        resetTransactionData();
         return;
       } else {
         sourceAmount.current = sourceToken.amount;
@@ -94,7 +94,7 @@ export const useTransactionConfig = (): UseBoxActionArgs => {
       ) {
         destAmount.current = undefined;
         setUseBoxActionArgs(undefined);
-        clearTransactionData();
+        resetTransactionData();
         return;
       } else {
         destAmount.current = destinationToken.amount;
@@ -156,7 +156,7 @@ export const useTransactionConfig = (): UseBoxActionArgs => {
     bridgeTransactionData,
     sourceToken,
     useBoxActionArgs,
-    clearTransactionData,
+    resetTransactionData,
   ]);
 
   return useBoxActionArgs ?? DisabledTransactionConfig;

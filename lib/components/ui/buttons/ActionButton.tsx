@@ -5,12 +5,12 @@ import { useApeContext } from '../../../providers/ape/apeProvider.context.ts';
 import Granim from 'granim';
 import { cn, createGranimConfig } from '../../../utils/utils.ts';
 import { useBridgeStore } from '../../../store/useBridgeStore.ts';
-import { humanReadableBridgeError } from '../../../types.ts';
 import { PortalType } from '../../../utils/constants.ts';
 import { BaseButton } from './BaseButton.tsx';
 import { motion } from 'framer-motion';
 import { usePortalStore } from '../../../store/usePortalStore.ts';
 import { useShallow } from 'zustand/react/shallow';
+import { useBridgeError } from '../../../store/useBridgeError.ts';
 
 enum ActionButtonStyle {
   GradientBorder,
@@ -52,16 +52,15 @@ export const ActionButton = ({
   const [isHovered, setIsHovered] = useState(false);
   const [spotlightX, setSpotlightX] = useState(0);
   const {
-    bridgeError,
     waitingForSignature,
     isTokenApprovalRequired,
     waitingForTokenApprovalTxConfirm,
   } = useBridgeStore((state) => ({
-    bridgeError: state.bridgeError,
     waitingForSignature: state.waitingForSignature,
     isTokenApprovalRequired: state.isTokenApprovalRequired,
     waitingForTokenApprovalTxConfirm: state.waitingForTokenApprovalTxConfirm,
   }));
+  const { bridgeErrorMessage } = useBridgeError();
   const {
     sourceToken: { amount: sourceAmount },
     destinationToken: { amount: destinationAmount },
@@ -127,8 +126,8 @@ export const ActionButton = ({
     } else if (isWrongChain) {
       message = `Switch Network to ${desiredChainName || desiredChainId}`;
     } else {
-      if (bridgeError) {
-        message = humanReadableBridgeError[bridgeError];
+      if (bridgeErrorMessage) {
+        message = bridgeErrorMessage;
       } else if (waitingForSignature) {
         message = 'Waiting for signature';
         style = ActionButtonStyle.GradientFull;
@@ -149,7 +148,7 @@ export const ActionButton = ({
     isWrongChain,
     desiredChainName,
     desiredChainId,
-    bridgeError,
+    bridgeErrorMessage,
     waitingForSignature,
     waitingForTokenApprovalTxConfirm,
     isTokenApprovalRequired,
@@ -162,7 +161,7 @@ export const ActionButton = ({
     isWalletConnected &&
     (disabled ||
       waitingForTokenApprovalTxConfirm ||
-      bridgeError !== undefined ||
+      bridgeErrorMessage !== undefined ||
       areAmountsEmpty);
 
   return (

@@ -54,7 +54,7 @@ interface PortalActions {
   ) => void;
   setSlippagePercentage: (slippage: number) => void;
   resetSlippage: () => void;
-  clearTransactionData: () => void;
+  resetTransactionData: () => void;
   setHasUserUpdatedTokens: () => void;
 }
 
@@ -89,11 +89,16 @@ export const usePortalStore = create<PortalState & PortalActions>()((set) => ({
         state.hasUserUpdatedTokens = true;
       }),
     ),
-  clearTransactionData: () =>
+  resetTransactionData: () =>
     set(
       produce((state) => {
-        state.bridgeTransactionData.clearTransactionData();
-        state.destinationToken.amount = '';
+        state.bridgeTransactionData.resetTransactionData();
+        // Reset amount for the "non touched" field to zero out the quote
+        if (state.lastChanged == InputType.Source) {
+          state.destinationToken.amount = '';
+        } else {
+          state.sourceToken.amount = '';
+        }
       }),
     ),
   updateTransactionData: (

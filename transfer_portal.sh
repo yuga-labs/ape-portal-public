@@ -48,14 +48,19 @@ sed -i '' 's/ape-portal/ape-portal-public/g' package.json
 npm install
 
 # Step 9: Update the ci.yml file to remove the badge step
+#  - the badge is generated in the private repository, and part of the README.
 yq -i 'del( .jobs.test.steps[] | select(.name == "*Badge*" ) )' .github/workflows/ci.yml
 
-# Step 10: Commit the changes with the release tag
+# Step 10: Update the publish.yml file to remove the 'Update version' step
+#  - the version in package.json/package-lock.json was already updated upstream.
+yq -i 'del( .jobs.publish.steps[] | select(.name == "*Update version*" ) )' .github/workflows/publish.yaml
+
+# Step 11: Commit the changes with the release tag
 git add .
 git commit -m "Release $release_tag"
 git push origin main  # or the relevant branch name
 
-# Step 11: Create tag with release tag
+# Step 12: Create tag with release tag
 git tag "$release_tag"
 git push origin "$release_tag"
 

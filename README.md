@@ -31,15 +31,15 @@ The easiest way to get started creating a web3 app is with [RainbowKit](https://
 Install the ApeChain Portal using `npm`, `yarn`, or `pnpm`:
 
 ```bash
-npm i --save @yuga-labs/ape-portal
+npm i --save @yuga-labs/ape-portal-public
 ```
 
 ```bash
-yarn add @yuga-labs/ape-portal
+yarn add @yuga-labs/ape-portal-public
 ```
 
 ```bash
-pnpm i @yuga-labs/ape-portal
+pnpm i @yuga-labs/ape-portal-public
 ```
 
 ---
@@ -85,7 +85,7 @@ export const config = createConfig({
 
 ```ts
 // _app.tsx
-import "@yuga-labs/ape-portal/dist/assets/style.css";
+import "@yuga-labs/ape-portal-public/dist/assets/style.css";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -107,7 +107,7 @@ The [`ApeProvider`](lib/providers/ape/apeProvider.tsx) is used to pass configura
 
 ```js
 import { useConnectModal } from '@rainbow-me/rainbowkit';
-import { ApeConfig, ApeProvider, ApePortal } from "@yuga-labs/ape-portal";
+import { ApeConfig, ApeProvider, ApePortal } from "@yuga-labs/ape-portal-public";
 
 const Home = () => {
   const { openConnectModal = () => {} } = useConnectModal();
@@ -158,7 +158,7 @@ Include `<ApePortal>` as a component in your React files to display the **Bridge
 
 ```js
 import React from 'react';
-import { ApePortal } from '@yuga-labs/ape-portal';
+import { ApePortal } from '@yuga-labs/ape-portal-public';
 
 function App() {
   return <ApePortal />;
@@ -173,7 +173,7 @@ Alternatively, use **Bridge**, **Swap**, or **Buy** components individually:
 
 ```js
 import React from 'react';
-import { Bridge, Buy, Swap } from '@yuga-labs/ape-portal';
+import { Bridge, Buy, Swap } from '@yuga-labs/ape-portal-public';
 
 function App() {
   return (

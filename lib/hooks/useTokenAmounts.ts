@@ -9,12 +9,6 @@ import { currencyFormatter } from '../utils/currency.ts';
 import { readableAmount } from '../utils/utils.ts';
 import { useIsTransactionProcessing } from '../store/useIsTransactionProcessing.ts';
 
-/**
- * Temporary fix to ensure ETH-stETH balance is displayed. Only this token requires lower case address.
- */
-const shouldLowercase = (address: string) =>
-  address.toLowerCase() === '0xae7ab96520de3a18e5e111b5eaab095312d7fe84';
-
 export const useTokenAmounts = (
   token: TokenTransactionData,
   srcToken?: boolean,
@@ -33,11 +27,7 @@ export const useTokenAmounts = (
     useUsersBalances({
       address,
       chainId: token.token.chainId,
-      selectTokens: [
-        shouldLowercase(token.token.address)
-          ? token.token.address.toLowerCase()
-          : token.token.address,
-      ],
+      selectTokens: [token.token.address],
     });
 
   const findCurrentBalance = useCallback(

@@ -26,7 +26,7 @@ npm run dev
 
 Alternatively, you can use `npm link` to install a locally built version of this library to some other local project.
 
-From the consuming app, either run `npm install <path_to_this_folder>`, or `npm link @yuga-labs/ape-portal`. If you opt for the latter, you must run `npm link` from this folder first, to install this package into the global npm store. For more information, see [ape-portal-playground README](https://github.com/yuga-labs/ape-widget-playground/blob/94cf1feb36fbd782b0b462859f61da7f99f2f19c/README.md#local-development-ape-portal).
+From the consuming app, either run `npm install <path_to_this_folder>`, or `npm link @yuga-labs/ape-portal-public`. If you opt for the latter, you must run `npm link` from this folder first, to install this package into the global npm store. For more information, see [ape-portal-playground README](https://github.com/yuga-labs/ape-widget-playground/blob/94cf1feb36fbd782b0b462859f61da7f99f2f19c/README.md#local-development-ape-portal).
 
 Bear in mind that any changes to this local dependency will not be reflected in your consumer app until you perform `npm run build` here.
 

@@ -1,7 +1,7 @@
 {
   "name": "@yuga-labs/ape-portal-public",
   "description": "ApeChain Portal. Offers a set of components to interact with the ApeChain blockchain.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "APEPORTAL-1.0",
   "type": "module",
   "main": "./dist/cjs/index.js",
@@ -80,8 +80,8 @@
     "wagmi": "2.12.20"
   },
   "dependencies": {
-    "@decent.xyz/box-hooks": "3.4.0-yuga.6",
-    "@decent.xyz/box-ui": "3.4.0-yuga.6",
+    "@decent.xyz/box-hooks": "3.4.0-yuga.7",
+    "@decent.xyz/box-ui": "3.4.0-yuga.7",
     "@halliday-sdk/commerce": "3.0.4",
     "@headlessui/react": "^2.0.4",
     "@radix-ui/react-dialog": "1.1.1",

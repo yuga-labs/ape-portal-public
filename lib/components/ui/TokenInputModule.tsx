@@ -140,7 +140,7 @@ export const TokenInputModule = ({
             renderContent={({ setModalOpen }) => (
               <ChainTokenSelectModal
                 currentToken={currentToken}
-                srcToken={isSourceToken}
+                isSourceToken={isSourceToken}
                 isSwap={isSwap}
                 setModalOpen={setModalOpen}
               />

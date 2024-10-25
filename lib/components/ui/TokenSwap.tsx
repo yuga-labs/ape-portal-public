@@ -60,7 +60,7 @@ function TokenSwapComponent({
           <AnimatePresence>
             {!isOnRamp && (
               <motion.div
-                layout
+                layout={'position'}
                 initial={{ opacity: 0.5, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 className={

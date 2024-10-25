@@ -109,3 +109,7 @@ export const ApeCoinMainnetEthereum = createApeCoinTokenInfo(
 
 export const ApeCoinMainnetArbitrumContract =
   '0x7f9FBf9bDd3F4105C478b996B648FE6e828a1e98';
+export const ApeUsdOmnichainContract =
+  '0xA2235d059F80e176D931Ef76b6C51953Eb3fBEf4';
+export const ApeEthOmnichainContract =
+  '0xcF800F4948D16F23333508191B1B1591daF70438';

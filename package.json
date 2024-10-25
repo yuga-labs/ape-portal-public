@@ -105,6 +105,6 @@
     "url": "https://github.com/yuga-labs/ape-portal-public.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   }
 }

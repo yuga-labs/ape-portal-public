@@ -39,10 +39,12 @@ echo "Current directory: $current_dir"
 
 # Step 6: Copy the files from the source to the destination (use --dry-run to test)
 echo "About to transfer the files from the source to the destination."
-rsync -av --exclude-from="../ape-portal/.gitignore" --exclude=".git" --exclude=".husky" "../ape-portal/" .
+rsync -av --exclude-from="../ape-portal/.gitignore" --exclude=".git" --exclude=".npmrc" --exclude=".husky" "../ape-portal/" .
 
 # Step 7: Update the package.json file to reflect the new package/repo name
 sed -i '' 's/ape-portal/ape-portal-public/g' package.json
+# update registry from private to public; change https://npm.pkg.github.com to https://registry.npmjs.org
+sed -i '' 's/https:\/\/npm.pkg.github.com/https:\/\/registry.npmjs.org/g' package.json
 
 # Step 8: Install the dependencies
 npm install

@@ -43,6 +43,9 @@ rsync -av --exclude-from="../ape-portal/.gitignore" --exclude=".git" --exclude="
 
 # Step 7: Update the package.json file to reflect several changes for public repo publishing
 
+# In publish.yaml, delete the line `GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}` from the primary key `env`
+yq eval 'del(.env.GITHUB_TOKEN)' -i .github/workflows/publish.yaml
+ 
 # In package.json, Change URL from github.com/yuga-labs/ape-portal.git to github.com/yuga-labs/ape-portal-public.git"
 sed -i '' 's/github.com\/yuga-labs\/ape-portal.git/github.com\/yuga-labs\/ape-portal-public.git/g' package.json
 

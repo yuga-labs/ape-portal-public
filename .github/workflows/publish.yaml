@@ -4,7 +4,6 @@ on:
     tags:
       - 'v*.*.*'
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   NPM_CONFIG_SKIP_PREFLIGHT_CHECK: true
   HUSKY: 0
 permissions:

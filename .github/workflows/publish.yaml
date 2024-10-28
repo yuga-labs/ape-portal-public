@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Publish to GitHub Packages
-        run: npm publish --access public
+        run: npm publish --access public --@yuga-labs:registry=https://npm.pkg.github.com/
       - name: fix formatting of package.json
         run: npx prettier --write package.json
       - name: Commit package.json update

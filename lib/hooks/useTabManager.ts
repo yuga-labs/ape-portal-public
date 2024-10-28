@@ -127,6 +127,7 @@ export const useTabManager = (
 
   const setPortalTypeWithSync = useCallback(
     (portalType: PortalType) => {
+      if (portalType === selectedPortalType) return;
       if (portalType === PortalType.OnRamp) {
         if (selectedPortalType === PortalType.Bridge) {
           setStashedToken(new TokenTransactionData(destinationToken.token));

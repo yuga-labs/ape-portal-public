@@ -1296,4 +1296,58 @@ describe('ApePortal', () => {
     });
     expect(chainSelectorButton).toBeDisabled();
   });
+
+  it('does not update the locks destination token when double clicking the bridge tab button', async () => {
+    const { getState } = usePortalStore;
+    const config = setupConfig(arbitrum);
+    render(
+      <AllTheProviders
+        wagmiConfig={config}
+        apeConfig={{
+          ...defaultApeConfig,
+          enableOnramp: true,
+        }}
+      >
+        <ApePortal
+          tokenConfig={{
+            lockDestinationToken: true,
+          }}
+        />
+      </AllTheProviders>,
+    );
+
+    await act(async () => {
+      await connect(config, {
+        chainId: ChainId.ARBITRUM,
+        connector: config.connectors[0],
+      });
+    });
+    const bridgeTab = screen.getByTestId('tab-0');
+    expectSourceAndDestinationTokens('ETH', 'APE');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.ARBITRUM);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
+    // 1. The destination token should be locked and the switch button disabled
+    const switchTokenButton = screen.getByRole('button', {
+      name: 'swap-source-destination',
+    });
+    expect(switchTokenButton).toBeDefined();
+    expect(switchTokenButton).toBeDisabled();
+    const destinationTokenButton = within(
+      screen.getByTestId('token-input-destination'),
+    ).getByRole('button', {
+      name: /ape/i,
+    });
+    expect(destinationTokenButton).toBeDefined();
+    expect(destinationTokenButton).toBeDisabled();
+    // 2. Click the bridge tab while being on the bridge tab
+    await userEvent.click(bridgeTab);
+    // 3. Verify nothing changed
+    expectSourceAndDestinationTokens('ETH', 'APE');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.ARBITRUM);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
+    expect(switchTokenButton).toBeDefined();
+    expect(switchTokenButton).toBeDisabled();
+    expect(destinationTokenButton).toBeDefined();
+    expect(destinationTokenButton).toBeDisabled();
+  });
 });

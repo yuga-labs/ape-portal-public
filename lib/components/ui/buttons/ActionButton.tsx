@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
 import { usePortalStore } from '../../../store/usePortalStore.ts';
 import { useShallow } from 'zustand/react/shallow';
 import { useBridgeError } from '../../../store/useBridgeError.ts';
+import { useErrorStore } from '../../../store/useErrorStore.ts';
 
 enum ActionButtonStyle {
   GradientBorder,
@@ -48,6 +49,7 @@ export const ActionButton = ({
   disabled,
   portal,
 }: ActionButtonProps) => {
+  const account = useAccount();
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [spotlightX, setSpotlightX] = useState(0);
@@ -70,6 +72,9 @@ export const ActionButton = ({
       destinationToken: state.destinationToken,
     })),
   );
+  const { setError } = useErrorStore((state) => ({
+    setError: state.setError,
+  }));
   const areAmountsEmpty =
     Number(sourceAmount) === 0 && Number(destinationAmount) === 0;
   const isWalletConnected = !!useAccount().address;
@@ -118,11 +123,29 @@ export const ActionButton = ({
     openConnectModal,
   ]);
 
+  const isUnsupportedWallet = useMemo(() => {
+    if (account?.connector?.name) {
+      const magicEdenRegex = /magic eden/i;
+      return magicEdenRegex.test(account?.connector?.name);
+    }
+    return false;
+  }, [account?.connector?.name]);
+
+  useEffect(() => {
+    if (isUnsupportedWallet) {
+      setError(
+        'Magic Eden Wallet coming soon. Please choose a different wallet provider.',
+      );
+    }
+  }, [isUnsupportedWallet, setError]);
+
   const [text, style]: [string, ActionButtonStyle] = useMemo(() => {
     let message = '';
     let style = ActionButtonStyle.GradientBorder;
     if (!isWalletConnected) {
       message = 'Connect Wallet';
+    } else if (isUnsupportedWallet) {
+      message = 'Unsupported Wallet';
     } else if (isWrongChain) {
       message = `Switch Network to ${desiredChainName || desiredChainId}`;
     } else {
@@ -145,24 +168,26 @@ export const ActionButton = ({
     return [message, style];
   }, [
     isWalletConnected,
+    isUnsupportedWallet,
     isWrongChain,
     desiredChainName,
     desiredChainId,
     bridgeErrorMessage,
     waitingForSignature,
     waitingForTokenApprovalTxConfirm,
-    isTokenApprovalRequired,
     areAmountsEmpty,
+    isTokenApprovalRequired,
     portal,
   ]);
 
   const buttonDisabled =
-    !isWrongChain &&
-    isWalletConnected &&
-    (disabled ||
-      waitingForTokenApprovalTxConfirm ||
-      bridgeErrorMessage !== undefined ||
-      areAmountsEmpty);
+    isUnsupportedWallet ||
+    (!isWrongChain &&
+      isWalletConnected &&
+      (disabled ||
+        waitingForTokenApprovalTxConfirm ||
+        bridgeErrorMessage !== undefined ||
+        areAmountsEmpty));
 
   return (
     <BaseButton

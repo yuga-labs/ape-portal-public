@@ -27,8 +27,6 @@ jobs:
         run: npm ci
       - name: Publish to GitHub Packages
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: fix formatting of package.json
         run: npx prettier --write package.json
       - name: Commit package.json update

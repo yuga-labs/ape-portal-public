@@ -41,11 +41,15 @@ echo "Current directory: $current_dir"
 echo "About to transfer the files from the source to the destination."
 rsync -av --exclude-from="../ape-portal/.gitignore" --exclude=".git" --exclude=".npmrc" --exclude=".husky" "../ape-portal/" .
 
-# Step 7: Update the package.json file to reflect several changes for the public repo - name, publishing, etc.
-sed -i '' 's/ape-portal/ape-portal-public/g' package.json
-# update registry from private to public; change https://npm.pkg.github.com to https://registry.npmjs.org
+# Step 7: Update the package.json file to reflect several changes for public repo publishing
+
+# In package.json, Change URL from github.com/yuga-labs/ape-portal.git to github.com/yuga-labs/ape-portal-public.git"
+sed -i '' 's/github.com\/yuga-labs\/ape-portal.git/github.com\/yuga-labs\/ape-portal-public.git/g' package.json
+
+# Use public npm registry instead of private github registry
 sed -i '' 's/https:\/\/npm.pkg.github.com/https:\/\/registry.npmjs.org/g' package.json
-# use yq to change the publish step for 'Publish to GitHub Packages' to public access
+
+# Change the publish step for 'Publish to GitHub Packages' to public access, add npm token
 yq eval '
   (.jobs.publish.steps[] | select(.name == "Publish to GitHub Packages") | .run) = "npm publish --access public" |
   (.jobs.publish.steps[] | select(.name == "Publish to GitHub Packages") | .env) = {"NODE_AUTH_TOKEN": "${{secrets.NPM_TOKEN}}"}

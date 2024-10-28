@@ -43,8 +43,8 @@ rsync -av --exclude-from="../ape-portal/.gitignore" --exclude=".git" --exclude="
 
 # Step 7: Update the package.json file to reflect several changes for public repo publishing
 
-# In package.json, Change URL from github.com/yuga-labs/ape-portal.git to github.com/yuga-labs/ape-portal-public.git"
-sed -i '' 's/github.com\/yuga-labs\/ape-portal.git/github.com\/yuga-labs\/ape-portal-public.git/g' package.json
+# In package.json, Change references from ape-portal.git to ape-portal-public
+sed -i '' 's/ape-portal/ape-portal-public/g' package.json
 
 # Change the publish step for 'Publish to GitHub Packages' to public access, add npm token
 yq eval '

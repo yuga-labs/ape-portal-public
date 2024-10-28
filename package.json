@@ -1,5 +1,5 @@
 {
-  "name": "@yuga-labs/ape-portal",
+  "name": "@yuga-labs/ape-portal-public",
   "description": "ApeChain Portal. Offers a set of components to interact with the ApeChain blockchain.",
   "version": "0.3.3",
   "license": "APEPORTAL-1.0",

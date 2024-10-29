@@ -508,6 +508,12 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                           <div
                             class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
                           >
+                            <button
+                              class="aw-flex disabled:aw-cursor-not-allowed"
+                              title="Add the ApeChain Network to your wallet"
+                            >
+                              Add Network
+                            </button>
                             <a
                               href="https://terms.apeportal.xyz"
                               target="_blank"
@@ -1038,6 +1044,12 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                         <div
                           class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
                         >
+                          <button
+                            class="aw-flex disabled:aw-cursor-not-allowed"
+                            title="Add the ApeChain Network to your wallet"
+                          >
+                            Add Network
+                          </button>
                           <a
                             href="https://terms.apeportal.xyz"
                             target="_blank"
@@ -1637,6 +1649,12 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                           <div
                             class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
                           >
+                            <button
+                              class="aw-flex disabled:aw-cursor-not-allowed"
+                              title="Add the ApeChain Network to your wallet"
+                            >
+                              Add Network
+                            </button>
                             <a
                               href="https://terms.apeportal.xyz"
                               target="_blank"
@@ -2239,6 +2257,12 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                         <div
                           class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
                         >
+                          <button
+                            class="aw-flex disabled:aw-cursor-not-allowed"
+                            title="Add the ApeChain Network to your wallet"
+                          >
+                            Add Network
+                          </button>
                           <a
                             href="https://terms.apeportal.xyz"
                             target="_blank"

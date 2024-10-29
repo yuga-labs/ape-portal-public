@@ -1,6 +1,7 @@
 import { useAccount } from 'wagmi';
 import { LINK_SUPPORT, LINK_TERMS } from '../../utils/constants';
 import { useCallback } from 'react';
+import { AddApeNetworkButton } from './buttons/AddApeNetworkButton';
 
 export const ToolBar = () => {
   const { address } = useAccount();
@@ -20,6 +21,7 @@ export const ToolBar = () => {
   return (
     <div className="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center">
       <div className="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50">
+        <AddApeNetworkButton className="aw-flex disabled:aw-cursor-not-allowed" />
         <a href={LINK_TERMS} target="_blank">
           Terms
         </a>

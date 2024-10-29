@@ -4,6 +4,7 @@ import { ToolBar } from '../../../lib/components/ui/ToolBar';
 import { AllTheProviders, customRender } from '../../index';
 import { defaultApeConfig, setupConfig, TEST_ACCOUNT } from '../../utils';
 import { connect } from 'wagmi/actions';
+import { apeChain } from 'viem/chains';
 
 describe('components/ui/ToolBar', () => {
   test('should render toolbar with default values', () => {
@@ -38,6 +39,46 @@ describe('components/ui/ToolBar', () => {
       `https://www.decentscan.xyz/?address=${TEST_ACCOUNT.address}`,
     );
 
+    expect(actionButton).toMatchSnapshot();
+  });
+
+  test('should allow user to Add Network when connected to a different chain', async () => {
+    const config = setupConfig();
+    const actionButton = render(
+      <AllTheProviders apeConfig={defaultApeConfig} wagmiConfig={config}>
+        <ToolBar />
+      </AllTheProviders>,
+    );
+    await act(async () => {
+      await connect(config, {
+        connector: config.connectors[0],
+      });
+    });
+    expect(
+      screen.getByRole('button', { name: 'Add Network' }),
+    ).toBeInTheDocument();
+
+    expect(screen.getByRole('button', { name: 'Add Network' })).toBeEnabled();
+    expect(actionButton).toMatchSnapshot();
+  });
+
+  test('should not allow user to Add Network when connected to ApeChain', async () => {
+    const config = setupConfig(apeChain);
+    const actionButton = render(
+      <AllTheProviders apeConfig={defaultApeConfig} wagmiConfig={config}>
+        <ToolBar />
+      </AllTheProviders>,
+    );
+    await act(async () => {
+      await connect(config, {
+        connector: config.connectors[0],
+      });
+    });
+    expect(
+      screen.getByRole('button', { name: 'Add Network' }),
+    ).toBeInTheDocument();
+
+    expect(screen.getByRole('button', { name: 'Add Network' })).toBeDisabled();
     expect(actionButton).toMatchSnapshot();
   });
 });

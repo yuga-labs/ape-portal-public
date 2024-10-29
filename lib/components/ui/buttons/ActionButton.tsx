@@ -28,6 +28,8 @@ const GradientBg = ({}) => {
   );
 };
 
+const UNSUPPORTED_WALLETS = ['Magic Eden', 'Uniswap'];
+
 export type ActionButtonProps = {
   action: () => void;
   disabled?: boolean;
@@ -123,21 +125,25 @@ export const ActionButton = ({
     openConnectModal,
   ]);
 
-  const isUnsupportedWallet = useMemo(() => {
+  const unsupportedWalletName: string | undefined = useMemo(() => {
     if (account?.connector?.name) {
-      const magicEdenRegex = /magic eden/i;
-      return magicEdenRegex.test(account?.connector?.name);
+      for (const wallet of UNSUPPORTED_WALLETS) {
+        const regexp = new RegExp(wallet, 'i');
+        if (regexp.test(account.connector.name)) {
+          return wallet;
+        }
+      }
     }
-    return false;
   }, [account?.connector?.name]);
+  const isUnsupportedWallet = !!unsupportedWalletName;
 
   useEffect(() => {
     if (isUnsupportedWallet) {
       setError(
-        'Magic Eden Wallet coming soon. Please choose a different wallet provider.',
+        `${unsupportedWalletName} Wallet support coming soon. Please choose a different wallet provider. If you already disconnected the wallet, try refreshing the page.`,
       );
     }
-  }, [isUnsupportedWallet, setError]);
+  }, [isUnsupportedWallet, unsupportedWalletName, setError]);
 
   const [text, style]: [string, ActionButtonStyle] = useMemo(() => {
     let message = '';

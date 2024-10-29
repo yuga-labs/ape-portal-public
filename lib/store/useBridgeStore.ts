@@ -30,7 +30,11 @@ export const useBridgeStore = create<BridgeState & BridgeActions>((set) => ({
   isTokenApprovalRequired: false,
   waitingForTokenApprovalTxConfirm: false,
   highImpactError: false,
-  resetBridgeError: () => set({ bridgeError: undefined }),
+  resetBridgeError: () =>
+    set({
+      bridgeError: undefined,
+      highImpactError: false,
+    }),
   resetBridgeTransactionHash: () => set({ bridgeTransactionHash: undefined }),
   setBridgeError: (error?: BridgeError) =>
     set({ bridgeError: error ?? undefined }),

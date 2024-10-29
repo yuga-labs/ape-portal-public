@@ -34,7 +34,9 @@ The easiest way to get started creating a web3 app is with [RainbowKit](https://
 curl -sSL -o .npmrc https://raw.githubusercontent.com/yuga-labs/ape-portal-public/2bd5d6c85cbb8dfc276c054ddeb0f55a1df459aa/.npmrc
 ```
 
-2. Install the ApeChain Portal using `npm`, `yarn`, or `pnpm`:
+2. Accessing the GitHub npm registry requires a GitHub account. Ensure you have a GitHub personal access token `GITHUB_TOKEN` in your environment, authorized with `read:package` permissions. For more information, see [GitHub documentation on personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
+
+3. Install the ApeChain Portal using `npm`, `yarn`, or `pnpm`:
 
 ```bash
 npm i --save @yuga-labs/ape-portal-public

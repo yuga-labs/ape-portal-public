@@ -19,6 +19,7 @@ import { useErrorStore } from '../../store/useErrorStore';
 import { cn, shortenAddress } from '../../utils/utils';
 import { isAddress } from 'viem';
 import ErrorModal from '../ui/modal/ErrorModal.tsx';
+import { apeChain } from 'viem/chains';
 
 export function Buy({
   showBranding = false,
@@ -38,8 +39,8 @@ export function Buy({
     if (!address || !signer || !enableOnramp) return;
     openHalliday({
       apiKey,
-      destinationBlockchainType: 'APECHAIN',
-      destinationCryptoType: 'APECOIN_APECHAIN',
+      destinationChainId: apeChain.id,
+      destinationTokenAddress: '0x', // 0x means native token
       destinationAddress: destinationAddress || address,
       getSigner: async () => signer,
       targetElementId: 'aw-onramp-halliday',

@@ -39,7 +39,7 @@ echo "Current directory: $current_dir"
 
 # Step 6: Copy the files from the source to the destination (use --dry-run to test)
 echo "About to transfer the files from the source to the destination."
-rsync -av --exclude-from="../ape-portal/.gitignore" --exclude=".git" --exclude=".husky" "../ape-portal/" .
+rsync -av --exclude-from="../ape-portal/.gitignore" --exclude=".git" --exclude=".husky" --exclude="RELEASE.md" "../ape-portal/" .
 
 # Step 7: Update the package.json file to reflect several changes for public repo publishing
 

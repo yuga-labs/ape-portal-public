@@ -155,6 +155,7 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
       boxActionResponse: BoxActionResponse,
       address: Address,
       chainId: number,
+      originalError: Error,
     ) => {
       try {
         const approvalNeeded = await isApprovalNeeded({
@@ -167,6 +168,8 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
           setBridgeError(undefined);
           setIsTokenApprovalRequired(true);
         } else {
+          // Token approval was not the cause of the original error - log to console
+          console.error(JSON.stringify(originalError, undefined, 2));
           setIsTokenApprovalRequired(false);
           setBridgeError('UNKNOWN_ERROR');
         }
@@ -220,8 +223,6 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
         ) {
           setBridgeError('INSUFFICIENT_FUNDS');
         } else {
-          console.error(JSON.stringify(gasEstimateErrorData, undefined, 2));
-
           // Try checking ERC20 allowance
           if (
             !sourceToken.token.isNative &&
@@ -233,6 +234,7 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
               preparedTransaction,
               address,
               sourceToken.token.chainId,
+              gasEstimateErrorData,
             );
           }
         }

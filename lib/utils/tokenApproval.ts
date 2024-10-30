@@ -103,6 +103,12 @@ export const isApprovalNeeded = async ({
   const { isNative, amount, tokenAddress: token } = tokenPayment;
   if (isNative) return false;
 
+  // For OFT bridging, the spender is the token contract itself (on behalf of the sender)
+  //  and approval is not needed.
+  if (token === spender) {
+    return false;
+  }
+
   const hasApproval = await userHasApproval({
     token: token as `0x${string}`,
     spender: spender as `0x${string}`,

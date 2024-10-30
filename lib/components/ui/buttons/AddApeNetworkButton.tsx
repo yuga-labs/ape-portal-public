@@ -14,7 +14,7 @@ export const AddApeNetworkButton = ({
   const walletChainId = useChainId();
 
   const isWalletConnected = !!address;
-  const isOnApechain = walletChainId === apeChain.id;
+  const isOnApechain = isWalletConnected && walletChainId === apeChain.id;
   const handleAddNetwork = useCallback(() => {
     if (isWalletConnected) {
       switchChain({ chainId: apeChain.id });

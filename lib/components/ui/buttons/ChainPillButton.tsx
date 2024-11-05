@@ -17,7 +17,7 @@ export const ChainPillButton = ({
         setSelectorChain(chain);
       }}
       className={cn(
-        'aw-flex aw-h-[40px] aw-items-center aw-justify-center aw-gap-2 aw-rounded-[55px] aw-bg-apeBlue aw-pl-2 aw-pr-2.5 aw-py-1 hover:aw-bg-apeDarkBlue aw-border',
+        'aw-flex aw-h-[40px] aw-items-center aw-justify-center aw-gap-2 aw-rounded-[55px] aw-bg-apeBlue aw-pl-2 aw-pr-2.5 aw-py-1 hover:aw-bg-apeDarkBlue aw-border aw-transition-all aw-duration-300 aw-ease-in-out',
         chain === selectorChain
           ? 'aw-border-white/50'
           : 'aw-border-transparent',

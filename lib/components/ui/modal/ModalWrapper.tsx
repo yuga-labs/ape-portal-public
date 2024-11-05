@@ -20,7 +20,29 @@ interface ModalWrapperProps {
   externalModalOpenState?: boolean;
   showCloseButton?: boolean;
   closeButtonClassName?: string;
+  centerContents?: boolean;
 }
+
+export const ModalWrapperBase = ({
+  className,
+  children,
+  ...props
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <div
+      className={cn(
+        'aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80',
+        className,
+      )}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+};
 
 export const ModalWrapper = ({
   children: trigger,
@@ -31,6 +53,7 @@ export const ModalWrapper = ({
   externalModalOpenState,
   showCloseButton = true,
   closeButtonClassName,
+  centerContents,
 }: ModalWrapperProps) => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const { modalContainer } = useModalStore((state) => ({
@@ -79,7 +102,7 @@ export const ModalWrapper = ({
           aria-describedby={undefined}
           className={'aw-pointer-events-auto aw-size-full'}
         >
-          <div className="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white">
+          <div className="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white">
             {showCloseButton && (
               <Dialog.Close aria-label="Close">
                 <CloseButton className={closeButtonClassName} />
@@ -88,7 +111,13 @@ export const ModalWrapper = ({
             <VisuallyHidden>
               <Dialog.Title>{title}</Dialog.Title>
             </VisuallyHidden>
-            {renderContent({ modalOpen, setModalOpen: setModalState })}
+            <ModalWrapperBase
+              className={
+                centerContents ? 'aw-items-center aw-justify-center' : ''
+              }
+            >
+              {renderContent({ modalOpen, setModalOpen: setModalState })}
+            </ModalWrapperBase>
           </div>
         </Dialog.Content>
       </Dialog.Portal>

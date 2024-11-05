@@ -19,7 +19,7 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -31,7 +31,7 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
@@ -341,7 +341,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -353,7 +353,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
@@ -604,7 +604,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -616,7 +616,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
@@ -845,7 +845,7 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -857,7 +857,7 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
@@ -1105,7 +1105,7 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -1117,7 +1117,7 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"

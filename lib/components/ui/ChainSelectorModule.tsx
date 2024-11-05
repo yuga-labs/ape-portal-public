@@ -105,50 +105,48 @@ export const ChainSelectorModule = ({
       <ModalWrapper
         title="Select Network"
         renderContent={({ setModalOpen }) => (
-          <div className="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80">
-            <div className="aw-inline-flex aw-size-full aw-flex-col aw-items-start aw-justify-start aw-gap-2.5 aw-rounded aw-border aw-border-white/20 aw-bg-apeCtaBlue/50 aw-p-5">
-              <p
-                className={
-                  'aw-mb-2 aw-font-dmsans aw-font-medium aw-leading-normal aw-tracking-wide'
-                }
-              >
-                Select Network
-              </p>
-              {hasPopularChains && (
-                <>
-                  <p className={headerTextClasses}>Popular Networks:</p>
-                  <div
-                    className={
-                      'aw-mb-3 aw-flex aw-flex-row aw-flex-wrap aw-gap-2'
-                    }
-                  >
-                    {popularChains.map((chain) => {
-                      return (
-                        <ChainPillButton
-                          key={chain}
-                          chain={chain}
-                          setSelectorChain={(chainId: ChainId) => {
-                            setSelectorChain(chainId, setModalOpen);
-                          }}
-                          selectorChain={sourceToken.token.chainId}
-                        />
-                      );
-                    })}
-                  </div>
-                </>
-              )}
-              {hasPopularChains && (
-                <p className={headerTextClasses}>All Networks:</p>
-              )}
-              <ChainDropdown
-                setSelectorChain={(chainId: ChainId) => {
-                  setSelectorChain(chainId, setModalOpen);
-                }}
-                selectorChain={sourceToken.token.chainId}
-                chains={otherChains}
-                condensed={false}
-              />
-            </div>
+          <div className="aw-inline-flex aw-size-full aw-flex-col aw-items-start aw-justify-start aw-gap-2.5 aw-rounded aw-border aw-border-white/20 aw-bg-apeCtaBlue/50 aw-p-5">
+            <p
+              className={
+                'aw-mb-2 aw-font-dmsans aw-font-medium aw-leading-normal aw-tracking-wide'
+              }
+            >
+              Select Network
+            </p>
+            {hasPopularChains && (
+              <>
+                <p className={headerTextClasses}>Popular Networks:</p>
+                <div
+                  className={
+                    'aw-mb-3 aw-flex aw-flex-row aw-flex-wrap aw-gap-2'
+                  }
+                >
+                  {popularChains.map((chain) => {
+                    return (
+                      <ChainPillButton
+                        key={chain}
+                        chain={chain}
+                        setSelectorChain={(chainId: ChainId) => {
+                          setSelectorChain(chainId, setModalOpen);
+                        }}
+                        selectorChain={sourceToken.token.chainId}
+                      />
+                    );
+                  })}
+                </div>
+              </>
+            )}
+            {hasPopularChains && (
+              <p className={headerTextClasses}>All Networks:</p>
+            )}
+            <ChainDropdown
+              setSelectorChain={(chainId: ChainId) => {
+                setSelectorChain(chainId, setModalOpen);
+              }}
+              selectorChain={sourceToken.token.chainId}
+              chains={otherChains}
+              condensed={false}
+            />
           </div>
         )}
         disabled={loading || disabled}

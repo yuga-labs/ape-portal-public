@@ -157,6 +157,7 @@
 
 .decent-dialog .box-popular-token-row {
   gap: 10px !important;
+  transition: all 0.3s ease;
 }
 
 .decent-dialog .box-token-row {
@@ -167,6 +168,7 @@
   text-align: left;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 .aw-font-dmmono {

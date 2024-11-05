@@ -124,7 +124,7 @@ export const ChainTokenSelectModal = ({
   const instructionPrefix = isSwap ? '' : '2. ';
 
   return (
-    <div className="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80">
+    <>
       {!isSwap && (
         <div className="aw-flex aw-w-full aw-flex-col aw-items-start aw-justify-start aw-gap-2.5 aw-rounded aw-border aw-border-white/20 aw-bg-apeCtaBlue/50 aw-p-3 md:aw-px-5">
           <p
@@ -170,6 +170,6 @@ export const ChainTokenSelectModal = ({
           selectTokens={enabledTokens}
         />
       </div>
-    </div>
+    </>
   );
 };

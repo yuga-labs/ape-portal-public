@@ -163,89 +163,88 @@ function TransactionStatus({
         resetBridgeTransactionHash();
       }}
       showCloseButton={!isTxProcessing && !waitingForSignature}
+      centerContents
       renderContent={() => (
-        <div className="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80">
-          <div className="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center">
-            <div className="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]">
-              {status}
-            </div>
-            <h2 className="aw-mt-8 aw-text-[16px] aw-text-white">
-              {statusSecondary}
-            </h2>
-            <div
-              className={
-                'aw-relative aw-mt-8 aw-flex aw-w-4/5 aw-flex-row aw-justify-center aw-gap-x-4'
-              }
+        <div className="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center">
+          <div className="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]">
+            {status}
+          </div>
+          <h2 className="aw-mt-8 aw-text-[16px] aw-text-white">
+            {statusSecondary}
+          </h2>
+          <div
+            className={
+              'aw-relative aw-mt-8 aw-flex aw-w-4/5 aw-flex-row aw-justify-center aw-gap-x-4'
+            }
+          >
+            <motion.div
+              initial={{ width: '60%' }}
+              animate={status}
+              variants={variants}
+              className={cn(
+                'aw-relative aw-flex aw-h-20 aw-w-full aw-flex-row aw-items-center aw-justify-evenly aw-rounded-full',
+                {
+                  'aw-animated-gradient': isTxProcessing,
+                },
+              )}
             >
-              <motion.div
-                initial={{ width: '60%' }}
-                animate={status}
-                variants={variants}
-                className={cn(
-                  'aw-relative aw-flex aw-h-20 aw-w-full aw-flex-row aw-items-center aw-justify-evenly aw-rounded-full',
-                  {
-                    'aw-animated-gradient': isTxProcessing,
-                  },
-                )}
-              >
-                <TokenDisplay
-                  token={sourceToken.token}
-                  amount={sourceAmount}
-                  amountUsd={sourceToken.amountUsd}
-                  animationVisible={isTxProcessing}
-                  showChain={!isSwap}
-                  left
-                />
-                {statusElement}
-                <TokenDisplay
-                  token={destinationToken.token}
-                  amount={destinationAmount}
-                  amountUsd={destinationToken.amountUsd}
-                  animationVisible={isTxProcessing}
-                  showChain={!isSwap}
-                />
-              </motion.div>
+              <TokenDisplay
+                token={sourceToken.token}
+                amount={sourceAmount}
+                amountUsd={sourceToken.amountUsd}
+                animationVisible={isTxProcessing}
+                showChain={!isSwap}
+                left
+              />
+              {statusElement}
+              <TokenDisplay
+                token={destinationToken.token}
+                amount={destinationAmount}
+                amountUsd={destinationToken.amountUsd}
+                animationVisible={isTxProcessing}
+                showChain={!isSwap}
+              />
+            </motion.div>
+          </div>
+          <div className="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0">
+            <div
+              className={cn(
+                'aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white',
+                {
+                  'aw-invisible':
+                    status === BridgeState.COMPLETED ||
+                    status === BridgeState.FAILED ||
+                    !estimatedTxTimeReadable,
+                },
+              )}
+            >
+              <div className="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50">
+                Estimated Time:
+              </div>
+              <div className="aw-flex aw-min-h-5 aw-justify-center aw-font-bold">
+                {estimatedTxTimeReadable}
+              </div>
             </div>
-            <div className="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0">
-              <div
-                className={cn(
-                  'aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white',
-                  {
-                    'aw-invisible':
-                      status === BridgeState.COMPLETED ||
-                      status === BridgeState.FAILED ||
-                      !estimatedTxTimeReadable,
-                  },
-                )}
+            <div className="aw-flex aw-flex-col">
+              {waitingForSignature ? (
+                <ActionButton
+                  disabled={true}
+                  portal={isSwap ? PortalType.Swap : PortalType.Bridge}
+                  action={() => {}}
+                />
+              ) : (
+                <LinkButton
+                  text={'View Transaction'}
+                  url={viewTransactionUrl}
+                />
+              )}
+              <a
+                href={LINK_SUPPORT}
+                target="_blank"
+                className="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
               >
-                <div className="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50">
-                  Estimated Time:
-                </div>
-                <div className="aw-flex aw-min-h-5 aw-justify-center aw-font-bold">
-                  {estimatedTxTimeReadable}
-                </div>
-              </div>
-              <div className="aw-flex aw-flex-col">
-                {waitingForSignature ? (
-                  <ActionButton
-                    disabled={true}
-                    portal={isSwap ? PortalType.Swap : PortalType.Bridge}
-                    action={() => {}}
-                  />
-                ) : (
-                  <LinkButton
-                    text={'View Transaction'}
-                    url={viewTransactionUrl}
-                  />
-                )}
-                <a
-                  href={LINK_SUPPORT}
-                  target="_blank"
-                  className="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
-                >
-                  {isSwap ? 'Swap' : 'Bridge'} Support
-                </a>
-              </div>
+                {isSwap ? 'Swap' : 'Bridge'} Support
+              </a>
             </div>
           </div>
         </div>

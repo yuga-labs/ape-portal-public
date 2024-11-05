@@ -6,14 +6,16 @@ import { arbitrum, mainnet } from 'wagmi/chains';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ConnectButton, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { ApePortalWrapper } from './ApePortalWrapper';
-import { apeChain } from 'viem/chains';
+import { apeChain, curtis } from 'viem/chains';
+import React from 'react';
 
 export const wagmiConfig = createConfig({
-  chains: [apeChain, mainnet, arbitrum],
+  chains: [apeChain, mainnet, arbitrum, curtis],
   transports: {
     [apeChain.id]: http(),
     [mainnet.id]: http(),
     [arbitrum.id]: http(),
+    [curtis.id]: http(),
   },
 });
 const queryClient = new QueryClient();

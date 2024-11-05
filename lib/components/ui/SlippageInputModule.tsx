@@ -107,7 +107,7 @@ export const SlippageInputModule = () => {
           className="aw-z-100 aw-flex aw-flex-col"
         >
           {({ close }) => (
-            <div className="aw-inline-flex aw-min-h-[164px] aw-w-[303px] aw-flex-col aw-items-start aw-justify-center aw-gap-3 aw-rounded-[10px] aw-border aw-border-white/20 aw-bg-[#002775] aw-px-5 aw-py-[17px]">
+            <div className="aw-inline-flex aw-min-h-[164px] aw-w-[320px] aw-flex-col aw-items-start aw-justify-center aw-gap-3 aw-rounded-[10px] aw-border aw-border-white/20 aw-bg-[#002775] aw-px-5 aw-py-[17px]">
               <div className="aw-inline-flex aw-items-start aw-justify-between aw-self-stretch">
                 <div className="aw-text-center aw-font-dmsans aw-text-sm aw-font-bold aw-leading-[18px] aw-text-white">
                   Max slippage
@@ -184,7 +184,7 @@ export const SlippageInputModule = () => {
                 onClick={() => {
                   handleApplyChanges(close);
                 }}
-                className="aw-inline-flex aw-items-center aw-justify-center aw-gap-2.5 aw-self-stretch aw-rounded aw-bg-[#0054fa] aw-px-2.5 aw-py-[9px] aw-text-center aw-font-dmsans aw-text-[13px] aw-font-bold aw-leading-[18px] aw-text-white"
+                className="aw-inline-flex aw-items-center aw-justify-center aw-gap-2.5 aw-self-stretch aw-rounded aw-bg-[#0054fa] aw-px-2.5 aw-py-[9px] aw-text-center aw-font-dmsans aw-text-[13px] aw-font-bold aw-leading-[18px] aw-text-white aw-transition-colors aw-duration-200 hover:aw-bg-[#053389]"
               >
                 Apply changes
               </button>

@@ -164,9 +164,9 @@ function TransactionStatus({
       }}
       showCloseButton={!isTxProcessing && !waitingForSignature}
       renderContent={() => (
-        <div className="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80">
+        <div className="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80">
           <div className="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center">
-            <div className="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]">
+            <div className="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]">
               {status}
             </div>
             <h2 className="aw-mt-8 aw-text-[16px] aw-text-white">

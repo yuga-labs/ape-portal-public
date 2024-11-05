@@ -184,12 +184,6 @@ export const useTabManager = (
           return;
         }
 
-        if (sourceToken.token.chainId === destinationToken.token.chainId) {
-          // User was technically already doing a swap
-          setSelectedPortalType(portalType);
-          return;
-        }
-
         const chainNextToken = getChainNextToken(sourceToken.token);
         if (chainNextToken) {
           setDestinationToken(chainNextToken);

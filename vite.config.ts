@@ -69,4 +69,11 @@ export default defineConfig({
     include: ['**/*.test.{ts,tsx}'],
     setupFiles: ['test/index.tsx'],
   },
+  // @decent.xyz expects process.env to be defined which vite does not define.
+  // As a workaround we expose process.env as an empty object.
+  // Note: If values are needed here in the future, keep in mind they will be
+  // exposed to the client before adding
+  define: {
+    'process.env': {},
+  },
 });

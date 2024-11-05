@@ -30,7 +30,6 @@ export const humanReadableBridgeError: BridgeErrorDescriptions = {
   UNKNOWN_ERROR: 'Something went wrong',
   WRONG_NETWORK: 'Bad from or to chains',
 };
-export const HIGH_IMPACT_ERROR = 'Price impact too high';
 
 export interface DefaultTokenAmount {
   type: InputType;

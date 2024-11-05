@@ -2,10 +2,10 @@ import { create } from 'zustand';
 import { BridgeError } from '../types';
 
 interface BridgeState {
-  /** Various bridge/swap error states. Intended for reading via useBridgeError, to account for highImpactError. */
+  /** Various bridge/swap error states. Intended for reading via useBridgeError. */
   bridgeError: BridgeError | undefined;
-  /** True if price impact exceeds DISABLE_BUTTON_THRESHOLD_PRICE_IMPACT. Intended for reading via useBridgeError. */
-  highImpactError: boolean;
+  /** True if price impact exceeds DISABLE_BUTTON_THRESHOLD_PRICE_IMPACT. */
+  highImpactWarning: boolean;
   bridgeTransactionHash: string | undefined;
   waitingForSignature: boolean;
   isTokenApprovalRequired: boolean;
@@ -15,7 +15,7 @@ interface BridgeState {
 interface BridgeActions {
   resetBridgeError: () => void;
   setBridgeError: (error?: BridgeError) => void;
-  setHighImpactError: (highImpact: boolean) => void;
+  setHighImpactWarning: (highImpact: boolean) => void;
   setBridgeTransactionHash: (txHash: string) => void;
   resetBridgeTransactionHash: () => void;
   setWaitingForSignature: (waiting: boolean) => void;
@@ -29,17 +29,17 @@ export const useBridgeStore = create<BridgeState & BridgeActions>((set) => ({
   waitingForSignature: false,
   isTokenApprovalRequired: false,
   waitingForTokenApprovalTxConfirm: false,
-  highImpactError: false,
+  highImpactWarning: false,
   resetBridgeError: () =>
     set({
       bridgeError: undefined,
-      highImpactError: false,
+      highImpactWarning: false,
     }),
   resetBridgeTransactionHash: () => set({ bridgeTransactionHash: undefined }),
   setBridgeError: (error?: BridgeError) =>
     set({ bridgeError: error ?? undefined }),
-  setHighImpactError: (highImpact: boolean) =>
-    set({ highImpactError: highImpact }),
+  setHighImpactWarning: (highImpact: boolean) =>
+    set({ highImpactWarning: highImpact }),
   setBridgeTransactionHash: (txHash: string) =>
     set({ bridgeTransactionHash: txHash }),
   setWaitingForSignature: (waiting: boolean) =>

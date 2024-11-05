@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import { JSX, useEffect, useRef } from 'react';
 import { useAccount, useChainId, useSwitchChain } from 'wagmi';
 import { useCallback } from 'react';
 import { useApeContext } from '../../../providers/ape/apeProvider.context';
@@ -12,6 +12,7 @@ export const AddApeNetworkButton = ({
   const { openConnectModal } = useApeContext();
   const { switchChain } = useSwitchChain();
   const walletChainId = useChainId();
+  const waitingForWalletConnection = useRef(false);
 
   const isWalletConnected = !!address;
   const isOnApechain = isWalletConnected && walletChainId === apeChain.id;
@@ -20,8 +21,20 @@ export const AddApeNetworkButton = ({
       switchChain({ chainId: apeChain.id });
     } else {
       openConnectModal();
+      // Since openConnectModal is not a promise, we will finish adding the network via
+      //  useEffect that relies on waitingForWalletConnection.current (below)
+      waitingForWalletConnection.current = true;
     }
   }, [isWalletConnected, openConnectModal, switchChain]);
+
+  useEffect(() => {
+    /** This useEffect will fire after the user's wallet is connected, after
+     *  being initially disconnected. Then, we can continue adding the network. */
+    if (isWalletConnected && waitingForWalletConnection.current) {
+      waitingForWalletConnection.current = false;
+      switchChain({ chainId: apeChain.id });
+    }
+  }, [isWalletConnected, switchChain]);
 
   return (
     <button

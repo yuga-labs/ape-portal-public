@@ -80,7 +80,7 @@ function TokenSwapComponent({
                 >
                   {!isOnRamp && (
                     <TokenInputModule
-                      isSourceToken
+                      isSourceToken={true}
                       className="aw-z-50"
                       loading={loading}
                       selectType={portalType}
@@ -92,6 +92,7 @@ function TokenSwapComponent({
                   />
                   {!isOnRamp && (
                     <TokenInputModule
+                      isSourceToken={false}
                       className="aw-z-30"
                       loading={loading}
                       selectType={portalType}

@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import { act, render, screen } from '@testing-library/react';
+import { act, render, screen, waitFor } from '@testing-library/react';
 import {
   ActionButton,
   ActionButtonProps,
@@ -13,11 +13,7 @@ import {
   usePortalStore,
 } from '../../../../lib/store/usePortalStore.ts';
 import { useBridgeStore } from '../../../../lib/store/useBridgeStore';
-import {
-  BridgeError,
-  HIGH_IMPACT_ERROR,
-  humanReadableBridgeError,
-} from '../../../../lib/types';
+import { BridgeError, humanReadableBridgeError } from '../../../../lib/types';
 import { TokenTransactionData } from '../../../../lib/classes/TokenTransactionData.ts';
 import { polygon } from 'wagmi/chains';
 
@@ -286,20 +282,20 @@ describe('components/ui/buttons/ActionButton', () => {
     expect(screen.getByText('Waiting for signature')).toBeEnabled();
     expect(actionButton).toMatchSnapshot();
   });
-  test('should show price impact warning when bridgeErrorMessage is set', async () => {
+  test('should show price impact warning when highImpactWarning is set', async () => {
     // Set source token amount to trigger button text change from `Enter Amount`
     usePortalStore.setState({
       sourceToken: new TokenTransactionData(defaultBridgeSourceToken, '1'),
     });
     const config = setupConfigForDefaultNetwork();
-    const actionButton = render(
+    render(
       <AllTheProviders apeConfig={defaultApeConfig} wagmiConfig={config}>
         <ActionButton {...getProps()} />
       </AllTheProviders>,
     );
     await act(async () => {
       useBridgeStore.setState({
-        highImpactError: true,
+        highImpactWarning: true,
       });
 
       await connect(config, {
@@ -307,10 +303,12 @@ describe('components/ui/buttons/ActionButton', () => {
         connector: config.connectors[0],
       });
     });
-    expect(
-      screen.getByRole('button', { name: HIGH_IMPACT_ERROR }),
-    ).toBeDisabled();
-    expect(actionButton).toMatchSnapshot();
+    // Click action button
+    screen.getByRole('button', { name: 'Swap' }).click();
+    // Expect `High Price Impact` modal to be displayed
+    await waitFor(() => {
+      expect(screen.getByText('High Impact Warning')).toBeVisible();
+    });
   });
 
   test('should show price impact warning even if token requires approval', async () => {
@@ -319,14 +317,14 @@ describe('components/ui/buttons/ActionButton', () => {
       sourceToken: new TokenTransactionData(defaultBridgeSourceToken, '1'),
     });
     const config = setupConfigForDefaultNetwork();
-    const actionButton = render(
+    render(
       <AllTheProviders apeConfig={defaultApeConfig} wagmiConfig={config}>
         <ActionButton {...getProps()} />
       </AllTheProviders>,
     );
     await act(async () => {
       useBridgeStore.setState({
-        highImpactError: true,
+        highImpactWarning: true,
         isTokenApprovalRequired: true,
       });
 
@@ -336,9 +334,14 @@ describe('components/ui/buttons/ActionButton', () => {
       });
     });
     expect(
-      screen.getByRole('button', { name: HIGH_IMPACT_ERROR }),
-    ).toBeDisabled();
-    expect(screen.queryByText('Approve token for spend')).toBeNull();
-    expect(actionButton).toMatchSnapshot();
+      screen.getByRole('button', { name: 'Approve token for spend' }),
+    ).toBeEnabled();
+
+    // Click action button
+    screen.getByRole('button', { name: 'Approve token for spend' }).click();
+    // Expect `High Price Impact` modal to be displayed
+    await waitFor(() => {
+      expect(screen.getByText('High Impact Warning')).toBeVisible();
+    });
   });
 });

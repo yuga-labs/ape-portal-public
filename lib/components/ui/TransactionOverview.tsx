@@ -59,7 +59,7 @@ export const TransactionOverview = () => {
                 Fees:
               </span>
               <div className={'aw-flex aw-flex-row aw-items-center'}>
-                <span className="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white">
+                <span className="aw-max-w-[300px] aw-overflow-hidden aw-text-ellipsis aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white">
                   {bridgeTransactionData.totalFeeUsdString}
                 </span>
                 <ArrowDown

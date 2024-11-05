@@ -185,7 +185,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                               class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
                             >
                               <div
-                                class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                                class="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                               >
                                 $0
                               </div>
@@ -358,7 +358,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                               class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
                             >
                               <div
-                                class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                                class="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                               >
                                 $0
                               </div>
@@ -401,7 +401,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                                 class="aw-flex aw-flex-row aw-items-center"
                               >
                                 <span
-                                  class="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
+                                  class="aw-max-w-[300px] aw-overflow-hidden aw-text-ellipsis aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
                                 >
                                   $0
                                 </span>
@@ -721,7 +721,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                             class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
                           >
                             <div
-                              class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              class="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                             >
                               $0
                             </div>
@@ -894,7 +894,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                             class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
                           >
                             <div
-                              class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              class="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                             >
                               $0
                             </div>
@@ -937,7 +937,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                               class="aw-flex aw-flex-row aw-items-center"
                             >
                               <span
-                                class="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
+                                class="aw-max-w-[300px] aw-overflow-hidden aw-text-ellipsis aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
                               >
                                 $0
                               </span>
@@ -1326,7 +1326,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                               class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
                             >
                               <div
-                                class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                                class="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                               >
                                 $0
                               </div>
@@ -1499,7 +1499,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                               class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
                             >
                               <div
-                                class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                                class="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                               >
                                 $0
                               </div>
@@ -1542,7 +1542,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                                 class="aw-flex aw-flex-row aw-items-center"
                               >
                                 <span
-                                  class="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
+                                  class="aw-max-w-[300px] aw-overflow-hidden aw-text-ellipsis aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
                                 >
                                   $0
                                 </span>
@@ -1687,7 +1687,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                   class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
                 >
                   <div
-                    class="aw-flex aw-min-h-[470px] aw-justify-center aw-bg-apeBlue"
+                    class="aw-flex aw-min-h-[470px] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-apeBlue"
                     data-testid="aw-onramp-container"
                   >
                     <div
@@ -1934,7 +1934,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                             class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
                           >
                             <div
-                              class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              class="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                             >
                               $0
                             </div>
@@ -2107,7 +2107,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                             class="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap"
                           >
                             <div
-                              class="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
+                              class="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                             >
                               $0
                             </div>
@@ -2150,7 +2150,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                               class="aw-flex aw-flex-row aw-items-center"
                             >
                               <span
-                                class="aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
+                                class="aw-max-w-[300px] aw-overflow-hidden aw-text-ellipsis aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white"
                               >
                                 $0
                               </span>
@@ -2295,7 +2295,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                 class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
               >
                 <div
-                  class="aw-flex aw-min-h-[470px] aw-justify-center aw-bg-apeBlue"
+                  class="aw-flex aw-min-h-[470px] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-apeBlue"
                   data-testid="aw-onramp-container"
                 >
                   <div

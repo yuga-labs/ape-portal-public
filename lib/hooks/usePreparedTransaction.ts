@@ -60,10 +60,10 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
     setBridgeError,
     resetBridgeError,
     setIsTokenApprovalRequired,
-    setHighImpactError,
+    setHighImpactWarning,
   } = useBridgeStore((state) => ({
     setBridgeError: state.setBridgeError,
-    setHighImpactError: state.setHighImpactError,
+    setHighImpactWarning: state.setHighImpactWarning,
     resetBridgeError: state.resetBridgeError,
     setIsTokenApprovalRequired: state.setIsTokenApprovalRequired,
   }));
@@ -325,7 +325,7 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
         setPriceImpactWarning(undefined);
       }
 
-      setHighImpactError(
+      setHighImpactWarning(
         Boolean(
           estimatedPriceImpact &&
             estimatedPriceImpact >= DISABLE_BUTTON_THRESHOLD_PRICE_IMPACT,
@@ -344,7 +344,7 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
     resetBridgeError,
     setBridgeError,
     setErrorAndCheckForApproval,
-    setHighImpactError,
+    setHighImpactWarning,
     setIsTokenApprovalRequired,
     setPriceImpactWarning,
     setTxTimeWarning,

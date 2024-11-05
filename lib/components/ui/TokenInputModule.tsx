@@ -12,8 +12,9 @@ import { ChainTokenSelectTrigger } from './ChainTokenSelectTrigger.tsx';
 import { cn, shortenAddress } from '../../utils/utils.ts';
 import { useApeContext } from '../../providers/ape/apeProvider.context.ts';
 import { ModalWrapper } from './modal/ModalWrapper.tsx';
-import { isAddress } from 'viem';
+import { Address, isAddress } from 'viem';
 import { useAccount } from 'wagmi';
+import { ApeStableDisclosure } from './ApeStableDisclosure.tsx';
 
 const InputLabelMap: Record<PortalType, Record<InputType, string>> = {
   [PortalType.Bridge]: {
@@ -31,7 +32,7 @@ const InputLabelMap: Record<PortalType, Record<InputType, string>> = {
 };
 
 export type TokenInputModuleProps = {
-  isSourceToken?: boolean;
+  isSourceToken: boolean;
   className?: string;
   loading: boolean;
   selectType: PortalType;
@@ -134,6 +135,7 @@ export const TokenInputModule = ({
               ((lastChanged === InputType.Destination && isSourceToken) ||
                 (lastChanged === InputType.Source && !isSourceToken))
             }
+            maxDecimals={currentToken.token.decimals}
           />
           <ModalWrapper
             title="Select Token"
@@ -155,8 +157,13 @@ export const TokenInputModule = ({
           </ModalWrapper>
         </div>
         <div className="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap">
-          <div className="aw-size-full aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70">
+          <div className="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70">
             {inputUsdValue}
+            <ApeStableDisclosure
+              tokenAddress={currentToken.token.address as Address}
+              tokenUsdValue={inputUsdValue}
+              isSourceToken={isSourceToken}
+            />
           </div>
           <div>
             <span className="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40">

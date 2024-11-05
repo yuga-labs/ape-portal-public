@@ -5,7 +5,7 @@ import {
   openHalliday,
   Service,
 } from '@halliday-sdk/commerce';
-import { useEffect, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ActionButton } from '../ui/buttons/ActionButton';
 import {
   PUBLIC_HALLIDAY_API_KEY as apiKey,
@@ -20,6 +20,7 @@ import { cn, shortenAddress } from '../../utils/utils';
 import { isAddress } from 'viem';
 import ErrorModal from '../ui/modal/ErrorModal.tsx';
 import { apeChain } from 'viem/chains';
+import { LaunchHallidayButton } from '../ui/buttons/LaunchHallidayButton.tsx';
 
 export function Buy({
   showBranding = false,
@@ -31,13 +32,32 @@ export function Buy({
   const { address } = useAccount();
   const signer = useEthersSigner();
   const { setError } = useErrorStore();
-  const wasHallidayLoaded = useRef(false);
+  const wasHallidayLoaded = useRef<boolean>(false);
+  const [isIframePresent, setIsIframePresent] = useState(false);
 
+  // Check if the iframe is present. So if the user closes the iframe,
+  // we can show the "launch onramp" button
   useEffect(() => {
-    if (wasHallidayLoaded.current) return;
-    if (isTabHosted && portalType !== PortalType.OnRamp) return;
-    if (!address || !signer || !enableOnramp) return;
-    openHalliday({
+    const divElement = document.querySelector('#aw-onramp-halliday');
+    const checkIframePresence = () => {
+      const iframeExists = divElement?.querySelector('iframe');
+      setIsIframePresent(!!iframeExists);
+    };
+    const observer = new MutationObserver(() => checkIframePresence());
+    if (divElement) {
+      observer.observe(divElement, { childList: true, subtree: true });
+    }
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const launchHalliday = useCallback(() => {
+    if (!address || !signer) {
+      console.error('Onramp: Address or signer not available');
+      return;
+    }
+    void openHalliday({
       apiKey,
       destinationChainId: apeChain.id,
       destinationTokenAddress: '0x', // 0x means native token
@@ -47,6 +67,13 @@ export function Buy({
       services: ['ONRAMP' as Service],
       windowType: 'EMBED' as CommerceWindowType,
     });
+  }, [address, destinationAddress, signer]);
+
+  useEffect(() => {
+    if (wasHallidayLoaded.current) return;
+    if (isTabHosted && portalType !== PortalType.OnRamp) return;
+    if (!address || !signer || !enableOnramp) return;
+    void launchHalliday();
     wasHallidayLoaded.current = true;
   }, [
     address,
@@ -55,6 +82,7 @@ export function Buy({
     destinationAddress,
     portalType,
     isTabHosted,
+    launchHalliday,
   ]);
 
   useEffect(() => {
@@ -72,6 +100,10 @@ export function Buy({
     }
   }, [destinationAddress, isTopTrader]);
 
+  const userClosedHalliday = useMemo(() => {
+    return isWalletConnected && !isIframePresent && wasHallidayLoaded.current;
+  }, [isIframePresent, isWalletConnected]);
+
   return (
     <ApeContainer
       wrapChildren={showBranding}
@@ -80,7 +112,7 @@ export function Buy({
     >
       <div
         data-testid="aw-onramp-container"
-        className="aw-flex aw-min-h-[470px] aw-justify-center aw-bg-apeBlue"
+        className="aw-flex aw-min-h-[470px] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-apeBlue"
       >
         {!isTabHosted && <ErrorModal />}
         {fundsReceiverWarning && isWalletConnected && (
@@ -97,6 +129,7 @@ export function Buy({
           className={cn(
             'aw-w-[90vw]',
             !isWalletConnected && 'aw-hidden',
+            userClosedHalliday && 'aw-hidden',
             fundsReceiverWarning && 'aw-pt-10 sm:aw-pt-6',
           )}
         />
@@ -114,6 +147,21 @@ export function Buy({
               </div>
             </div>
             <ActionButton action={() => {}} portal={PortalType.Bridge} />
+          </div>
+        )}
+        {userClosedHalliday && (
+          <div className="aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16">
+            <div className={'aw-font-dmsans aw-text-white'}>
+              <div className="aw-mb-6 aw-text-center aw-text-3xl aw-capitalize aw-leading-[37px] aw-tracking-wide">
+                Onramp
+              </div>
+              <div className="aw-text-center aw-font-bold aw-leading-[25px]">
+                Launch to proceed
+                <br />
+                with the onramp.
+              </div>
+            </div>
+            <LaunchHallidayButton handler={launchHalliday} />
           </div>
         )}
       </div>

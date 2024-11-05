@@ -12,6 +12,7 @@ import { usePortalStore } from '../../../store/usePortalStore.ts';
 import { useShallow } from 'zustand/react/shallow';
 import { useBridgeError } from '../../../store/useBridgeError.ts';
 import { useErrorStore } from '../../../store/useErrorStore.ts';
+import ConsentModal from '../modal/ConsentModal.tsx';
 
 enum ActionButtonStyle {
   GradientBorder,
@@ -55,11 +56,14 @@ export const ActionButton = ({
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [spotlightX, setSpotlightX] = useState(0);
+  const [showConsentModal, setShowConsentModal] = useState(false);
   const {
+    highImpactWarning,
     waitingForSignature,
     isTokenApprovalRequired,
     waitingForTokenApprovalTxConfirm,
   } = useBridgeStore((state) => ({
+    highImpactWarning: state.highImpactWarning,
     waitingForSignature: state.waitingForSignature,
     isTokenApprovalRequired: state.isTokenApprovalRequired,
     waitingForTokenApprovalTxConfirm: state.waitingForTokenApprovalTxConfirm,
@@ -115,7 +119,11 @@ export const ActionButton = ({
     } else if (isWrongChain) {
       switchToDesiredChain();
     } else {
-      action();
+      if (highImpactWarning && !showConsentModal) {
+        setShowConsentModal(true);
+      } else {
+        action();
+      }
     }
   }, [
     isWrongChain,
@@ -123,6 +131,8 @@ export const ActionButton = ({
     action,
     isWalletConnected,
     openConnectModal,
+    highImpactWarning,
+    showConsentModal,
   ]);
 
   const unsupportedWalletName: string | undefined = useMemo(() => {
@@ -196,44 +206,60 @@ export const ActionButton = ({
         areAmountsEmpty));
 
   return (
-    <BaseButton
-      disabled={buttonDisabled}
-      onClick={handler}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onMouseMove={handleMouseMove}
-      className={cn(
-        'disabled:aw-opacity-100',
-        style === ActionButtonStyle.GradientFull
-          ? 'aw-gradient-lavender-coral-sunset aw-relative aw-h-[62px] aw-cursor-not-allowed aw-overflow-hidden aw-text-clip'
-          : 'aw-bg-gradient-lavender-coral-sunset',
-      )}
-      ref={buttonRef}
-    >
-      <div
-        className={cn(
-          'aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-w-full',
-          style === ActionButtonStyle.GradientFull
-            ? 'aw-absolute aw-left-1/2 aw-top-1/2 aw--translate-x-1/2 aw--translate-y-1/2 aw-cursor-not-allowed aw-text-blue-900'
-            : 'aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white',
-          buttonDisabled &&
-            style != ActionButtonStyle.GradientFull &&
-            'aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled',
-        )}
-      >
-        <motion.div
-          className="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
-          style={{
-            left: spotlightX,
-            top: 0,
+    <>
+      {showConsentModal && (
+        <ConsentModal
+          visible={showConsentModal}
+          title="High Impact Warning"
+          description="This transaction has a high price impact, meaning you will receive significantly less in $USD equivalent than you are sending. Are you sure you want to proceed?"
+          onAccept={() => {
+            setShowConsentModal(false);
+            action();
           }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isHovered ? 0.2 : 0 }}
-          transition={{ duration: 0.2 }}
+          onReject={() => setShowConsentModal(false)}
+          acceptText="Proceed"
+          rejectText="Cancel"
         />
-        {text}
-      </div>
-      {style === ActionButtonStyle.GradientFull && <GradientBg />}
-    </BaseButton>
+      )}
+      <BaseButton
+        disabled={buttonDisabled}
+        onClick={handler}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onMouseMove={handleMouseMove}
+        className={cn(
+          'disabled:aw-opacity-100',
+          style === ActionButtonStyle.GradientFull
+            ? 'aw-gradient-lavender-coral-sunset aw-relative aw-h-[62px] aw-cursor-not-allowed aw-overflow-hidden aw-text-clip'
+            : 'aw-bg-gradient-lavender-coral-sunset',
+        )}
+        ref={buttonRef}
+      >
+        <div
+          className={cn(
+            'aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-w-full',
+            style === ActionButtonStyle.GradientFull
+              ? 'aw-absolute aw-left-1/2 aw-top-1/2 aw--translate-x-1/2 aw--translate-y-1/2 aw-cursor-not-allowed aw-text-blue-900'
+              : 'aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white',
+            buttonDisabled &&
+              style != ActionButtonStyle.GradientFull &&
+              'aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled',
+          )}
+        >
+          <motion.div
+            className="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
+            style={{
+              left: spotlightX,
+              top: 0,
+            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isHovered ? 0.2 : 0 }}
+            transition={{ duration: 0.2 }}
+          />
+          {text}
+        </div>
+        {style === ActionButtonStyle.GradientFull && <GradientBg />}
+      </BaseButton>
+    </>
   );
 };

@@ -31,13 +31,13 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Processing Transaction
             </div>
@@ -353,13 +353,13 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Processing Transaction
             </div>
@@ -616,13 +616,13 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Check Your Wallet
             </div>
@@ -857,13 +857,13 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Processing Transaction
             </div>
@@ -1117,13 +1117,13 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
+          class="aw-flex aw-size-full aw-animate-fade-in aw-flex-col aw-items-center aw-justify-center aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[30px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Processing Transaction
             </div>

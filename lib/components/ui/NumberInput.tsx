@@ -7,12 +7,14 @@ export const NumberInputWithLabel = ({
   loading,
   disabled,
   label,
+  maxDecimals,
 }: {
   value: string;
   onChange: (value: string) => void;
   loading: boolean;
   disabled: boolean;
   label: string;
+  maxDecimals?: number;
 }) => {
   return (
     <div className="aw-flex aw-flex-1 aw-flex-col aw-justify-between">
@@ -28,6 +30,7 @@ export const NumberInputWithLabel = ({
         value={value}
         disabled={disabled}
         onChangeSanitized={onChange}
+        maxDecimals={maxDecimals}
       />
     </div>
   );

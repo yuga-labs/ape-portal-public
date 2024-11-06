@@ -25,7 +25,7 @@ import { LaunchHallidayButton } from '../ui/buttons/LaunchHallidayButton.tsx';
 export function Buy({
   showBranding = false,
   className,
-  isTabHosted,
+  isTabHosted = false,
   portalType,
 }: PortalProps & { portalType?: PortalType }) {
   const { enableOnramp, destinationAddress, isTopTrader } = useApeContext();
@@ -108,7 +108,8 @@ export function Buy({
     <ApeContainer
       wrapChildren={showBranding}
       className={className}
-      showGradient={!isTabHosted}
+      showGradient={showBranding}
+      isTabHosted={isTabHosted}
     >
       <div
         data-testid="aw-onramp-container"

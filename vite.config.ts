@@ -76,4 +76,7 @@ export default defineConfig({
   define: {
     'process.env': {},
   },
+  server: {
+    open: '/example/index.html',
+  },
 });

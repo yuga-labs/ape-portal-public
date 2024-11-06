@@ -12,6 +12,7 @@ export const ModalPortal = () => {
     if (container) {
       setModalContainer(container);
     }
+    return () => setModalContainer(undefined);
   }, [container, setModalContainer]);
 
   return (

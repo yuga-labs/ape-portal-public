@@ -10,6 +10,7 @@ export type ApeContainerProps = {
   wrapChildren: boolean;
   className?: string;
   showGradient?: boolean;
+  isTabHosted: boolean;
 };
 
 export const ApeContainer = ({
@@ -17,6 +18,7 @@ export const ApeContainer = ({
   wrapChildren = false,
   className,
   showGradient = true,
+  isTabHosted,
 }: ApeContainerProps) => {
   useEffect(() => {
     if (!showGradient) return;
@@ -31,6 +33,7 @@ export const ApeContainer = ({
           className,
         )}
       >
+        {!isTabHosted && <ModalPortal />}
         {showGradient && (
           <canvas
             id={'aw-ape-container-bg'}

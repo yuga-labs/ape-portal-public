@@ -54,7 +54,10 @@ interface PortalActions {
   ) => void;
   setSlippagePercentage: (slippage: number) => void;
   resetSlippage: () => void;
+  /** Reset warnings, gas prices and fees, and only the last touched token amount. */
   resetTransactionData: () => void;
+  /** Reset warnings, gas prices and fees, and both source/dest token amounts. */
+  resetTransactionDataAndAmounts: () => void;
   setHasUserUpdatedTokens: () => void;
 }
 
@@ -89,6 +92,7 @@ export const usePortalStore = create<PortalState & PortalActions>()((set) => ({
         state.hasUserUpdatedTokens = true;
       }),
     ),
+  /** Reset warnings, gas prices and fees, and only the last touched token amount. */
   resetTransactionData: () =>
     set(
       produce((state) => {
@@ -99,6 +103,15 @@ export const usePortalStore = create<PortalState & PortalActions>()((set) => ({
         } else {
           state.sourceToken.amount = '';
         }
+      }),
+    ),
+  /** Reset warnings, gas prices and fees, and both source/dest token amounts. */
+  resetTransactionDataAndAmounts: () =>
+    set(
+      produce((state) => {
+        state.bridgeTransactionData.resetTransactionData();
+        state.sourceToken.amount = '';
+        state.destinationToken.amount = '';
       }),
     ),
   updateTransactionData: (

@@ -84,7 +84,6 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                   />
                   <div
                     class="aw-relative aw-z-40 aw-flex aw-overflow-hidden aw-rounded-b-[5px]"
-                    style="transition: background 0.4s ease-out;"
                   >
                     <img
                       alt="Background Ape"
@@ -620,7 +619,6 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                 />
                 <div
                   class="aw-relative aw-z-40 aw-flex aw-overflow-hidden aw-rounded-b-[5px]"
-                  style="transition: background 0.4s ease-out;"
                 >
                   <img
                     alt="Background Ape"
@@ -1225,7 +1223,6 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                   />
                   <div
                     class="aw-relative aw-z-40 aw-flex aw-overflow-hidden aw-rounded-b-[5px]"
-                    style="transition: background 0.4s ease-out;"
                   >
                     <img
                       alt="Background Ape"
@@ -1833,7 +1830,6 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                 />
                 <div
                   class="aw-relative aw-z-40 aw-flex aw-overflow-hidden aw-rounded-b-[5px]"
-                  style="transition: background 0.4s ease-out;"
                 >
                   <img
                     alt="Background Ape"

@@ -41,9 +41,19 @@ const AdaptiveTooltip = ({
           setIsOpen(false);
         }
       };
+      // On scroll, close the tooltip
+      const handleScroll = () => {
+        if (isOpen) {
+          setIsOpen(false);
+        }
+      };
 
       document.addEventListener('click', handleClickAway);
-      return () => document.removeEventListener('click', handleClickAway);
+      document.addEventListener('scroll', handleScroll);
+      return () => {
+        document.removeEventListener('click', handleClickAway);
+        document.removeEventListener('scroll', handleScroll);
+      };
     }
   }, [isOpen]);
 

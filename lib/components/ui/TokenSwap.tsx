@@ -43,7 +43,11 @@ function TokenSwapComponent({
 
   return (
     <LayoutGroup>
-      <ApeContainer wrapChildren={showBranding} className={className}>
+      <ApeContainer
+        wrapChildren={showBranding}
+        className={className}
+        isTabHosted={isTabHosted}
+      >
         <SpotlightBackground
           isSwap={isSwap}
           showBranding={showBranding || isTabHosted}

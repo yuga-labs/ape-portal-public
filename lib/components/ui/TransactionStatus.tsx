@@ -32,11 +32,17 @@ function TransactionStatus({
   onTransactionSuccess,
   onTransactionError,
 }: TransactionStatusProps) {
-  const { sourceToken, destinationToken, estimatedTxTime } = usePortalStore(
+  const {
+    sourceToken,
+    destinationToken,
+    estimatedTxTime,
+    resetTransactionDataAndAmounts,
+  } = usePortalStore(
     useShallow((state) => ({
       sourceToken: state.sourceToken,
       destinationToken: state.destinationToken,
       estimatedTxTime: state.bridgeTransactionData.estimatedTxTime,
+      resetTransactionDataAndAmounts: state.resetTransactionDataAndAmounts,
     })),
   );
   const { resetBridgeTransactionHash } = useBridgeStore(
@@ -161,6 +167,10 @@ function TransactionStatus({
       externalModalOpenState={isWaitingForSignatureOrIsProcessing}
       onDismiss={() => {
         resetBridgeTransactionHash();
+        if (status === BridgeState.COMPLETED) {
+          // If the transaction was successful, zero out the source and destination amounts
+          resetTransactionDataAndAmounts();
+        }
       }}
       showCloseButton={!isTxProcessing && !waitingForSignature}
       centerContents

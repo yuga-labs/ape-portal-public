@@ -61,7 +61,7 @@
     "eslint-plugin-tailwindcss": "3.17.4",
     "eslint-plugin-unicorn": "54.0.0",
     "glob": "^10.4.1",
-    "happy-dom": "15.10.1",
+    "happy-dom": "15.10.2",
     "husky": "9.0.11",
     "lint-staged": "15.2.7",
     "postcss": "^8.4.38",

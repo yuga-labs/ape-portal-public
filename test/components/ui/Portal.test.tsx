@@ -1014,7 +1014,7 @@ describe('ApePortal', () => {
         name: /apechain/i,
       }),
     ).toBeDefined();
-    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expectSourceAndDestinationTokens('APE', 'WAPE');
     expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });

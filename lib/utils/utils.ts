@@ -108,13 +108,15 @@ export const ApeCoinMainnetEthereum = createApeCoinTokenInfo(
   ApeCoinMainnetEthereumContract,
 );
 
-/** Apecoin Contracts */
+/** Apecoin and Apechain Contracts */
 export const ApeCoinMainnetArbitrumContract =
   '0x7f9FBf9bDd3F4105C478b996B648FE6e828a1e98';
 export const ApeUsdOmnichainContract =
   '0xA2235d059F80e176D931Ef76b6C51953Eb3fBEf4';
 export const ApeEthOmnichainContract =
   '0xcF800F4948D16F23333508191B1B1591daF70438';
+export const WapeApechainMainnetContract =
+  '0x48b62137EdfA95a428D35C09E44256a739F6B557';
 
 /** ETH mainnet stables */
 export const UsdcEthMainnetContract =

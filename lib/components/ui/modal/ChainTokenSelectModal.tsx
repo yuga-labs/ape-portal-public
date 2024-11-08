@@ -22,6 +22,7 @@ import {
   UsdcEthMainnetContract,
   UsdtArbMainnetContract,
   UsdtEthMainnetContract,
+  WapeApechainMainnetContract,
   WethArbMainnetContract,
   WethEthMainnetContract,
 } from '../../../utils/utils.ts';
@@ -59,6 +60,7 @@ const activeTokens = {
     WethArbMainnetContract, // ARB-WETH
   ],
   [ChainId.APE]: [
+    WapeApechainMainnetContract,
     ApeUsdOmnichainContract,
     ApeEthOmnichainContract,
     zeroAddress,

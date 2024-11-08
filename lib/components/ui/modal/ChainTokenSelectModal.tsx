@@ -13,6 +13,7 @@ import {
   ApeCoinMainnetEthereumContract,
   ApeEthOmnichainContract,
   ApeUsdOmnichainContract,
+  ArbArbMainnetContract,
   createApeCoinTokenInfo,
   DaiArbMainnetContract,
   DaiEthMainnetContract,
@@ -44,16 +45,18 @@ const activeTokens = {
     UsdtEthMainnetContract, // ETH-USDT
     UsdcEthMainnetContract, // ETH-USDC
     StethEthMainnetContract, // ETH-stETH
+    WethEthMainnetContract, // ETH-WETH
   ],
   [ChainId.ARBITRUM]: [
     ApeUsdOmnichainContract,
     ApeEthOmnichainContract,
     ApeCoinMainnetArbitrumContract,
     zeroAddress,
-    '0x912CE59144191C1204E64559FE8253a0e49E6548', // ARB-ARB
+    ArbArbMainnetContract, // ARB-ARB
     DaiArbMainnetContract, // ARB-DAI
     UsdtArbMainnetContract, // ARB-USDT
     UsdcArbMainnetContract, // ARB-USDC
+    WethArbMainnetContract, // ARB-WETH
   ],
   [ChainId.APE]: [
     ApeUsdOmnichainContract,

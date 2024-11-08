@@ -129,6 +129,9 @@ export const WethEthMainnetContract =
   '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2';
 
 /** ARB mainnet stables */
+/** ARB-ARB */
+export const ArbArbMainnetContract =
+  '0x912CE59144191C1204E64559FE8253a0e49E6548';
 export const DaiArbMainnetContract =
   '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1';
 export const UsdtArbMainnetContract =

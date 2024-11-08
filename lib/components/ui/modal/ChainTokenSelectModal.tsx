@@ -21,6 +21,8 @@ import {
   UsdcEthMainnetContract,
   UsdtArbMainnetContract,
   UsdtEthMainnetContract,
+  WethArbMainnetContract,
+  WethEthMainnetContract,
 } from '../../../utils/utils.ts';
 import { Address, isAddressEqual, zeroAddress } from 'viem';
 
@@ -65,23 +67,157 @@ const limitTokensBySource = (
   sourceToken: TokenInfo,
   destChain: ChainId,
 ): string[] | undefined => {
-  if (sourceToken.chainId === ChainId.APE && destChain === ChainId.ETHEREUM) {
-    if (isAddressEqual(sourceToken.address as Address, zeroAddress)) {
-      return [ApeCoinMainnetEthereumContract]; // ETH-APE
+  if (
+    sourceToken.chainId === ChainId.ETHEREUM &&
+    (destChain === ChainId.ARBITRUM || destChain === ChainId.APE)
+  ) {
+    // Source: ETH-USDC, ETH-USDT, ETH-DAI
+    if (
+      isAddressEqual(sourceToken.address as Address, UsdcEthMainnetContract) ||
+      isAddressEqual(sourceToken.address as Address, UsdtEthMainnetContract) ||
+      isAddressEqual(sourceToken.address as Address, DaiEthMainnetContract)
+    ) {
+      return [ApeUsdOmnichainContract]; // APE-APEUSD or ARB-APEUSD
     }
+
+    // Source: ETH-ETH, ETH-WETH, ETH-stETH
+    if (
+      isAddressEqual(sourceToken.address as Address, zeroAddress) ||
+      isAddressEqual(sourceToken.address as Address, WethEthMainnetContract) ||
+      isAddressEqual(sourceToken.address as Address, StethEthMainnetContract)
+    ) {
+      return [ApeEthOmnichainContract]; // APE-APEETH or ARB-APEETH
+    }
+
+    // Source: ETH-APE
+    if (
+      isAddressEqual(
+        sourceToken.address as Address,
+        ApeCoinMainnetEthereumContract,
+      )
+    ) {
+      if (destChain === ChainId.ARBITRUM) {
+        return [ApeCoinMainnetArbitrumContract]; // APE-ARB
+      }
+      if (destChain === ChainId.APE) {
+        return [zeroAddress]; // APE-APE
+      }
+    }
+  }
+
+  if (sourceToken.chainId === ChainId.ARBITRUM) {
+    // Source: ARB-USDC
+    if (
+      isAddressEqual(sourceToken.address as Address, UsdcArbMainnetContract)
+    ) {
+      if (destChain === ChainId.APE) {
+        return [ApeUsdOmnichainContract]; // APE-APEUSD
+      }
+      return [];
+    }
+    // Source: ARB-USDT
+    if (
+      isAddressEqual(sourceToken.address as Address, UsdtArbMainnetContract)
+    ) {
+      if (destChain === ChainId.APE) {
+        return [ApeUsdOmnichainContract]; // APE-APEUSD
+      }
+      return [];
+    }
+    // Source: ARB-DAI
+    if (isAddressEqual(sourceToken.address as Address, DaiArbMainnetContract)) {
+      if (destChain === ChainId.APE) {
+        return [ApeUsdOmnichainContract]; // APE-APEUSD
+      }
+      return [];
+    }
+    // Source: ARB-APEUSD
     if (
       isAddressEqual(sourceToken.address as Address, ApeUsdOmnichainContract)
     ) {
-      return [
-        '0x6B175474E89094C44Da98b954EedeAC495271d0F', // ETH-DAI
-      ];
+      if (destChain === ChainId.APE) {
+        return [ApeUsdOmnichainContract]; // APE-APEUSD
+      }
+      return [];
     }
+    // Source: ARB-ETH
+    if (isAddressEqual(sourceToken.address as Address, zeroAddress)) {
+      if (destChain === ChainId.APE) {
+        return [ApeEthOmnichainContract]; // APE-APEETH
+      }
+      return [];
+    }
+    // Source: ARB-WETH
+    if (
+      isAddressEqual(sourceToken.address as Address, WethArbMainnetContract)
+    ) {
+      if (destChain === ChainId.APE) {
+        return [ApeEthOmnichainContract]; // APE-APEETH
+      }
+      return [];
+    }
+    // Source: ARB-APEETH
     if (
       isAddressEqual(sourceToken.address as Address, ApeEthOmnichainContract)
     ) {
-      return [
-        '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84', // ETH-stETH
-      ];
+      if (destChain === ChainId.APE) {
+        return [ApeEthOmnichainContract]; // APE-APEETH
+      }
+      return [];
+    }
+    // Source: ARB-APE
+    if (
+      isAddressEqual(
+        sourceToken.address as Address,
+        ApeCoinMainnetArbitrumContract,
+      )
+    ) {
+      if (destChain === ChainId.APE) {
+        return [zeroAddress]; // APE-APE
+      }
+      if (destChain === ChainId.ETHEREUM) {
+        return [ApeCoinMainnetEthereumContract]; // ETH-APE
+      }
+      return [];
+    }
+  }
+
+  if (sourceToken.chainId === ChainId.APE) {
+    // Source: APE-APEUSD
+    if (
+      isAddressEqual(sourceToken.address as Address, ApeUsdOmnichainContract)
+    ) {
+      if (destChain === ChainId.ETHEREUM) {
+        return [DaiEthMainnetContract]; // ETH-DAI
+      }
+      if (destChain === ChainId.ARBITRUM) {
+        return [ApeUsdOmnichainContract]; // ARB-APEUSD
+      }
+      return [];
+    }
+
+    // Source: APE-APEETH
+    if (
+      isAddressEqual(sourceToken.address as Address, ApeEthOmnichainContract)
+    ) {
+      if (destChain === ChainId.ETHEREUM) {
+        return [StethEthMainnetContract]; // ETH-stETH
+      }
+      if (destChain === ChainId.ARBITRUM) {
+        return [ApeEthOmnichainContract]; // ARB-APEETH
+      }
+      return [];
+    }
+
+    // Source: APE-APE
+    if (isAddressEqual(sourceToken.address as Address, zeroAddress)) {
+      if (destChain === ChainId.ARBITRUM) {
+        return [ApeCoinMainnetArbitrumContract]; // APE-ARB
+      }
+      if (destChain === ChainId.ETHEREUM) {
+        return [ApeCoinMainnetEthereumContract]; // ETH-APE
+      }
+      return [];
     }
   }
 };

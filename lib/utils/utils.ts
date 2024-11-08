@@ -125,6 +125,8 @@ export const DaiEthMainnetContract =
   '0x6B175474E89094C44Da98b954EedeAC495271d0F';
 export const StethEthMainnetContract =
   '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84';
+export const WethEthMainnetContract =
+  '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2';
 
 /** ARB mainnet stables */
 export const DaiArbMainnetContract =
@@ -133,6 +135,8 @@ export const UsdtArbMainnetContract =
   '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9';
 export const UsdcArbMainnetContract =
   '0xaf88d065e77c8cC2239327C5EDb3A432268e5831';
+export const WethArbMainnetContract =
+  '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1';
 
 export const isStableToken = (contractAddress: string | Address): boolean =>
   [

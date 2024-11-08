@@ -103,7 +103,7 @@ exports[`components/ui/TokenInputModule > should NOT show destination wallet add
             <span
               class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
             >
-              Loading...
+              0
             </span>
           </div>
           <button
@@ -220,7 +220,7 @@ exports[`components/ui/TokenInputModule > should NOT show destination wallet add
           <span
             class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
           >
-            Loading...
+            0
           </span>
         </div>
         <button
@@ -393,7 +393,7 @@ exports[`components/ui/TokenInputModule > should only render MaxButton when srcT
             <span
               class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
             >
-              Loading...
+              0
             </span>
           </div>
           <button
@@ -510,7 +510,7 @@ exports[`components/ui/TokenInputModule > should only render MaxButton when srcT
           <span
             class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
           >
-            Loading...
+            0
           </span>
         </div>
         <button
@@ -683,7 +683,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton disabled if wa
             <span
               class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
             >
-              Loading...
+              0
             </span>
           </div>
           <button
@@ -800,7 +800,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton disabled if wa
           <span
             class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
           >
-            Loading...
+            0
           </span>
         </div>
         <button
@@ -1261,7 +1261,7 @@ exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
             <span
               class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
             >
-              Loading...
+              0
             </span>
           </div>
         </div>
@@ -1368,7 +1368,7 @@ exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
           <span
             class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
           >
-            Loading...
+            0
           </span>
         </div>
       </div>

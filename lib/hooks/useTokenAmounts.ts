@@ -28,6 +28,7 @@ export const useTokenAmounts = (
       address,
       chainId: token.token.chainId,
       selectTokens: [token.token.address],
+      enable: address !== undefined,
     });
 
   const findCurrentBalance = useCallback(

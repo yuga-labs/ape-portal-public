@@ -198,7 +198,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                                 <span
                                   class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                                 >
-                                  Loading...
+                                  0
                                 </span>
                               </div>
                               <button
@@ -371,7 +371,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                                 <span
                                   class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                                 >
-                                  Loading...
+                                  0
                                 </span>
                               </div>
                             </div>
@@ -733,7 +733,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                               <span
                                 class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                               >
-                                Loading...
+                                0
                               </span>
                             </div>
                             <button
@@ -906,7 +906,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                               <span
                                 class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                               >
-                                Loading...
+                                0
                               </span>
                             </div>
                           </div>
@@ -1337,7 +1337,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                                 <span
                                   class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                                 >
-                                  Loading...
+                                  0
                                 </span>
                               </div>
                               <button
@@ -1510,7 +1510,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                                 <span
                                   class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                                 >
-                                  Loading...
+                                  0
                                 </span>
                               </div>
                             </div>
@@ -1944,7 +1944,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                               <span
                                 class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                               >
-                                Loading...
+                                0
                               </span>
                             </div>
                             <button
@@ -2117,7 +2117,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                               <span
                                 class="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70"
                               >
-                                Loading...
+                                0
                               </span>
                             </div>
                           </div>

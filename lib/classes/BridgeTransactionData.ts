@@ -5,6 +5,8 @@ export class BridgeTransactionData {
   [immerable] = true;
 
   static DEFAULT_SLIPPAGE: number = 1;
+  /** Amount of slippage to use when swapping between stables (stable coins). */
+  static STABLE_SWAP_SLIPPAGE: number = 0.1;
   static MINIMUM_SLIPPAGE: number = 0.1;
   static MAXIMUM_SLIPPAGE: number = 50;
 

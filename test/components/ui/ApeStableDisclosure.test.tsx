@@ -30,12 +30,13 @@ describe('ApeStableDisclosure', () => {
     expect(screen.queryByRole('img')).toBeNull();
   });
 
-  test('should not render anything if tokenUsdValue is not positive', () => {
+  test('should still render disclosure even if token amount USD is 0', () => {
     renderComponent({
       tokenAddress: ApeUsdOmnichainContract,
       tokenUsdValue: '0',
     });
-    expect(screen.queryByRole('img')).toBeNull();
+    const warningIcon = screen.getByRole('img');
+    expect(warningIcon).toBeDefined();
   });
 
   test('should render warning icon with correct tooltip for ApeUSD', async () => {

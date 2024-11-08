@@ -1,7 +1,7 @@
 import { PencilIcon } from '../icons/PencilIcon.tsx';
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
 import { usePortalStore } from '../../store/usePortalStore.ts';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '../../utils/utils.ts';
 import { BridgeTransactionData } from '../../classes/BridgeTransactionData.ts';
 import { WarningIcon } from '../icons/WarningIcon.tsx';
@@ -18,6 +18,14 @@ export const SlippageInputModule = () => {
     bridgeTransactionData.slippagePercentage,
   );
   const [error, setError] = useState<string | undefined>();
+
+  useEffect(() => {
+    setCustomSlippageEnabled(
+      bridgeTransactionData.slippagePercentage !==
+        BridgeTransactionData.DEFAULT_SLIPPAGE,
+    );
+    setInputValue(bridgeTransactionData.slippagePercentage);
+  }, [bridgeTransactionData.slippagePercentage]);
 
   const handlePercentChange = (rawValue: string) => {
     setError(undefined);

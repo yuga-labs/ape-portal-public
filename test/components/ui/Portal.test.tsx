@@ -30,6 +30,7 @@ import {
   UnselectedTabClass,
 } from '../../../lib/components/ui/buttons/TabButton.tsx';
 import { apeChain } from 'viem/chains';
+import { BridgeTransactionData } from '../../../lib/classes/BridgeTransactionData.ts';
 
 MotionGlobalConfig.skipAnimations = true;
 
@@ -1349,5 +1350,70 @@ describe('ApePortal', () => {
     expect(switchTokenButton).toBeDisabled();
     expect(destinationTokenButton).toBeDefined();
     expect(destinationTokenButton).toBeDisabled();
+  });
+
+  it('sets slippage to STABLE_SWAP_SLIPPAGE if stable tokens are being swapped', async () => {
+    const { getState } = usePortalStore;
+    const config = setupConfig();
+    render(
+      <AllTheProviders wagmiConfig={config} apeConfig={defaultApeConfig}>
+        <ApePortal />
+      </AllTheProviders>,
+    );
+
+    await act(async () => {
+      await connect(config, {
+        chainId: ChainId.ETHEREUM,
+        connector: config.connectors[0],
+      });
+    });
+
+    expect(getState().bridgeTransactionData.slippagePercentage).toBe(
+      BridgeTransactionData.DEFAULT_SLIPPAGE,
+    );
+
+    const sourceTokenButton = within(
+      screen.getByTestId('token-input-source'),
+    ).getByRole('button', {
+      name: /ape/i,
+    });
+    await userEvent.click(sourceTokenButton);
+    await waitFor(
+      async () => {
+        const daiButton = screen.getByRole('button', {
+          name: /dai/i,
+        });
+        await userEvent.click(daiButton);
+      },
+      {
+        timeout: 20_000, // Wait longer since the assets depend on decent APIs
+      },
+    );
+
+    const destTokenButton = within(
+      screen.getByTestId('token-input-destination'),
+    ).getByRole('button', {
+      name: /ape/i,
+    });
+    // Set source token to a stable token like USDC
+    await userEvent.click(destTokenButton);
+    await waitFor(
+      async () => {
+        const apeUsdButton = screen.getByRole('button', {
+          name: /ape-usd/i,
+        });
+        await userEvent.click(apeUsdButton);
+      },
+      {
+        timeout: 20_000, // Wait longer since the assets depend on decent APIs
+      },
+    );
+
+    // Expect slippage now reverted to the stable value (0.1)
+    await waitFor(() => {
+      expect(getState().bridgeTransactionData.slippagePercentage).toBe(
+        BridgeTransactionData.STABLE_SWAP_SLIPPAGE,
+      );
+    });
   });
 });

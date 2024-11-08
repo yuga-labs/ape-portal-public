@@ -7,13 +7,6 @@ import AdaptiveTooltip from './tooltip/AdaptiveTooltip';
 import { useMemo } from 'react';
 import { InfoIcon } from '../icons/InfoIcon';
 
-const isPositiveMoney = (str: string): boolean => {
-  // Strip all characters except digits and a decimal, convert to number
-  // eslint-disable-next-line unicorn/prefer-string-replace-all
-  const num = Number(str.replace(/[^\d.]/g, ''));
-  return !Number.isNaN(num) && num > 0;
-};
-
 type ApeStableDisclosureProps = {
   isSourceToken: boolean;
   tokenAddress: Address;
@@ -28,7 +21,6 @@ type ApeStableDisclosureProps = {
 export const ApeStableDisclosure = ({
   isSourceToken,
   tokenAddress,
-  tokenUsdValue,
 }: ApeStableDisclosureProps) => {
   const isApeUsd = isAddressEqual(tokenAddress, ApeUsdOmnichainContract);
   const isApeEth = isAddressEqual(tokenAddress, ApeEthOmnichainContract);
@@ -43,12 +35,7 @@ export const ApeStableDisclosure = ({
     }
   }, [isApeEth, isApeUsd]);
 
-  if (
-    isSourceToken ||
-    !isApeStable ||
-    !isPositiveMoney(tokenUsdValue) ||
-    !tooltipContent
-  ) {
+  if (isSourceToken || !isApeStable || !tooltipContent) {
     return;
   }
 

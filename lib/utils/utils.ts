@@ -8,6 +8,7 @@ import {
   SECONDS_IN_MINUTE,
 } from './constants';
 import { ChainId, TokenInfo } from '@decent.xyz/box-common';
+import { isAddressEqual } from 'viem';
 
 export const pluralize = (amount: number): string => (amount > 1 ? 's' : '');
 
@@ -107,9 +108,57 @@ export const ApeCoinMainnetEthereum = createApeCoinTokenInfo(
   ApeCoinMainnetEthereumContract,
 );
 
+/** Apecoin Contracts */
 export const ApeCoinMainnetArbitrumContract =
   '0x7f9FBf9bDd3F4105C478b996B648FE6e828a1e98';
 export const ApeUsdOmnichainContract =
   '0xA2235d059F80e176D931Ef76b6C51953Eb3fBEf4';
 export const ApeEthOmnichainContract =
   '0xcF800F4948D16F23333508191B1B1591daF70438';
+
+/** ETH mainnet stables */
+export const UsdcEthMainnetContract =
+  '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48';
+export const UsdtEthMainnetContract =
+  '0xdAC17F958D2ee523a2206206994597C13D831ec7';
+export const DaiEthMainnetContract =
+  '0x6B175474E89094C44Da98b954EedeAC495271d0F';
+export const StethEthMainnetContract =
+  '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84';
+
+/** ARB mainnet stables */
+export const DaiArbMainnetContract =
+  '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1';
+export const UsdtArbMainnetContract =
+  '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9';
+export const UsdcArbMainnetContract =
+  '0xaf88d065e77c8cC2239327C5EDb3A432268e5831';
+
+export const isStableToken = (contractAddress: string | Address): boolean =>
+  [
+    UsdcEthMainnetContract,
+    UsdtEthMainnetContract,
+    DaiEthMainnetContract,
+    DaiArbMainnetContract,
+    UsdtArbMainnetContract,
+    UsdcArbMainnetContract,
+    ApeUsdOmnichainContract,
+  ].some((stableContract) =>
+    isAddressEqual(stableContract as Address, contractAddress as Address),
+  );
+
+const isStethAndApeEthTokenPair = (
+  contractAddressA: string | Address,
+  contractAddressB: string | Address,
+): boolean =>
+  (isAddressEqual(contractAddressA as Address, ApeEthOmnichainContract) &&
+    isAddressEqual(contractAddressB as Address, StethEthMainnetContract)) ||
+  (isAddressEqual(contractAddressA as Address, StethEthMainnetContract) &&
+    isAddressEqual(contractAddressB as Address, ApeEthOmnichainContract));
+
+export const isTokenPairStable = (
+  contractAddressA: string | Address,
+  contractAddressB: string | Address,
+): boolean =>
+  (isStableToken(contractAddressA) && isStableToken(contractAddressB)) ||
+  isStethAndApeEthTokenPair(contractAddressA, contractAddressB);

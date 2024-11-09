@@ -30,14 +30,28 @@ save-exact=true
 3
 
 
+4. URLa to get all the requied programs and program files to run a nextjs instance, deployed thru vercel, using the wagmi.sh packaged program and rainbow kit packed program, to onboard money to the layer 3 apechain, using arb layer 2 nitro tech, and settling down to native layer 1 Ethereum, all being seperate, seperated, but connected EVM chains are all operating in mainnet phase with a growing state that contains, wallets, contracts, entities, bridges, pools, groups, cohorts, clubs and pockets of ecosystems in, around, amd surrounding
 
-4
-
-
+https://github.com/mon-key-mike/ape-portal-public/tree/main
+https://nextjs.org/
+https://vercel.com/templates/next.js
+https://wagmi.sh/
+https://www.rainbowkit.com/docs/installation
 
 5
 
 
 
-
 6
+
+7
+
+8
+
+9
+
+
+
+
+
+

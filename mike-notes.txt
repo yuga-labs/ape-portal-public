@@ -2,20 +2,24 @@ Notes for MonkeyMike's Mind, wrapping his head around this,
 in order to implement on ramps for his communitities. 
 <3 
 
+========================================
 
 
 Note: 1 
+========================================
+
   PUBLIC_DECENT_API_KEY_BRIDGE,
   PUBLIC_DECENT_API_KEY_BRIDGE_NONEVM,
   PUBLIC_DECENT_API_KEY_BRIDGE_ZKSYNC,
   PUBLIC_DECENT_API_KEY_SWAP,
-  PUBLIC_DECENT_API_KEY_SWAP_NONEVM,
+  PUBLIC_DECENT_API_KEY_SWAP_NONEVM,1
   PUBLIC_DECENT_API_KEY_SWAP_ZKSYNC,
   PUBLIC_DECENT_API_KEY_TOPTRADER,
   PUBLIC_DECENT_API_KEY_TOPTRADER_NONEVM,
   PUBLIC_DECENT_API_KEY_TOPTRADER_ZKSYNC,
 
 2
+========================================
 
 # To install private @yuga-labs scoped packages from GitHub's package registry,
 # you will need to create a GitHub Personal Access Token with "read:packages"
@@ -28,6 +32,7 @@ save-exact=true
 
 
 3
+========================================
 
 
 4. URLa to get all the requied programs and program files to run a nextjs instance, deployed thru vercel, using the wagmi.sh packaged program and rainbow kit packed program, to onboard money to the layer 3 apechain, using arb layer 2 nitro tech, and settling down to native layer 1 Ethereum, all being seperate, seperated, but connected EVM chains are all operating in mainnet phase with a growing state that contains, wallets, contracts, entities, bridges, pools, groups, cohorts, clubs and pockets of ecosystems in, around, amd surrounding
@@ -39,21 +44,49 @@ https://wagmi.sh/
 https://www.rainbowkit.com/docs/installation
 
 5
+========================================
 
 
 
 6
+========================================
 
-7
-
-8
-
-9
+7========================================
 
 
+8========================================
 
 
-COOKIE STORAGE on CLIENT, so saved passwords, and IP keyed addresses can be keyed and mapped using the cookie as instance idenitifier, or a login auth config allowanrce for persistent and storable client data. ?
+9========================================
+
+10 ========================================
+11========================================
+12========================================
+13========================================
+14========================================
+15========================================
+16========================================
+17========================================
+18========================================
+19========================================
+20========================================
+
+========================================
+========================================
+========================================
+========================================
+
+
+
+COOKIE STORAGE on CLIENT, 
+
+========================================
+
+so saved passwords, and IP keyed addresses can be keyed 
+and mapped using the cookie as instance idenitifier,
+ or a login auth config allowanrce for persistent 
+and storable client data. ?
+========================================
 
 import { 
   createConfig, 
@@ -76,3 +109,49 @@ export function getConfig() {
     },
   })
 }
+========================================
+
+Here's a step-by-step breakdown of how this code sets up cookie storage in `Wagmi`:
+
+1. **Import Statements**: 
+   ```typescript
+   import { createConfig, http, cookieStorage, createStorage } from 'wagmi';
+   import { mainnet, sepolia } from 'wagmi/chains';
+   ```
+   - This imports necessary tools from `Wagmi`. 
+     - `createConfig` and `createStorage` help create the configuration for Wagmi.
+     - `cookieStorage` specifies that cookie storage will be used.
+     - `mainnet` and `sepolia` are specific blockchain networks or "chains" from `wagmi/chains`.
+
+2. **Define the Configuration Function**: 
+   ```typescript
+   export function getConfig() {
+   ```
+   - This function, `getConfig`, sets up and returns the Wagmi configuration, making it easy to call elsewhere in your app.
+
+3. **Create the Wagmi Configuration**:
+   ```typescript
+   return createConfig({
+     chains: [mainnet, sepolia],
+     ssr: true,
+     storage: createStorage({
+       storage: cookieStorage,
+     }),
+     transports: {
+       [mainnet.id]: http(),
+       [sepolia.id]: http(),
+     },
+   });
+   ```
+   - `createConfig` returns a configuration object for Wagmi with the following settings:
+     - `chains`: Specifies which blockchains are available in this setup, in this case, `mainnet` and `sepolia`.
+     - `ssr: true`: Enables server-side rendering.
+     - `storage`: Defines the storage for your configuration.
+       - `createStorage({ storage: cookieStorage })` uses `cookieStorage`, so cookies are used to store and manage your data.
+     - `transports`: Defines the transport protocols for each chain, specifying `http()` as the transport protocol for both `mainnet` and `sepolia`.
+
+This setup allows `Wagmi` to use cookies for storage, which can be helpful for storing information securely across different user sessions.
+========================================
+========================================
+========================================
+

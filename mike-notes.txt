@@ -1,11 +1,11 @@
 Notes for MonkeyMike's Mind, wrapping his head around this, 
 in order to implement on ramps for his communitities. 
 <3 
-========================================
+==============
 
 
 Note: 1 
-========================================
+============================
 
   PUBLIC_DECENT_API_KEY_BRIDGE,
   PUBLIC_DECENT_API_KEY_BRIDGE_NONEVM,
@@ -18,7 +18,7 @@ Note: 1
   PUBLIC_DECENT_API_KEY_TOPTRADER_ZKSYNC,
 
 2
-========================================
+============================
 
 # To install private @yuga-labs scoped packages from GitHub's package registry,
 # you will need to create a GitHub Personal Access Token with "read:packages"
@@ -31,63 +31,282 @@ save-exact=true
 
 
 3
-========================================
+==========================================
 
-
-4. URLa to get all the requied programs and program files to run a nextjs instance, deployed thru vercel, using the wagmi.sh packaged program and rainbow kit packed program, to onboard money to the layer 3 apechain, using arb layer 2 nitro tech, and settling down to native layer 1 Ethereum, all being seperate, seperated, but connected EVM chains are all operating in mainnet phase with a growing state that contains, wallets, contracts, entities, bridges, pools, groups, cohorts, clubs and pockets of ecosystems in, around, amd surrounding
+==========================================
+4. 
+URLa to get all the requied programs and program files to run a nextjs instance, deployed thru vercel, using the wagmi.sh packaged program and rainbow kit packed program, to onboard money to the layer 3 apechain, using arb layer 2 nitro tech, and settling down to native layer 1 Ethereum, all being seperate, seperated, but connected EVM chains are all operating in mainnet phase with a growing state that contains, wallets, contracts, entities, bridges, pools, groups, cohorts, clubs and pockets of ecosystems in, around, amd surrounding
 
 https://github.com/mon-key-mike/ape-portal-public/tree/main
 https://nextjs.org/
 https://vercel.com/templates/next.js
 https://wagmi.sh/
 https://www.rainbowkit.com/docs/installation
-
+==========================================
 5
-========================================
+================================================================================================================================================================
+npx create-next-app@latest bridge-app
+==============
+cd bridge-app
+==============
+npm install wagmi ethers @rainbow-me/rainbowkit
+============================
+import { createConfig, configureChains, mainnet, sepolia, arbitrum } from 'wagmi';
+import { publicProvider } from 'wagmi/providers/public';
+import { createStorage, cookieStorage } from 'wagmi';
+import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+
+export const { chains, publicClient } = configureChains(
+  [mainnet, sepolia, arbitrum],
+  [publicProvider()]
+);
+
+const { connectors } = getDefaultWallets({
+  appName: 'Bridge App',
+  chains
+});
+
+export const wagmiConfig = createConfig({
+  autoConnect: true,
+  connectors,
+  chains,
+  publicClient,
+  storage: createStorage({ storage: cookieStorage })
+});
+====================
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import { WagmiConfig } from 'wagmi';
+import { wagmiConfig, chains } from '../wagmiConfig';
+import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <WagmiConfig config={wagmiConfig}>
+      <RainbowKitProvider chains={chains}>
+        <Component {...pageProps} />
+      </RainbowKitProvider>
+    </WagmiConfig>
+  );
+}
+==============
+import { useAccount, useConnect, useDisconnect } from 'wagmi';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
+export default function Bridge() {
+  const { address, isConnected } = useAccount();
+
+  return (
+    <div>
+      <h1>Welcome to ApeChain Bridge on Caldera Curtis Testnet</h1>
+      <ConnectButton />
+      {isConnected ? (
+        <p>Connected as {address}</p>
+      ) : (
+        <p>Connect your wallet to use the bridge</p>
+      )}
+    </div>
+  );
+}
+==============
+git init
+==============
+git add .
+==============
+git commit -m "Initial commit for bridge app"
+==============
+git remote add origin https://github.com/yourusername/bridge-app.git
+==============
+git push -u origin main
+============================
+
+==========================================
+Alright! Here’s a step-by-step guide to setting up a basic crypto bridge on a custom domain, using `wagmi`, `RainbowKit`, `Next.js`, `Vercel`, and GitHub. This guide will walk you through deploying it on the `sepolia` and `arbitrum` testnets and displaying on `caldera curtis testnet`. This will be deployed on `apechain.bananas.services`. Let’s dive in:
+
+---
+
+### Step 1: Set Up the Next.js Project
+
+1. **Create a New Project**:
+   - In your terminal, navigate to the directory where you want your project and run:
+     ```bash
+     npx create-next-app@latest bridge-app
+     cd bridge-app
+     ```
+
+2. **Install Dependencies**:
+   - Add the libraries we’ll need:
+     ```bash
+     npm install wagmi ethers @rainbow-me/rainbowkit
+     ```
+
+---
+
+### Step 2: Set Up `Wagmi` and `RainbowKit`
+
+`Wagmi` provides hooks and functions for interacting with blockchain networks, while `RainbowKit` helps create user-friendly wallet connection UI.
+
+1. **Create a Config File for `Wagmi` and `RainbowKit`**:
+   - Inside `bridge-app`, create a new file, `wagmiConfig.ts`, and set up a configuration to support `mainnet`, `sepolia`, and `arbitrum` testnets, and `caldera curtis` as the display chain.
+
+   ```typescript
+   import { createConfig, configureChains, mainnet, sepolia, arbitrum } from 'wagmi';
+   import { publicProvider } from 'wagmi/providers/public';
+   import { createStorage, cookieStorage } from 'wagmi';
+   import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+
+   export const { chains, publicClient } = configureChains(
+     [mainnet, sepolia, arbitrum],
+     [publicProvider()]
+   );
+
+   const { connectors } = getDefaultWallets({
+     appName: 'Bridge App',
+     chains
+   });
+
+   export const wagmiConfig = createConfig({
+     autoConnect: true,
+     connectors,
+     chains,
+     publicClient,
+     storage: createStorage({ storage: cookieStorage })
+   });
+   ```
+
+2. **Set Up RainbowKit and Wagmi Providers in `_app.tsx`**:
+   - Go to `pages/_app.tsx` and wrap the application with both `RainbowKitProvider` and `WagmiConfig`, to make sure the entire app can access wallet and blockchain functionality.
+
+   ```typescript
+   import '../styles/globals.css';
+   import type { AppProps } from 'next/app';
+   import { WagmiConfig } from 'wagmi';
+   import { wagmiConfig, chains } from '../wagmiConfig';
+   import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+
+   export default function App({ Component, pageProps }: AppProps) {
+     return (
+       <WagmiConfig config={wagmiConfig}>
+         <RainbowKitProvider chains={chains}>
+           <Component {...pageProps} />
+         </RainbowKitProvider>
+       </WagmiConfig>
+     );
+   }
+   ```
+
+---
+
+### Step 3: Set Up the Bridge Interface
+
+1. **Create a Simple Page to Interact with the Chain**:
+   - Inside `pages/bridge.tsx`, create a UI to display the `caldera curtis` chain data and make transactions between `sepolia` and `arbitrum` testnets.
+
+   ```typescript
+   import { useAccount, useConnect, useDisconnect } from 'wagmi';
+   import { ConnectButton } from '@rainbow-me/rainbowkit';
+
+   export default function Bridge() {
+     const { address, isConnected } = useAccount();
+
+     return (
+       <div>
+         <h1>Welcome to ApeChain Bridge on Caldera Curtis Testnet</h1>
+         <ConnectButton />
+         {isConnected ? (
+           <p>Connected as {address}</p>
+         ) : (
+           <p>Connect your wallet to use the bridge</p>
+         )}
+       </div>
+     );
+   }
+   ```
+
+---
+
+### Step 4: Deploy to GitHub and Vercel
+
+1. **Push the Project to GitHub**:
+   - Initialize a Git repository and push your code to GitHub.
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit for bridge app"
+   git remote add origin https://github.com/yourusername/bridge-app.git
+   git push -u origin main
+   ```
+
+2. **Deploy to Vercel**:
+   - Go to [Vercel](https://vercel.com/), sign in, and link your GitHub account if it isn’t already.
+   - Click **New Project**, select your `bridge-app` repository, and follow the prompts to deploy.
+   - In Vercel’s **Project Settings**, set the **Root Domain** to `apechain.bananas.services`.
+
+---
+
+### Step 5: Set Up DNS for Custom Domain
+
+1. **Configure DNS for `apechain.bananas.services`**:
+   - In your domain registrar’s settings (or DNS provider), set up a CNAME record pointing `apechain` to `cname.vercel-dns.com`.
+   - Wait for the DNS to propagate.
+
+---
+
+### Step 6: Test on Sepolia, Arbitrum, and Caldera Curtis Testnet
+
+- Once deployed, visit `apechain.bananas.services/bridge`.
+- Connect your wallet using the `RainbowKit` button.
+- Check that your app can access the `caldera curtis` display chain and enables interactions between `sepolia` and `arbitrum` testnets.
+
+---
+
+And that's it! You’ve deployed a Next.js app using Wagmi and RainbowKit, connected it to the blockchain, and hosted it on a custom domain. This setup is now ready to use on the `caldera curtis` testnet as the display chain with `sepolia` and `arbitrum` interactions.
+======================================================================================
+
 
 
 
 6
-========================================
+======================================================================================
 
 7
-========================================
+======================================================================================
 
 
 8
-========================================
+======================================================================================
 
 
 9
-========================================
+======================================================================================
 
 10
-========================================
+======================================================================================
 
 11
-========================================
+======================================================================================
 12
-========================================
+======================================================================================
 13
-========================================
+======================================================================================
 14
-========================================
+======================================================================================
 15
-========================================
+======================================================================================
 16
-========================================
+======================================================================================
 17
-========================================
+======================================================================================
 18
-========================================
+======================================================================================
 19
-========================================
+======================================================================================
 
 
 
 
 20
-========================================
+======================================================================================
 Alright, let’s break this down into simple parts.
 
 1. **SSR (Server-Side Rendering):** Imagine you’re setting up a big picture on the wall. With SSR, someone else starts the picture on the wall for you so when you walk into the room, the picture is already there to see. It’s sort of like having things ready before you even arrive, like when a grown-up sets up a game for you.
@@ -102,14 +321,9 @@ When the "ssr" property is turned on, it means that the main parts of what you�
 
 
 
-
-
+==============
 ========================================
-========================================
-========================================
-========================================
-
-
+======================================================================================
 
 COOKIE STORAGE on CLIENT, 
 

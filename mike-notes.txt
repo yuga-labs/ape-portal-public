@@ -42,6 +42,11 @@ https://nextjs.org/
 https://vercel.com/templates/next.js
 https://wagmi.sh/
 https://www.rainbowkit.com/docs/installation
+https://curtis.hub.caldera.xyz/
+https://www.alchemy.com/faucets/ethereum-sepolia
+
+
+
 ==========================================
 5
 ================================================================================================================================================================

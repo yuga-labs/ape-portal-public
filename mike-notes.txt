@@ -53,5 +53,26 @@ https://www.rainbowkit.com/docs/installation
 
 
 
+COOKIE STORAGE on CLIENT, so saved passwords, and IP keyed addresses can be keyed and mapped using the cookie as instance idenitifier, or a login auth config allowanrce for persistent and storable client data. ?
 
+import { 
+  createConfig, 
+  http, 
+  cookieStorage,
+  createStorage
+} from 'wagmi'
+import { mainnet, sepolia } from 'wagmi/chains'
 
+export function getConfig() {
+  return createConfig({
+    chains: [mainnet, sepolia],
+    ssr: true,
+    storage: createStorage({
+      storage: cookieStorage,
+    }),
+    transports: {
+      [mainnet.id]: http(),
+      [sepolia.id]: http(),
+    },
+  })
+}

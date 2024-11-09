@@ -1,7 +1,6 @@
 Notes for MonkeyMike's Mind, wrapping his head around this, 
 in order to implement on ramps for his communitities. 
 <3 
-
 ========================================
 
 
@@ -51,25 +50,59 @@ https://www.rainbowkit.com/docs/installation
 6
 ========================================
 
-7========================================
+7
+========================================
 
 
-8========================================
+8
+========================================
 
 
-9========================================
+9
+========================================
 
-10 ========================================
-11========================================
-12========================================
-13========================================
-14========================================
-15========================================
-16========================================
-17========================================
-18========================================
-19========================================
-20========================================
+10
+========================================
+
+11
+========================================
+12
+========================================
+13
+========================================
+14
+========================================
+15
+========================================
+16
+========================================
+17
+========================================
+18
+========================================
+19
+========================================
+
+
+
+
+20
+========================================
+Alright, let’s break this down into simple parts.
+
+1. **SSR (Server-Side Rendering):** Imagine you’re setting up a big picture on the wall. With SSR, someone else starts the picture on the wall for you so when you walk into the room, the picture is already there to see. It’s sort of like having things ready before you even arrive, like when a grown-up sets up a game for you.
+
+2. **External Stores:** Think of "external stores" as places where you keep special toys or supplies that you want to play with later. They’re not right in front of you; they’re kept somewhere else, like a toy box in another room. But they hold things that are important for the game or activity you want to do.
+
+3. **Hydrate:** To "hydrate" is like adding water to a dry sponge to make it squishy and full again. Here, when the content "hydrates," it means that all the extra details and updates come into the picture after you’ve already started looking at it.
+
+So, putting it all together:
+
+When the "ssr" property is turned on, it means that the main parts of what you’re looking at are set up ahead of time, but any extra or detailed parts are brought in a little later, after you’re already there, making everything feel more complete and up-to-date.
+
+
+
+
 
 ========================================
 ========================================

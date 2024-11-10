@@ -32,6 +32,9 @@
     "test:update": "vitest --update",
     "prepublishOnly": "npm run build",
     "prepare": "husky"
+    "start": "npm start",                  
+    "setup": "npm install", 
+    "postinstall": "pip install -r requirements.txt" 
   },
   "peerDependencies": {
     "react": "^18",
@@ -81,6 +84,9 @@
     "wagmi": "2.12.20"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",              
+    "web3": "^1.8.0",                 
+    "nodemon": "^2.0.15"
     "@decent.xyz/box-hooks": "3.4.0-yuga.9",
     "@decent.xyz/box-ui": "3.4.0-yuga.9",
     "@halliday-sdk/commerce": "3.1.0",

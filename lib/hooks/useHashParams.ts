@@ -6,9 +6,9 @@ import { DefaultTokenInfo } from '../index.ts';
 import { useEffect, useState } from 'react';
 import { usePortalStore } from '../store/usePortalStore.ts';
 import { getChainNextToken } from '../utils/getNextToken.ts';
-import { TokenId } from '@decent.xyz/box-common';
-import { useChainConfig } from './useChainConfig.ts';
+import { ChainId, TokenId } from '@decent.xyz/box-common';
 import { useHash } from './useHash.ts';
+import { useChainConfig } from './useChainConfig.ts';
 
 const SwapDestTokenExp = /#swap\/(\d+)\/(0x[\dA-Fa-f]{40})/;
 
@@ -27,9 +27,9 @@ const extractTokenInfo = (
           `URL hash requested invalid token address ${tokenAddress}`,
         );
       }
-      if (!chains.includes(chainId)) {
+      if (!chains.includes(chainId) && chainId !== ChainId.APE) {
         throw new Error(
-          `URL hash requested chain ${chainId} but we only support ${chains}`,
+          `URL hash requested chain ${chainId} but we only support ${ChainId.APE}`,
         );
       }
       return {

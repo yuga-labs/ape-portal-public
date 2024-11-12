@@ -27,25 +27,42 @@ const isTokenConfigValid = (
   tokenConfig?: TokenConfig,
 ): boolean => {
   const { defaultSourceToken, defaultDestinationToken } = tokenConfig || {};
-  if (defaultSourceToken && !chains.includes(defaultSourceToken.chainId)) {
-    return false;
-  }
-  if (
-    defaultDestinationToken &&
-    !chains.includes(defaultDestinationToken.chainId)
-  ) {
-    return false;
+  const isBridge = portalType === PortalType.Bridge;
+  const isSwap = portalType === PortalType.Swap;
+  if (!defaultSourceToken && !defaultDestinationToken) {
+    return true;
   }
 
-  if (
-    portalType === PortalType.Swap &&
-    tokenConfig?.defaultSourceToken &&
-    tokenConfig?.defaultDestinationToken
-  ) {
-    return (
-      tokenConfig?.defaultSourceToken?.chainId ==
-      tokenConfig?.defaultDestinationToken?.chainId
-    );
+  if (isBridge) {
+    if (defaultSourceToken && !chains.includes(defaultSourceToken.chainId)) {
+      return false;
+    }
+    if (
+      defaultDestinationToken &&
+      !chains.includes(defaultDestinationToken.chainId)
+    ) {
+      return false;
+    }
+  }
+
+  if (isSwap) {
+    if (defaultSourceToken && defaultDestinationToken) {
+      return (
+        tokenConfig?.defaultSourceToken?.chainId ==
+          defaultSwapSourceToken.chainId &&
+        tokenConfig?.defaultSourceToken?.chainId ==
+          tokenConfig?.defaultDestinationToken?.chainId
+      );
+    } else {
+      if (defaultSourceToken) {
+        return defaultSourceToken.chainId == defaultSwapSourceToken.chainId;
+      }
+      if (defaultDestinationToken) {
+        return (
+          defaultDestinationToken.chainId == defaultSwapSourceToken.chainId
+        );
+      }
+    }
   }
   return true;
 };
@@ -176,30 +193,14 @@ export const useConfigTokenDefaults = (
       isWalletConnected &&
       isWrongChain &&
       chains.includes(walletChainId) &&
-      isSourceTokenEmpty
+      isSourceTokenEmpty &&
+      portalType === PortalType.Bridge
     ) {
       const chainNativeToken = getNativeTokenInfo(walletChainId);
       const matchesDestinationToken =
         chainNativeToken?.chainId === destinationToken.token.chainId &&
         chainNativeToken?.address === destinationToken.token.address;
       if (chainNativeToken && !matchesDestinationToken) {
-        if (hashPortalType === PortalType.Swap) {
-          const validDestSwapToken =
-            destinationToken.token.chainId === chainNativeToken.chainId;
-          if (!validDestSwapToken) {
-            const nextToken = getChainNextToken({
-              address: chainNativeToken.address,
-              chainId: chainNativeToken.chainId,
-            });
-            // If no pair is found for the wallet chain on Swap we let the
-            // defaults get set in useConfigTokenDefaults
-            if (nextToken) {
-              setDestinationToken(nextToken);
-              setSourceToken(chainNativeToken);
-              return;
-            }
-          }
-        }
         setSourceToken(chainNativeToken);
       }
     }

@@ -203,7 +203,9 @@ export default App;
 ### Setting Custom Token Defaults
 
 Both the source and destination tokens can be independently set to a custom default token by passing the token
-information (`DefaultTokenInfo`) to the `TokenConfig` object to the Portal or the individual Bridge or Swap component.
+information (`DefaultTokenInfo`) to the `TokenConfig` object to the Portal or the individual Bridge component.
+
+> **_NOTE:_** The Swap component does not support all custom token defaults and is **ApeChain** only.
 
 The tokens can be set with or without an amount. When an amount is set the input field for that token will be pre-filled
 and the calculation for the other token will be updated automatically.
@@ -270,6 +272,8 @@ To facilitate onboarding users to your app or service, it may be desirable to on
 
 If `lockDestinationToken` is true, users will only be allowed to bridge or swap to the default destination token/chain, which is currently ApeCoin. This default can be overridden by setting the `defaultDestinationToken` in the `TokenConfig` object.
 
+> **_NOTE:_** The Swap component destination token must be on **ApeChain**. So any overrides must comply.
+
 ```js
 <ApePortal
   tokenConfig={{
@@ -334,11 +338,13 @@ These can be used by adding the hash to the URL, for example: `https://yourapp.c
 
 The `#swap` hash also supports an optional chain and token address parameter, to force the `<Swap>` widget or **ApePortal swab tab** to initialize to that chain and token pair.
 
+> **_NOTE:_** This feature only currently supports **ApeChain**.
+
 The expected URL format is `#swap/chainId/contractAddress`.
 
 Example URL:
 
-- Chain ID 1, ApeCoin ERC20 contract: `/your-ape-portal/#swap/1/0x4d224452801ACEd8B2F0aebE155379bb5D594381`
+- Chain ID 33139, Ape-Usd contract: `/your-ape-portal/#swap/33139/0xA2235d059F80e176D931Ef76b6C51953Eb3fBEf4`
 
 #### Hash router NextJS incompatibility
 

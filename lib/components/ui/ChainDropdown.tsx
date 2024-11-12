@@ -9,7 +9,6 @@ import { ChainPillButton } from './buttons/ChainPillButton.tsx';
 import { ArrowDown } from '../icons/ArrowDown.tsx';
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '../../utils/utils.ts';
-import { usePortalStore } from '../../store/usePortalStore.ts';
 
 /**
  * A list of chains as pill type buttons that can be selected.
@@ -32,9 +31,6 @@ export const ChainDropdown = ({
   selectorChain: ChainId;
   condensed?: boolean;
 }) => {
-  const { setHasUserUpdatedTokens } = usePortalStore((state) => ({
-    setHasUserUpdatedTokens: state.setHasUserUpdatedTokens,
-  }));
   const firstFiveChains: ChainId[] = useMemo(
     () => chains.slice(0, 5),
     [chains],
@@ -96,7 +92,6 @@ export const ChainDropdown = ({
                         key={chain}
                         chain={chain}
                         setSelectorChain={(chain) => {
-                          setHasUserUpdatedTokens();
                           setSelectorChain(chain);
                         }}
                         selectorChain={selectorChain}

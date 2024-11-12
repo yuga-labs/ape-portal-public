@@ -2,11 +2,13 @@ import { create } from 'zustand';
 import { produce } from 'immer';
 import {
   ChainId,
+  getChainTokensInfo,
   getNativeTokenInfoOrFail,
   TokenInfo,
 } from '@decent.xyz/box-common';
 import {
   ApeCoinMainnetEthereum,
+  ApeUsdOmnichainContract,
   isTokenPairStable,
   secondsToReadableTime,
 } from '../utils/utils.ts';
@@ -18,15 +20,21 @@ import {
   WARNING_THRESHOLD_FIVE_MINUTES,
   WARNING_THRESHOLD_PRICE_IMPACT,
 } from '../utils/constants.ts';
+import { Address, isAddressEqual } from 'viem';
+
+export interface StashedTokens {
+  sourceToken: TokenTransactionData | undefined;
+  destinationToken: TokenTransactionData | undefined;
+}
 
 interface PortalState {
   sourceToken: TokenTransactionData;
   destinationToken: TokenTransactionData;
-  stashedToken: TokenTransactionData | undefined;
+  /* Token Stashes */
+  swapStash: StashedTokens | undefined;
+  bridgeStash: StashedTokens | undefined;
   bridgeTransactionData: BridgeTransactionData;
   tokenApprovalTxHash: string | undefined;
-  /* Used to enforce token defaults until the user explicitly changes the tokens */
-  hasUserUpdatedTokens: boolean;
   /* Input State */
   lastChanged: InputType;
   /** Holds the value of slippage that is used for swaps other than stables. */
@@ -48,7 +56,9 @@ interface PortalActions {
   setPriceImpactWarning: (priceImpact?: number) => void;
   setTxTimeWarning: (estimatedTxTime?: number) => void;
   setTokenApprovalTxHash: (txHash: string) => void;
-  setStashedToken: (token: TokenTransactionData | undefined) => void;
+  /* Token Stash Methods */
+  setSwapStash: (stash: StashedTokens | undefined) => void;
+  setBridgeStash: (stash: StashedTokens | undefined) => void;
   updateTransactionData: (
     sourceAmount: string,
     destAmount: string,
@@ -61,17 +71,18 @@ interface PortalActions {
   resetTransactionData: () => void;
   /** Reset warnings, gas prices and fees, and both source/dest token amounts. */
   resetTransactionDataAndAmounts: () => void;
-  setHasUserUpdatedTokens: () => void;
 }
 
 export const defaultBridgeSourceToken = ApeCoinMainnetEthereum;
 export const defaultBridgeDestinationToken = getNativeTokenInfoOrFail(
   ChainId.APE,
 );
-export const defaultSwapSourceToken = getNativeTokenInfoOrFail(
-  ChainId.ETHEREUM,
-);
-export const defaultSwapDestinationToken: TokenInfo = ApeCoinMainnetEthereum;
+export const defaultSwapSourceToken = getNativeTokenInfoOrFail(ChainId.APE);
+export const defaultSwapDestinationToken: TokenInfo = getChainTokensInfo(
+  ChainId.APE,
+)?.find((token) => {
+  return isAddressEqual(token.address as Address, ApeUsdOmnichainContract);
+}) as TokenInfo;
 
 /** Set slippage to minimum to accommodate stable coin swaps. */
 function setSlippageForStableSwap(
@@ -99,11 +110,18 @@ type PortalStore = PortalState & PortalActions;
 export const usePortalStore = create<PortalStore>()((set) => ({
   sourceToken: new TokenTransactionData(defaultBridgeSourceToken),
   destinationToken: new TokenTransactionData(defaultBridgeDestinationToken),
-  stashedToken: undefined,
-  setStashedToken: (token: TokenTransactionData | undefined) =>
+  swapStash: undefined,
+  bridgeStash: undefined,
+  setSwapStash: (stash: StashedTokens | undefined) =>
     set(
-      produce((state: PortalStore) => {
-        state.stashedToken = token;
+      produce((state) => {
+        state.swapStash = stash;
+      }),
+    ),
+  setBridgeStash: (stash: StashedTokens | undefined) =>
+    set(
+      produce((state) => {
+        state.bridgeStash = stash;
       }),
     ),
   bridgeTransactionData: new BridgeTransactionData(),
@@ -111,13 +129,6 @@ export const usePortalStore = create<PortalStore>()((set) => ({
   bridgeTransaction: undefined,
   tokenApprovalTxHash: undefined,
   lastChanged: InputType.Source,
-  hasUserUpdatedTokens: false,
-  setHasUserUpdatedTokens: () =>
-    set(
-      produce((state: PortalStore) => {
-        state.hasUserUpdatedTokens = true;
-      }),
-    ),
   /** Reset warnings, gas prices and fees, and only the last touched token amount. */
   resetTransactionData: () =>
     set(
@@ -286,7 +297,6 @@ export const usePortalStore = create<PortalStore>()((set) => ({
         const currentSource = state.sourceToken;
         state.sourceToken = state.destinationToken;
         state.destinationToken = currentSource;
-        state.hasUserUpdatedTokens = true;
       }),
     );
   },

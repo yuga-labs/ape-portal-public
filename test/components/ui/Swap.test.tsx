@@ -25,7 +25,7 @@ describe('Swap Component', () => {
       customRender(<Swap showBranding={showBranding} />, {});
       userEvent.click(
         within(screen.getByTestId('token-input-source')).getByRole('button', {
-          name: /eth/i,
+          name: /ape/i,
         }),
       );
       await waitFor(() => {

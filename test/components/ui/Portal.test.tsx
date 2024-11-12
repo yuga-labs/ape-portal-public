@@ -36,6 +36,10 @@ MotionGlobalConfig.skipAnimations = true;
 
 const SelectedTabClassRegex = new RegExp(SelectedTabClass, 'i');
 const UnselectedTabClassRegex = new RegExp(UnselectedTabClass, 'i');
+const SwitchToApeChainRegex = new RegExp(
+  /switch network to (33139|ape chain)/,
+  'i',
+);
 
 const expectSourceAndDestinationTokens = (
   sourceToken: string,
@@ -220,7 +224,7 @@ describe('ApePortal', () => {
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
 
-  it('when switching to swap tab use APE to ETH as the default pair when on ETH mainnet', async () => {
+  it('when switching to swap tab use APE APE to APE APE-USD as the default pair when on ETH mainnet', async () => {
     const { getState } = usePortalStore;
     const config = setupConfig(mainnet);
     render(
@@ -248,18 +252,15 @@ describe('ApePortal', () => {
     expect(
       screen.queryByText(/no other tokens found on this chain to swap/i),
     ).toBeFalsy();
-    expect(screen.getByText(/ETH/)).toBeDefined();
-    expect(
-      screen.getByRole('button', {
-        name: /ethereum/i,
-      }),
-    ).toBeDefined();
-    expectSourceAndDestinationTokens('ETH', 'APE');
+    expect(screen.getByText(/APE/)).toBeDefined();
+    expect(screen.getByText(/apechain/i)).toBeDefined();
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
     expect(
       screen.queryByRole('button', { name: 'ETH' }),
     ).not.toBeInTheDocument();
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.ETHEREUM);
+    expect(screen.getByText(SwitchToApeChainRegex)).toBeDefined();
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
 
   it('switches to swap tab and back to bridge stashes correctly', async () => {
@@ -274,15 +275,16 @@ describe('ApePortal', () => {
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     expect(screen.queryByText(/usdc/i)).toBeFalsy();
     await userEvent.click(swapTabButton);
-    expect(screen.queryByText(/apechain/i)).toBeFalsy();
-    expect(screen.queryByText(/ETH/)).toBeDefined();
+    expect(screen.queryByText(/apechain/i)).toBeDefined();
+    expect(screen.queryByText(/ETH/)).toBeFalsy();
     expect(
       screen.queryByRole('button', {
         name: /ETH/,
       }),
-    ).toBeInTheDocument();
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.ETHEREUM);
+    ).toBeFalsy();
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     await userEvent.click(bridgeTabButton);
     expect(screen.queryByText(/usdc/i)).toBeFalsy();
     expectSourceAndDestinationTokens('APE', 'APE');
@@ -413,7 +415,7 @@ describe('ApePortal', () => {
     });
   });
 
-  it('portal uses both tokens when they have matching chains and initial tab is swap', async () => {
+  it('portal uses default apechain tokens even when valid defaults are provided to the config and initial tab is swap', async () => {
     const { getState } = usePortalStore;
     customRender(
       <ApePortal
@@ -427,18 +429,25 @@ describe('ApePortal', () => {
     );
 
     await waitFor(() => {
-      expectSourceAndDestinationTokens('USDT', 'WETH');
-      expect(getState().sourceToken.token.chainId).toBe(ChainId.OPTIMISM);
-      expect(getState().destinationToken.token.chainId).toBe(ChainId.OPTIMISM);
+      // These are the default tokens for the swap tab set behind the scenes as the user
+      // reads the error modal
+      expectSourceAndDestinationTokens('APE', 'APE-USD');
+      expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+      expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     });
     const dismissButton = screen.queryByRole('button', {
       name: 'Ok',
     });
-    expect(screen.getByText(/optimism/i)).toBeDefined();
-    expect(dismissButton).toBeNull();
+    expect(screen.getByText(/apechain/i)).toBeDefined();
+    expect(dismissButton).toBeDefined();
+    expect(
+      screen.getByText(
+        /swap attempted with malformed token configuration. please contact support or try again./i,
+      ),
+    );
   });
 
-  it('portal shows an error when tokens have NON-matching chains and initial tab is swap. Use defaults ETH -> APE ', async () => {
+  it('portal shows an error when tokens have NON-matching chains and initial tab is swap. Use defaults APE APE -> APE APE-USD ', async () => {
     const { getState } = usePortalStore;
     customRender(
       <ApePortal
@@ -452,14 +461,14 @@ describe('ApePortal', () => {
     );
 
     await waitFor(() => {
-      expectSourceAndDestinationTokens('ETH', 'APE');
-      expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-      expect(getState().destinationToken.token.chainId).toBe(ChainId.ETHEREUM);
+      expectSourceAndDestinationTokens('APE', 'APE-USD');
+      expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+      expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     });
     const dismissButton = screen.queryByRole('button', {
       name: 'Ok',
     });
-    expect(screen.getByText(/ethereum/i)).toBeDefined();
+    expect(screen.getByText(/apechain/i)).toBeDefined();
     expect(dismissButton).toBeDefined();
     expect(
       screen.getByText(
@@ -488,52 +497,6 @@ describe('ApePortal', () => {
     });
     expect(dismissButton).toBeDefined();
     expect(screen.getByText(new RegExp(ERROR_MALFORMED_CONFIG, 'i')));
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
-  });
-
-  it('preserves the default pairings until user interaction', async () => {
-    const { getState } = usePortalStore;
-    customRender(<ApePortal />, {});
-    const bridgeTabButton = screen.getByText(/bridge/i);
-    const swapTabButton = screen.getByText(/swap/i);
-    const switchTokenButton = screen.getByRole('button', {
-      name: 'swap-source-destination',
-    });
-    expect(switchTokenButton).toBeDefined();
-    expect(bridgeTabButton).toBeDefined();
-    expect(swapTabButton).toBeDefined();
-    // 1. Confirm default pairings for bridge tab
-    await waitFor(() => {
-      expectSourceAndDestinationTokens('APE', 'APE');
-    });
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
-    // 2. Switch to swap tab and confirm default pairings
-    await userEvent.click(swapTabButton);
-    expect(screen.getByText(/ethereum/i)).toBeDefined();
-    await waitFor(() => {
-      expectSourceAndDestinationTokens('ETH', 'APE');
-    });
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.ETHEREUM);
-    // 3. Switch back to bridge tab and confirm default pairings are preserved
-    await userEvent.click(bridgeTabButton);
-    await waitFor(() => {
-      expectSourceAndDestinationTokens('APE', 'APE');
-    });
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
-    // 4. Switch BACK to swap tab and switch tokens (user interaction with the tokens turns off default pairings)
-    await userEvent.click(swapTabButton);
-    // 5. Press the switch token button twice to interact but keep ETH as the source
-    await userEvent.click(switchTokenButton);
-    await userEvent.click(switchTokenButton);
-    await userEvent.click(bridgeTabButton);
-    // 6. Confirm default pairings are no longer preserved
-    await waitFor(() => {
-      expectSourceAndDestinationTokens('ETH', 'APE');
-    });
     expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
@@ -660,7 +623,7 @@ describe('ApePortal', () => {
     expectSourceAndDestinationTokens('ETH', 'DAI');
   });
 
-  it('shows Poly MATIC as source on bridge and MATIC to USDC on swap when user wallet is on Polygon', async () => {
+  it('shows Poly MATIC as source on bridge when user wallet is on Polygon', async () => {
     const { getState } = usePortalStore;
     const config = setupConfig(polygon);
     render(
@@ -693,9 +656,9 @@ describe('ApePortal', () => {
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
     // 2. Expect our hooks changed tokens to source MATIC -> dest USDC
-    expectSourceAndDestinationTokens('MATIC', 'USDC');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.POLYGON);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.POLYGON);
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     // 4. Switch back to the bridge tab
     await userEvent.click(bridgeTabButton);
     expect(bridgeTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
@@ -703,7 +666,7 @@ describe('ApePortal', () => {
     expectSourceAndDestinationTokens('MATIC', 'APE');
   });
 
-  it('shows Ethereum ETH as source on bridge and ETH to APE on swap when user wallet is on Ethereum', async () => {
+  it('shows Ethereum ETH as source on bridge when user wallet is on Ethereum', async () => {
     const { getState } = usePortalStore;
     const config = setupConfig(mainnet);
     render(
@@ -734,9 +697,9 @@ describe('ApePortal', () => {
     await userEvent.click(swapTabButton);
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
-    expectSourceAndDestinationTokens('ETH', 'APE');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.ETHEREUM);
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     await userEvent.click(bridgeTabButton);
     expect(bridgeTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
@@ -745,7 +708,7 @@ describe('ApePortal', () => {
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
 
-  it('shows Arbitum ETH as source on bridge and ETH to ARB on swap when user wallet is on Arbitum', async () => {
+  it('shows Arbitum ETH as source on bridge when user wallet is on Arbitum', async () => {
     const { getState } = usePortalStore;
     const config = setupConfig(arbitrum);
     render(
@@ -776,9 +739,9 @@ describe('ApePortal', () => {
     await userEvent.click(swapTabButton);
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
-    expectSourceAndDestinationTokens('ETH', 'ARB');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ARBITRUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.ARBITRUM);
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     await userEvent.click(bridgeTabButton);
     expect(bridgeTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
@@ -787,7 +750,7 @@ describe('ApePortal', () => {
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
 
-  it('shows Ethereum APE as source on bridge and Ethereum APE to ETH on swap when user wallet is on ApeChain', async () => {
+  it('shows Ethereum APE as source on bridge when user wallet is on ApeChain', async () => {
     const { getState } = usePortalStore;
     const config = setupConfig(apeChain);
     render(
@@ -818,9 +781,9 @@ describe('ApePortal', () => {
     await userEvent.click(swapTabButton);
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
-    expectSourceAndDestinationTokens('APE', 'ETH');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.ETHEREUM);
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     await userEvent.click(bridgeTabButton);
     expect(bridgeTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
@@ -848,13 +811,10 @@ describe('ApePortal', () => {
     expectSourceAndDestinationTokens('APE', 'APE');
     expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
-    // 1. Switch to the swap tab
     await userEvent.click(swapTabButton);
-    // 2. Expect our hooks changed tokens source ETH -> dest DAI
-    expectSourceAndDestinationTokens('ETH', 'APE');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.ETHEREUM);
-    // 4. Switch back to the bridge tab
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     await userEvent.click(bridgeTabButton);
     expectSourceAndDestinationTokens('APE', 'APE');
   });
@@ -938,14 +898,10 @@ describe('ApePortal', () => {
     const swapTab = screen.getByTestId('tab-1');
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
-    expect(
-      screen.getByRole('button', {
-        name: /ethereum/i,
-      }),
-    ).toBeDefined();
-    expectSourceAndDestinationTokens('ETH', 'APE');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.ETHEREUM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.ETHEREUM);
+    expect(screen.getByText(/apechain/i)).toBeDefined();
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
 
   it('renders to bridge tab with default tokens when hash is set when user is on ETH mainnet', async () => {
@@ -1009,12 +965,9 @@ describe('ApePortal', () => {
     const swapTab = screen.getByTestId('tab-1');
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
-    expect(
-      screen.getByRole('button', {
-        name: /apechain/i,
-      }),
-    ).toBeDefined();
-    expectSourceAndDestinationTokens('APE', 'WAPE');
+    expect(screen.getByText(/apechain/i)).toBeDefined();
+    expect(screen.queryByText(SwitchToApeChainRegex)).toBeFalsy();
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
     expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
@@ -1048,14 +1001,11 @@ describe('ApePortal', () => {
     const swapTab = screen.getByTestId('tab-1');
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
-    expect(
-      screen.getByRole('button', {
-        name: /polygon/i,
-      }),
-    ).toBeDefined();
-    expectSourceAndDestinationTokens('MATIC', 'USDC');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.POLYGON);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.POLYGON);
+    expect(screen.getByText(/apechain/i)).toBeDefined();
+    expect(screen.getByText(SwitchToApeChainRegex)).toBeDefined();
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
 
   it('ensures source token passed via props takes precedence over the users wallet on swap', async () => {
@@ -1091,17 +1041,13 @@ describe('ApePortal', () => {
     const swapTab = screen.getByTestId('tab-1');
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
-    expect(
-      screen.getByRole('button', {
-        name: /optimism/i,
-      }),
-    ).toBeDefined();
-    expectSourceAndDestinationTokens('WETH', 'ETH');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.OPTIMISM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.OPTIMISM);
+    expect(screen.getByText(SwitchToApeChainRegex)).toBeDefined();
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
 
-  it('ensures destination token passed via props takes precedence over the users wallet on swap', async () => {
+  it('ensures destination token passed via props the users wallet doesnt break apechain only on swap', async () => {
     vi.spyOn(window, 'location', 'get').mockReturnValue({
       ...window.location,
       hash: '#swap',
@@ -1134,14 +1080,10 @@ describe('ApePortal', () => {
     const swapTab = screen.getByTestId('tab-1');
     expect(bridgeTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
-    expect(
-      screen.getByRole('button', {
-        name: /optimism/i,
-      }),
-    ).toBeDefined();
-    expectSourceAndDestinationTokens('ETH', 'WETH');
-    expect(getState().sourceToken.token.chainId).toBe(ChainId.OPTIMISM);
-    expect(getState().destinationToken.token.chainId).toBe(ChainId.OPTIMISM);
+    expect(screen.queryByText(/apechain/i)).toBeDefined();
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
 
   it('ensures source token passed via props takes precedence over the users wallet on bridge', async () => {
@@ -1288,14 +1230,13 @@ describe('ApePortal', () => {
     // 6. Switch to the swap tab for good measure
     const swapTabButton = screen.getByText(/swap/i);
     await userEvent.click(swapTabButton);
-    expectSourceAndDestinationTokens('ETH', 'ARB');
+    expect(screen.queryByText(/apechain/i)).toBeDefined();
+    expectSourceAndDestinationTokens('APE', 'APE-USD');
+    expect(getState().sourceToken.token.chainId).toBe(ChainId.APE);
+    expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     // 7. Ensure the chain picker and destination token are disabled
     expect(switchTokenButton).toBeDisabled();
     expect(destinationTokenButton).toBeDisabled();
-    const chainSelectorButton = screen.getByRole('button', {
-      name: /arbitrum/i,
-    });
-    expect(chainSelectorButton).toBeDisabled();
   });
 
   it('does not update the locks destination token when double clicking the bridge tab button', async () => {

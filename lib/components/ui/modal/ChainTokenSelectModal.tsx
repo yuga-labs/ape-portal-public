@@ -222,6 +222,10 @@ const limitTokensBySource = (
       if (destChain === ChainId.ETHEREUM) {
         return [ApeCoinMainnetEthereumContract]; // ETH-APE
       }
+      if (destChain === ChainId.APE) {
+        // Show all available tokens (undefined)
+        return undefined;
+      }
       return [];
     }
   }
@@ -240,17 +244,11 @@ export const ChainTokenSelectModal = ({
 }) => {
   const { chains } = useChainConfig();
   const { address } = useAccount();
-  const {
-    sourceToken,
-    setSourceToken,
-    setDestinationToken,
-    setHasUserUpdatedTokens,
-  } = usePortalStore(
+  const { sourceToken, setSourceToken, setDestinationToken } = usePortalStore(
     useShallow((state) => ({
       sourceToken: state.sourceToken,
       setSourceToken: state.setSourceToken,
       setDestinationToken: state.setDestinationToken,
-      setHasUserUpdatedTokens: state.setHasUserUpdatedTokens,
     })),
   );
   const [selectorChainId, setSelectorChainId] = useState<ChainId>(
@@ -301,7 +299,6 @@ export const ChainTokenSelectModal = ({
         <TokenSelector
           selectedToken={currentToken.token}
           setSelectedToken={(token: TokenInfo) => {
-            setHasUserUpdatedTokens();
             if (isSourceToken) {
               setSourceToken(token);
             } else {

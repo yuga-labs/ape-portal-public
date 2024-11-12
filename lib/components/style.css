@@ -223,6 +223,12 @@
   display: none;
 }
 
+.decent-dialog .box-font-light.box-text-\[\#837D92\].text-center {
+  color: white;
+  font-size: 1em;
+  font-family: 'DMSans';
+}
+
 .box-missing-img {
   object-fit: none;
   background-image: linear-gradient(

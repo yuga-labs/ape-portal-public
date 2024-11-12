@@ -55,9 +55,7 @@ function TokenSwapComponent({
           <AnimatePresence>
             {isSwap && (
               <ChainSelectorModule
-                loading={loading}
                 className={cn(showBranding ? 'aw-mb-3' : 'aw-my-3')}
-                disabled={tokenConfig?.lockDestinationToken}
               />
             )}
           </AnimatePresence>

@@ -39,6 +39,8 @@ interface PortalState {
   lastChanged: InputType;
   /** Holds the value of slippage that is used for swaps other than stables. */
   nonStableSlippage: number;
+  /* Solana */
+  solanaSelected: boolean;
 }
 
 interface PortalActions {
@@ -71,6 +73,8 @@ interface PortalActions {
   resetTransactionData: () => void;
   /** Reset warnings, gas prices and fees, and both source/dest token amounts. */
   resetTransactionDataAndAmounts: () => void;
+  /* Solana */
+  setSolanaSelected: (selected: boolean) => void;
 }
 
 export const defaultBridgeSourceToken = ApeCoinMainnetEthereum;
@@ -308,4 +312,11 @@ export const usePortalStore = create<PortalStore>()((set) => ({
       }),
     ),
   nonStableSlippage: BridgeTransactionData.DEFAULT_SLIPPAGE,
+  solanaSelected: false,
+  setSolanaSelected: (selected: boolean) =>
+    set(
+      produce((state: PortalStore) => {
+        state.solanaSelected = selected;
+      }),
+    ),
 }));

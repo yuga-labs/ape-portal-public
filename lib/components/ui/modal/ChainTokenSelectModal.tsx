@@ -27,6 +27,8 @@ import {
   WethEthMainnetContract,
 } from '../../../utils/utils.ts';
 import { Address, isAddressEqual, zeroAddress } from 'viem';
+import { AnimatePresence, motion } from 'framer-motion';
+import { SolanaModule } from '../SolanaModule.tsx';
 
 const ApeCoinArbitrum = createApeCoinTokenInfo(
   ChainId.ARBITRUM,
@@ -244,13 +246,15 @@ export const ChainTokenSelectModal = ({
 }) => {
   const { chains } = useChainConfig();
   const { address } = useAccount();
-  const { sourceToken, setSourceToken, setDestinationToken } = usePortalStore(
-    useShallow((state) => ({
-      sourceToken: state.sourceToken,
-      setSourceToken: state.setSourceToken,
-      setDestinationToken: state.setDestinationToken,
-    })),
-  );
+  const { sourceToken, setSourceToken, setDestinationToken, solanaSelected } =
+    usePortalStore(
+      useShallow((state) => ({
+        sourceToken: state.sourceToken,
+        setSourceToken: state.setSourceToken,
+        setDestinationToken: state.setDestinationToken,
+        solanaSelected: state.solanaSelected,
+      })),
+    );
   const [selectorChainId, setSelectorChainId] = useState<ChainId>(
     currentToken.token.chainId,
   );
@@ -287,34 +291,47 @@ export const ChainTokenSelectModal = ({
           />
         </div>
       )}
-      <div className="decent-dialog aw-inline-flex aw-w-full aw-flex-col aw-items-start aw-justify-start aw-gap-2.5 aw-rounded aw-border aw-border-white/20 aw-bg-apeCtaBlue/50 aw-px-3 aw-pt-2 md:aw-px-5 md:aw-pt-5">
-        <p
-          className={
-            'aw-font-dmsans aw-font-medium aw-leading-normal aw-tracking-wide'
-          }
-        >
-          {instructionPrefix}Select any token on{' '}
-          {getChainName(selectorChainId) ?? ' this chain'}
-        </p>
-        <TokenSelector
-          selectedToken={currentToken.token}
-          setSelectedToken={(token: TokenInfo) => {
-            if (isSourceToken) {
-              setSourceToken(token);
-            } else {
-              setDestinationToken(token);
-            }
-            setModalOpen(false);
-          }}
-          chainId={selectorChainId}
-          address={address}
-          selectorOnly
-          showUsdValue={true}
-          popularTokens={popularTokens}
-          hidePopularSection
-          selectTokens={enabledTokens}
-        />
-      </div>
+      <AnimatePresence mode={'wait'}>
+        {solanaSelected ? (
+          <SolanaModule />
+        ) : (
+          <motion.div
+            key={'evm'}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            layout={'position'}
+            className="decent-dialog aw-inline-flex aw-w-full aw-flex-col aw-items-start aw-justify-start aw-gap-2.5 aw-rounded aw-border aw-border-white/20 aw-bg-apeCtaBlue/50 aw-px-3 aw-pt-2 md:aw-px-5 md:aw-pt-5"
+          >
+            <p
+              className={
+                'aw-font-dmsans aw-font-medium aw-leading-normal aw-tracking-wide'
+              }
+            >
+              {instructionPrefix}Select any token on{' '}
+              {getChainName(selectorChainId) ?? ' this chain'}
+            </p>
+            <TokenSelector
+              selectedToken={currentToken.token}
+              setSelectedToken={(token: TokenInfo) => {
+                if (isSourceToken) {
+                  setSourceToken(token);
+                } else {
+                  setDestinationToken(token);
+                }
+                setModalOpen(false);
+              }}
+              chainId={selectorChainId}
+              address={address}
+              selectorOnly
+              showUsdValue={true}
+              popularTokens={popularTokens}
+              hidePopularSection
+              selectTokens={enabledTokens}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

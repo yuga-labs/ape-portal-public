@@ -9,6 +9,9 @@ import { ChainPillButton } from './buttons/ChainPillButton.tsx';
 import { ArrowDown } from '../icons/ArrowDown.tsx';
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '../../utils/utils.ts';
+import { SolanaLogo } from '../icons/SolanaLogo.tsx';
+import { usePortalStore } from '../../store/usePortalStore.ts';
+import { useApeContext } from '../../providers/ape/apeProvider.context.ts';
 
 /**
  * A list of chains as pill type buttons that can be selected.
@@ -31,6 +34,11 @@ export const ChainDropdown = ({
   selectorChain: ChainId;
   condensed?: boolean;
 }) => {
+  const { enableSolanaRedirect, solanaRedirectUrl } = useApeContext();
+  const { solanaSelected, setSolanaSelected } = usePortalStore((state) => ({
+    solanaSelected: state.solanaSelected,
+    setSolanaSelected: state.setSolanaSelected,
+  }));
   const firstFiveChains: ChainId[] = useMemo(
     () => chains.slice(0, 5),
     [chains],
@@ -54,8 +62,11 @@ export const ChainDropdown = ({
                 <ChainPillButton
                   key={chain}
                   chain={chain}
-                  setSelectorChain={setSelectorChain}
-                  selectorChain={selectorChain}
+                  onClick={() => {
+                    setSelectorChain(chain);
+                    setSolanaSelected(false);
+                  }}
+                  selected={!solanaSelected && chain === selectorChain}
                 />
               );
             })}
@@ -74,6 +85,19 @@ export const ChainDropdown = ({
                 />
               </DisclosureButton>
             )}
+            {enableSolanaRedirect && solanaRedirectUrl && (
+              <ChainPillButton
+                onClick={() => {
+                  setSolanaSelected(!solanaSelected);
+                }}
+                selected={solanaSelected}
+              >
+                <SolanaLogo className={'aw-aspect-square aw-size-6'} />
+                <div className="aw-text-center aw-font-dmmono aw-text-sm aw-font-medium aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-white">
+                  Solana
+                </div>
+              </ChainPillButton>
+            )}
           </div>
           <div className="aw-overflow-hidden">
             <AnimatePresence>
@@ -91,10 +115,10 @@ export const ChainDropdown = ({
                       <ChainPillButton
                         key={chain}
                         chain={chain}
-                        setSelectorChain={(chain) => {
+                        onClick={() => {
                           setSelectorChain(chain);
                         }}
-                        selectorChain={selectorChain}
+                        selected={!solanaSelected && chain === selectorChain}
                       />
                     );
                   })}

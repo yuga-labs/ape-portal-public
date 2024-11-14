@@ -14,6 +14,10 @@ export interface ApeConfig {
   /** Enable the On-Ramp tab in the widget, or the Buy component.
    * Requires prior approval from Yuga Labs or the onramp will not function due to CORS errors. */
   enableOnramp?: boolean;
+  /* Allow users to select Solana and be redirected to solanaRedirectUrl */
+  enableSolanaRedirect?: boolean;
+  /* Url a user will be redirected to for Solana */
+  solanaRedirectUrl?: string;
 }
 
 export interface ApeProviderProps {

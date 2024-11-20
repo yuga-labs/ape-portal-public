@@ -60,8 +60,8 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
@@ -104,8 +104,8 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
@@ -382,8 +382,8 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
@@ -426,8 +426,8 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
@@ -645,8 +645,8 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
@@ -685,8 +685,8 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
@@ -886,8 +886,8 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
@@ -930,8 +930,8 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
@@ -1146,8 +1146,8 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <div
@@ -1185,8 +1185,8 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
                     class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
                   >
                     <img
-                      alt="token"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+                      alt="ApeCoin"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <div

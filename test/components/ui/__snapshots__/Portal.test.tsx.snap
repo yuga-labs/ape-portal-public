@@ -138,8 +138,8 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                                     class="aw-relative aw-z-0 aw-mr-2"
                                   >
                                     <img
-                                      alt="token"
-                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                      alt="ApeCoin"
+                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                                     />
                                     <div
@@ -311,8 +311,8 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                                     class="aw-relative aw-z-0 aw-mr-2"
                                   >
                                     <img
-                                      alt="token"
-                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                      alt="ApeCoin"
+                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                                     />
                                     <div
@@ -673,8 +673,8 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                                   class="aw-relative aw-z-0 aw-mr-2"
                                 >
                                   <img
-                                    alt="token"
-                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                    alt="ApeCoin"
+                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                                     src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                                   />
                                   <div
@@ -846,8 +846,8 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                                   class="aw-relative aw-z-0 aw-mr-2"
                                 >
                                   <img
-                                    alt="token"
-                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                    alt="ApeCoin"
+                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                                     src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                                   />
                                   <div
@@ -1277,8 +1277,8 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                                     class="aw-relative aw-z-0 aw-mr-2"
                                   >
                                     <img
-                                      alt="token"
-                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                      alt="ApeCoin"
+                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                                     />
                                     <div
@@ -1450,8 +1450,8 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                                     class="aw-relative aw-z-0 aw-mr-2"
                                   >
                                     <img
-                                      alt="token"
-                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                      alt="ApeCoin"
+                                      class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                                     />
                                     <div
@@ -1884,8 +1884,8 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                                   class="aw-relative aw-z-0 aw-mr-2"
                                 >
                                   <img
-                                    alt="token"
-                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                    alt="ApeCoin"
+                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                                     src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                                   />
                                   <div
@@ -2057,8 +2057,8 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                                   class="aw-relative aw-z-0 aw-mr-2"
                                 >
                                   <img
-                                    alt="token"
-                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                                    alt="ApeCoin"
+                                    class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                                     src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                                   />
                                   <div

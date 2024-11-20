@@ -66,6 +66,7 @@ interface PortalActions {
     destAmount: string,
     bridgeFee: string,
     gasFee: string,
+    gasFeeWei: bigint,
   ) => void;
   setSlippagePercentage: (slippage: number) => void;
   resetSlippage: () => void;
@@ -160,6 +161,7 @@ export const usePortalStore = create<PortalStore>()((set) => ({
     destAmount: string,
     bridgeFee: string,
     gasFee: string,
+    gasFeeWei: bigint,
   ) =>
     set(
       produce((state: PortalStore) => {
@@ -171,6 +173,7 @@ export const usePortalStore = create<PortalStore>()((set) => ({
         state.bridgeTransactionData.setApplicationFeeUsd = Number(bridgeFee);
         state.bridgeTransactionData.gasFee = Number(gasFee);
         state.bridgeTransactionData.setGasFeeUsd = Number(gasFee);
+        state.bridgeTransactionData.gasFeeWei = gasFeeWei;
       }),
     ),
   setSourceChainGasTokenUsdValue: (value: number) =>

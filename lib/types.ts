@@ -20,6 +20,7 @@ export type DecentBridgeStatus = {
 
 export type BridgeError =
   | 'INSUFFICIENT_FUNDS'
+  | 'INSUFFICIENT_FUNDS_FOR_FEES'
   | 'WRONG_NETWORK'
   | 'UNKNOWN_ERROR';
 export type BridgeErrorDescriptions = {
@@ -27,6 +28,7 @@ export type BridgeErrorDescriptions = {
 };
 export const humanReadableBridgeError: BridgeErrorDescriptions = {
   INSUFFICIENT_FUNDS: 'Insufficient funds',
+  INSUFFICIENT_FUNDS_FOR_FEES: 'Insufficient funds for fees',
   UNKNOWN_ERROR: 'Something went wrong',
   WRONG_NETWORK: 'Bad from or to chains',
 };

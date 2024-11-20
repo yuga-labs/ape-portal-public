@@ -12,8 +12,8 @@ exports[`components/ui/TokenDisplay > should not render animation if animationVi
           class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
         >
           <img
-            alt="token"
-            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+            alt="Ether"
+            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
             src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
           />
           <img
@@ -55,8 +55,8 @@ exports[`components/ui/TokenDisplay > should not render animation if animationVi
         class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
       >
         <img
-          alt="token"
-          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+          alt="Ether"
+          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
           src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
         />
         <img
@@ -154,8 +154,8 @@ exports[`components/ui/TokenDisplay > should render TokenDisplay 1`] = `
           class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
         >
           <img
-            alt="token"
-            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+            alt="Ether"
+            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
             src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
           />
           <img
@@ -201,8 +201,8 @@ exports[`components/ui/TokenDisplay > should render TokenDisplay 1`] = `
         class="aw-relative aw-flex aw-items-center aw-justify-center aw-px-3"
       >
         <img
-          alt="token"
-          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1 "
+          alt="Ether"
+          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
           src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
         />
         <img

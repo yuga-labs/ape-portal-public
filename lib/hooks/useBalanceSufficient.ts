@@ -1,9 +1,10 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { BoxActionResponse } from '@decent.xyz/box-common';
 import { useAccount, useBalance, useReadContract } from 'wagmi';
 import { useBridgeStore } from '../store/useBridgeStore';
 import { Address, erc20Abi } from 'viem';
 import { useChainConfig } from './useChainConfig';
+import { usePortalStore } from '../store/usePortalStore';
 
 export const useBalanceSufficient = (
   preparedTransaction: BoxActionResponse | undefined,
@@ -13,6 +14,9 @@ export const useBalanceSufficient = (
   const { setBridgeError } = useBridgeStore((state) => ({
     setBridgeError: state.setBridgeError,
   }));
+  const bridgeTransactionData = usePortalStore(
+    (state) => state.bridgeTransactionData,
+  );
   const { chains } = useChainConfig();
   const chainId = preparedTransaction?.tokenPayment?.chainId;
   const isValidChain = chainId !== undefined && chains.includes(chainId);
@@ -28,28 +32,50 @@ export const useBalanceSufficient = (
         preparedTransaction?.tokenPayment?.isNative,
     },
   });
-  // Monitor for changes to sourceNativeTokenBalance and manage balanceSufficient state accordingly
+
+  /** Total amount of fees required in the native token, in the smallest unit (wei). */
+  const totalFeesNativeWei = useMemo(() => {
+    return (
+      (preparedTransaction?.applicationFee?.amount ?? 0n) +
+      (preparedTransaction?.protocolFee?.amount ?? 0n) +
+      (preparedTransaction?.bridgeFee?.amount ?? 0n) +
+      bridgeTransactionData.gasFeeWei
+    );
+  }, [
+    preparedTransaction?.applicationFee?.amount,
+    preparedTransaction?.protocolFee?.amount,
+    preparedTransaction?.bridgeFee?.amount,
+    bridgeTransactionData.gasFeeWei,
+  ]);
+
+  // Monitors balance sufficiency for swaps using the native token as the source
   useEffect(() => {
-    // TODO: This logic could get more complex and consider the `preparedTransaction?.tx?.value` as well, since
-    //  that could be sent separately (and greater than) the tokenPayment.
-    if (!preparedTransaction?.tokenPayment?.isNative) {
+    if (
+      !preparedTransaction?.tokenPayment ||
+      !preparedTransaction.tokenPayment.isNative ||
+      nativeTokenBalance.data?.value === undefined
+    ) {
       return;
     }
+    const totalNativePaymentWithFees =
+      preparedTransaction.tokenPayment.amount + totalFeesNativeWei;
     if (
-      nativeTokenBalance.data?.value !== undefined &&
-      preparedTransaction?.tokenPayment?.amount !== undefined &&
       nativeTokenBalance.data.value < preparedTransaction.tokenPayment.amount
     ) {
       balanceSufficient.current = false;
       setBridgeError('INSUFFICIENT_FUNDS');
+    } else if (nativeTokenBalance.data?.value < totalNativePaymentWithFees) {
+      balanceSufficient.current = false;
+      setBridgeError('INSUFFICIENT_FUNDS_FOR_FEES');
     } else {
       balanceSufficient.current = true;
     }
   }, [
+    totalFeesNativeWei,
     nativeTokenBalance.data?.value,
-    preparedTransaction?.tokenPayment?.amount,
-    preparedTransaction?.tokenPayment?.isNative,
+    preparedTransaction,
     setBridgeError,
+    bridgeTransactionData.gasFeeWei,
   ]);
 
   // Non-native (ERC-20) token balance monitor.
@@ -80,6 +106,12 @@ export const useBalanceSufficient = (
     ) {
       balanceSufficient.current = false;
       setBridgeError('INSUFFICIENT_FUNDS');
+    } else if (
+      nativeTokenBalance.data?.value !== undefined &&
+      nativeTokenBalance.data.value < totalFeesNativeWei
+    ) {
+      balanceSufficient.current = false;
+      setBridgeError('INSUFFICIENT_FUNDS_FOR_FEES');
     } else {
       balanceSufficient.current = true;
     }
@@ -87,6 +119,8 @@ export const useBalanceSufficient = (
     tokenBalance,
     preparedTransaction?.tokenPayment?.amount,
     preparedTransaction?.tokenPayment?.isNative,
+    nativeTokenBalance.data?.value,
+    totalFeesNativeWei,
     setBridgeError,
   ]);
 

@@ -218,7 +218,10 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
         if (
           InsufficientFundsError.nodeMessage.test(
             gasEstimateErrorData.cause.details,
-          ) ||
+          )
+        ) {
+          setBridgeError('INSUFFICIENT_FUNDS_FOR_FEES');
+        } else if (
           /amount exceeds balance/.test(gasEstimateErrorData.cause.details)
         ) {
           setBridgeError('INSUFFICIENT_FUNDS');
@@ -311,6 +314,7 @@ export const usePreparedTransaction = (useBoxActionArgs: UseBoxActionArgs) => {
         amountOutStr,
         totalAppFeesStr,
         gasFeeStr,
+        totalGasWei,
       );
       const { estimatedTxTime } = preparedTransaction;
       if (estimatedTxTime) {

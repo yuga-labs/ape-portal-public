@@ -1,26 +1,26 @@
 import { motion } from 'framer-motion';
 import { BaseButton } from './buttons/BaseButton.tsx';
-import { useEffect, useState } from 'react';
-import { handler } from 'tailwindcss-animate';
+import { useEffect } from 'react';
 import { useApeContext } from '../../providers/ape/apeProvider.context.ts';
+import { usePortalStore } from '../../store/usePortalStore.ts';
 
 export const SolanaModule = () => {
   const { solanaRedirectUrl } = useApeContext();
-  const [count, setCount] = useState(3);
-  useEffect(() => {
-    if (count === 0) {
-      if (solanaRedirectUrl) {
-        window.location.href = solanaRedirectUrl;
-      }
-      return;
+  const { setSolanaSelected } = usePortalStore((state) => ({
+    setSolanaSelected: state.setSolanaSelected,
+  }));
+
+  const handleRedirect = () => {
+    if (typeof solanaRedirectUrl === 'string') {
+      window.location.href = solanaRedirectUrl;
     }
+  };
 
-    const intervalId = setInterval(() => {
-      setCount((prevCount) => prevCount - 1);
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, [count, solanaRedirectUrl]);
+  useEffect(() => {
+    return () => {
+      setSolanaSelected(false);
+    };
+  }, [setSolanaSelected]);
 
   return (
     <motion.div
@@ -36,7 +36,7 @@ export const SolanaModule = () => {
           'aw-font-dmsans aw-font-medium aw-leading-normal aw-tracking-wide'
         }
       >
-        2. Redirecting to Solana Bridge
+        2. Redirect to Solana Bridge
       </p>
       <div
         className={
@@ -44,7 +44,7 @@ export const SolanaModule = () => {
         }
       >
         <BaseButton
-          onClick={handler}
+          onClick={handleRedirect}
           className={'aw-bg-gradient-lavender-coral-sunset'}
         >
           <div
@@ -52,7 +52,7 @@ export const SolanaModule = () => {
               'aw-relative aw-inline-flex aw-size-full aw-w-full aw-items-center aw-justify-center aw-overflow-hidden aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-font-dmmono aw-text-[16px] aw-font-medium aw-text-white md:aw-text-[18px]'
             }
           >
-            Redirecting {count}
+            Go To Solana Bridge
           </div>
         </BaseButton>
       </div>

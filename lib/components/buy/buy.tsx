@@ -34,6 +34,7 @@ export function Buy({
   const { setError } = useErrorStore();
   const wasHallidayLoaded = useRef<boolean>(false);
   const [isIframePresent, setIsIframePresent] = useState(false);
+  const launchAddress = useRef<undefined | string>();
 
   // Check if the iframe is present. So if the user closes the iframe,
   // we can show the "launch onramp" button
@@ -57,6 +58,7 @@ export function Buy({
       console.error('Onramp: Address or signer not available');
       return;
     }
+    launchAddress.current = address;
     void openHalliday({
       apiKey,
       destinationChainId: apeChain.id,
@@ -70,7 +72,14 @@ export function Buy({
   }, [address, destinationAddress, signer]);
 
   useEffect(() => {
-    if (wasHallidayLoaded.current) return;
+    if (wasHallidayLoaded.current) {
+      if (launchAddress.current === address) {
+        return;
+      } else {
+        // User address changed, re-instantiating iframe with new address
+        void launchHalliday();
+      }
+    }
     if (isTabHosted && portalType !== PortalType.OnRamp) return;
     if (!address || !signer || !enableOnramp) return;
     void launchHalliday();

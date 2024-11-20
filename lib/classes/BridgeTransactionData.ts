@@ -12,8 +12,11 @@ export class BridgeTransactionData {
 
   applicationFee: number = 0;
   applicationFeeUsd: number = 0;
+  /** Gas as a decimal amount for the native token, eg. 1gwei = 0.000000001 gasFee */
   gasFee: number = 0;
   gasFeeUsd: number = 0;
+  /** Gas as a raw/uint8 amount for the native token, eg. 1gwei = 1000000000 gasFeeWei */
+  gasFeeWei: bigint = 0n;
   timeWarning: string | undefined;
   priceImpactWarning: string | undefined;
   _slippagePercentage: number = 1;
@@ -29,6 +32,7 @@ export class BridgeTransactionData {
     this.applicationFeeUsd = 0;
     this.gasFee = 0;
     this.gasFeeUsd = 0;
+    this.gasFeeWei = 0n;
     this.timeWarning = undefined;
     this.priceImpactWarning = undefined;
   }

@@ -43,8 +43,8 @@ exports[`components/ui/TokenInputModule > should NOT show destination wallet add
                 class="aw-relative aw-z-0 aw-mr-2"
               >
                 <img
-                  alt="token"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  alt="ApeCoin"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -160,8 +160,8 @@ exports[`components/ui/TokenInputModule > should NOT show destination wallet add
               class="aw-relative aw-z-0 aw-mr-2"
             >
               <img
-                alt="token"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                alt="ApeCoin"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -333,8 +333,8 @@ exports[`components/ui/TokenInputModule > should only render MaxButton when srcT
                 class="aw-relative aw-z-0 aw-mr-2"
               >
                 <img
-                  alt="token"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  alt="ApeCoin"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -450,8 +450,8 @@ exports[`components/ui/TokenInputModule > should only render MaxButton when srcT
               class="aw-relative aw-z-0 aw-mr-2"
             >
               <img
-                alt="token"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                alt="ApeCoin"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -623,8 +623,8 @@ exports[`components/ui/TokenInputModule > should render MaxButton disabled if wa
                 class="aw-relative aw-z-0 aw-mr-2"
               >
                 <img
-                  alt="token"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  alt="ApeCoin"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -740,8 +740,8 @@ exports[`components/ui/TokenInputModule > should render MaxButton disabled if wa
               class="aw-relative aw-z-0 aw-mr-2"
             >
               <img
-                alt="token"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                alt="ApeCoin"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -913,8 +913,8 @@ exports[`components/ui/TokenInputModule > should render MaxButton enabled if wal
                 class="aw-relative aw-z-0 aw-mr-2"
               >
                 <img
-                  alt="token"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  alt="ApeCoin"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -1029,8 +1029,8 @@ exports[`components/ui/TokenInputModule > should render MaxButton enabled if wal
               class="aw-relative aw-z-0 aw-mr-2"
             >
               <img
-                alt="token"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                alt="ApeCoin"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -1201,8 +1201,8 @@ exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
                 class="aw-relative aw-z-0 aw-mr-2"
               >
                 <img
-                  alt="token"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  alt="ApeCoin"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -1308,8 +1308,8 @@ exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
               class="aw-relative aw-z-0 aw-mr-2"
             >
               <img
-                alt="token"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                alt="ApeCoin"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -1471,8 +1471,8 @@ exports[`components/ui/TokenInputModule > should show destination wallet address
                 class="aw-relative aw-z-0 aw-mr-2"
               >
                 <img
-                  alt="token"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                  alt="ApeCoin"
+                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -1579,8 +1579,8 @@ exports[`components/ui/TokenInputModule > should show destination wallet address
               class="aw-relative aw-z-0 aw-mr-2"
             >
               <img
-                alt="token"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3 "
+                alt="ApeCoin"
+                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div

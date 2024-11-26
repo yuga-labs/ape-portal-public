@@ -160,9 +160,13 @@ export const TokenInputModule = ({
           <div className="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70">
             {inputUsdValue}
             <ApeStableDisclosure
-              tokenAddress={currentToken.token.address as Address}
-              tokenUsdValue={inputUsdValue}
               isSourceToken={isSourceToken}
+              sourceTokenAddress={sourceToken.token.address as Address}
+              sourceTokenChainId={sourceToken.token.chainId}
+              destinationTokenAddress={
+                destinationToken.token.address as Address
+              }
+              destinationTokenChainId={destinationToken.token.chainId}
             />
           </div>
           <div>

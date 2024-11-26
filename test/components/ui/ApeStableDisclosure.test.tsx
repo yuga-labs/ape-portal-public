@@ -4,9 +4,12 @@ import { ApeStableDisclosure } from '../../../lib/components/ui/ApeStableDisclos
 import {
   ApeEthOmnichainContract,
   ApeUsdOmnichainContract,
+  UsdcArbMainnetContract,
+  UsdcEthMainnetContract,
 } from '../../../lib/utils/utils';
-import { zeroAddress } from 'viem';
+import { Address, zeroAddress } from 'viem';
 import userEvent from '@testing-library/user-event';
+import { ChainId } from '@decent.xyz/box-common';
 
 describe('ApeStableDisclosure', () => {
   const renderComponent = (
@@ -14,14 +17,21 @@ describe('ApeStableDisclosure', () => {
   ) => {
     const defaultProps = {
       isSourceToken: false,
-      tokenAddress: zeroAddress,
-      tokenUsdValue: '0',
+      sourceTokenAddress: zeroAddress as Address,
+      sourceTokenChainId: ChainId.ETHEREUM,
+      destinationTokenAddress: zeroAddress as Address,
+      destinationTokenChainId: ChainId.APE,
     };
     return render(<ApeStableDisclosure {...defaultProps} {...props} />);
   };
 
   test('should not render anything if isSourceToken is true', () => {
-    renderComponent({ isSourceToken: true });
+    renderComponent({
+      isSourceToken: true,
+      sourceTokenAddress: UsdcEthMainnetContract,
+      sourceTokenChainId: ChainId.ETHEREUM,
+      destinationTokenAddress: ApeUsdOmnichainContract,
+    });
     expect(screen.queryByRole('img')).toBeNull();
   });
 
@@ -32,45 +42,74 @@ describe('ApeStableDisclosure', () => {
 
   test('should still render disclosure even if token amount USD is 0', () => {
     renderComponent({
-      tokenAddress: ApeUsdOmnichainContract,
-      tokenUsdValue: '0',
+      destinationTokenAddress: ApeEthOmnichainContract,
     });
     const warningIcon = screen.getByRole('img');
     expect(warningIcon).toBeDefined();
   });
 
-  test('should render warning icon with correct tooltip for ApeUSD', async () => {
+  test('should render warning icon with correct tooltip for ETH-USDC -> APE-APEUSD', async () => {
     userEvent.setup();
     renderComponent({
-      tokenAddress: ApeUsdOmnichainContract,
-      tokenUsdValue: '10',
+      sourceTokenAddress: UsdcEthMainnetContract,
+      sourceTokenChainId: ChainId.ETHEREUM,
+      destinationTokenAddress: ApeUsdOmnichainContract,
     });
     const warningIcon = screen.getByRole('img');
     expect(warningIcon).toBeDefined();
     userEvent.hover(warningIcon);
     await waitFor(() =>
       expect(
-        screen.queryByText(
-          'The underlying price of APE-USD is correlated with DAI.',
-        ),
+        screen.queryByText('For a 1:1 conversion, use DAI to apeUSD'),
       ).toBeDefined(),
     );
   });
 
-  test('should render warning icon with correct tooltip for ApeETH', async () => {
+  test('should render warning icon with correct tooltip for ARB-USDC -> APE-APEUSD', async () => {
     userEvent.setup();
     renderComponent({
-      tokenAddress: ApeEthOmnichainContract,
-      tokenUsdValue: '10',
+      sourceTokenAddress: UsdcArbMainnetContract,
+      sourceTokenChainId: ChainId.ARBITRUM,
+      destinationTokenAddress: ApeUsdOmnichainContract,
     });
     const warningIcon = screen.getByRole('img');
     expect(warningIcon).toBeDefined();
     userEvent.hover(warningIcon);
     await waitFor(() =>
       expect(
-        screen.queryByText(
-          'The underlying price of APE-ETH is correlated with Liquid Staked ETH (stETH).',
-        ),
+        screen.queryByText('For a 1:1 conversion, use DAI to apeUSD'),
+      ).toBeDefined(),
+    );
+  });
+
+  test('should render warning icon with correct tooltip for ETH-ETH -> APE-APEETH', async () => {
+    userEvent.setup();
+    renderComponent({
+      destinationTokenAddress: ApeEthOmnichainContract,
+    });
+    const warningIcon = screen.getByRole('img');
+    expect(warningIcon).toBeDefined();
+    userEvent.hover(warningIcon);
+    await waitFor(() =>
+      expect(
+        screen.queryByText('For a 1:1 conversion, use stETH to apeETH'),
+      ).toBeDefined(),
+    );
+  });
+
+  test('should render warning icon with correct tooltip for ARB-ETH -> APE-APEETH', async () => {
+    userEvent.setup();
+    renderComponent({
+      sourceTokenAddress: zeroAddress as Address,
+      sourceTokenChainId: ChainId.ARBITRUM,
+      destinationTokenAddress: ApeEthOmnichainContract,
+    });
+    const warningIcon = screen.getByRole('img');
+    expect(warningIcon).toBeDefined();
+    userEvent.hover(warningIcon);
+    await waitFor(() =>
+      expect(
+        screen.queryByText('For a 1:1 conversion, use stETH to apeETH'),
       ).toBeDefined(),
     );
   });

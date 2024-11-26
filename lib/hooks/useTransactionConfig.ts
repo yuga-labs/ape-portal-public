@@ -1,29 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
 import { usePortalStore } from '../store/usePortalStore.ts';
-import {
-  Address,
-  isAddress,
-  isAddressEqual,
-  parseUnits,
-  zeroAddress,
-} from 'viem';
+import { isAddress, parseUnits, zeroAddress } from 'viem';
 import {
   ActionType,
   bigintSerializer,
-  BridgeId,
   ChainId,
   SwapActionConfig,
   SwapDirection,
-  TokenInfo,
 } from '@decent.xyz/box-common';
 import { useAccount } from 'wagmi';
 import { UseBoxActionArgs } from '@decent.xyz/box-hooks';
 import { InputType } from '../utils/constants.ts';
 import { useApeContext } from '../providers/ape/apeProvider.context.ts';
-import {
-  ApeCoinMainnetArbitrumContract,
-  ApeCoinMainnetEthereumContract,
-} from '../utils/utils.ts';
 
 const DisabledTransactionConfig: UseBoxActionArgs = {
   sender: zeroAddress,
@@ -40,16 +28,6 @@ const DisabledTransactionConfig: UseBoxActionArgs = {
   },
   enable: false,
 };
-
-function isApechainOrApecoin(token: TokenInfo): boolean {
-  if (token.chainId === ChainId.APE || token.chainId === ChainId.APE_CURTIS) {
-    return true;
-  }
-  return (
-    isAddressEqual(token.address as Address, ApeCoinMainnetArbitrumContract) ||
-    isAddressEqual(token.address as Address, ApeCoinMainnetEthereumContract)
-  );
-}
 
 export const useTransactionConfig = (): UseBoxActionArgs => {
   const { destinationAddress } = useApeContext();
@@ -132,15 +110,6 @@ export const useTransactionConfig = (): UseBoxActionArgs => {
       actionConfig: actionConfig,
       enable: true,
     };
-
-    // For decent's initial ApeChain OFT support, bridge transactions must set bridgeId property if ApeChain or ApeCoin ARB is involved in the TX
-    if (
-      sourceToken.token.chainId !== destinationToken.token.chainId &&
-      (isApechainOrApecoin(sourceToken.token) ||
-        isApechainOrApecoin(destinationToken.token))
-    ) {
-      newUseBoxActionArgs.bridgeId = BridgeId.OFT;
-    }
 
     if (
       JSON.stringify(useBoxActionArgs, bigintSerializer) !==

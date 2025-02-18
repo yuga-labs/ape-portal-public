@@ -29,7 +29,7 @@ export const SolanaModule = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       layout={'position'}
-      className="aw-inline-flex aw-w-full aw-flex-col aw-items-start aw-justify-start aw-gap-2.5 aw-rounded aw-border aw-border-white/20 aw-bg-apeCtaBlue/50 aw-px-3 aw-pt-2 md:aw-px-5 md:aw-pt-5"
+      className="aw-inline-flex aw-w-full aw-flex-col aw-items-start aw-justify-start aw-gap-2.5 aw-rounded aw-border aw-border-white/20 aw-bg-primaryDark/50 aw-px-3 aw-pt-2 md:aw-px-5 md:aw-pt-5"
     >
       <p
         className={
@@ -49,7 +49,7 @@ export const SolanaModule = () => {
         >
           <div
             className={
-              'aw-relative aw-inline-flex aw-size-full aw-w-full aw-items-center aw-justify-center aw-overflow-hidden aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-font-dmmono aw-text-[16px] aw-font-medium aw-text-white md:aw-text-[18px]'
+              'aw-relative aw-inline-flex aw-size-full aw-w-full aw-items-center aw-justify-center aw-overflow-hidden aw-rounded-[5px] aw-bg-primaryDark aw-text-center aw-font-dmmono aw-text-[16px] aw-font-medium aw-text-text-primary md:aw-text-[18px]'
             }
           >
             Go To Solana Bridge

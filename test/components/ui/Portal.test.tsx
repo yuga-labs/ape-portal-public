@@ -219,7 +219,7 @@ describe('ApePortal', () => {
       'data-headlessui-state',
       'selected',
     );
-    expectSourceAndDestinationTokens('MATIC', 'APE');
+    expectSourceAndDestinationTokens('POL', 'APE');
     expect(getState().sourceToken.token.chainId).toBe(ChainId.POLYGON);
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
   });
@@ -648,7 +648,7 @@ describe('ApePortal', () => {
     const swapTab = screen.getByTestId('tab-1');
     const bridgeTabButton = screen.getByText(/bridge/i);
     const swapTabButton = screen.getByText(/swap/i);
-    expectSourceAndDestinationTokens('MATIC', 'APE');
+    expectSourceAndDestinationTokens('POL', 'APE');
     expect(getState().sourceToken.token.chainId).toBe(ChainId.POLYGON);
     expect(getState().destinationToken.token.chainId).toBe(ChainId.APE);
     // 1. Switch to the swap tab
@@ -663,7 +663,7 @@ describe('ApePortal', () => {
     await userEvent.click(bridgeTabButton);
     expect(bridgeTab.getAttribute('class')).toMatch(SelectedTabClassRegex);
     expect(swapTab.getAttribute('class')).toMatch(UnselectedTabClassRegex);
-    expectSourceAndDestinationTokens('MATIC', 'APE');
+    expectSourceAndDestinationTokens('POL', 'APE');
   });
 
   it('shows Ethereum ETH as source on bridge when user wallet is on Ethereum', async () => {

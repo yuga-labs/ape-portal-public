@@ -1,7 +1,13 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { cn } from '../../utils/utils.ts';
-import apeOutline from '../../assets/svg/ape-logo-outline.svg';
-import { motion, useMotionTemplate, useSpring } from 'framer-motion';
+import {
+  motion,
+  MotionValue,
+  useMotionTemplate,
+  useSpring,
+} from 'framer-motion';
+import { ApeOutline } from '../icons/ApeOutline.tsx';
+import { useApeContext } from '../../providers/ape/apeProvider.context.ts';
 
 export const SpotlightBackground = ({
   children,
@@ -48,8 +54,15 @@ export const SpotlightBackground = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const background = useMotionTemplate`linear-gradient(to top, rgb(2, 70, 205, 1) 0%, transparent 100px), radial-gradient(circle at ${mousePosX}px ${mousePosY}px, transparent 50px, rgb(2, 70, 205, 1) 350px)`;
+  const themeToMotionTemplate: {
+    [key: string]: MotionValue<string>;
+  } = {
+    ape: useMotionTemplate`linear-gradient(to top, rgb(2, 70, 205, 1) 0%, transparent 100px), radial-gradient(circle at ${mousePosX}px ${mousePosY}px, transparent 50px, rgb(2, 70, 205, 1) 350px)`,
+    light: useMotionTemplate`linear-gradient(to top, rgb(240, 240, 240, 1) 0%, transparent 100px), radial-gradient(circle at ${mousePosX}px ${mousePosY}px, transparent 50px, rgb(240, 240, 240, 1) 350px)`,
+    dark: useMotionTemplate`linear-gradient(to top, rgb(38, 38, 38, 1) 0%, transparent 100px), radial-gradient(circle at ${mousePosX}px ${mousePosY}px, transparent 50px, rgb(38, 38, 38, 1) 350px)`,
+  };
 
+  const background = themeToMotionTemplate[useApeContext().theme ?? 'ape'];
   return (
     <motion.div
       ref={spotlightDivRef}
@@ -65,13 +78,11 @@ export const SpotlightBackground = ({
         'aw-rounded-b-[5px]': showBranding,
       })}
     >
-      <img
+      <ApeOutline
         className={cn(
-          'aw-absolute aw-top-[-45%] aw-object-cover',
-          showBranding ? 'aw-size-[150%]' : 'aw-size-[200%]',
+          'aw-absolute aw-object-fill aw-stroke-primary aw-border-2 md:aw-top-[50%] aw-top-[45%] md:aw-left-[55%] aw-left-[65%] aw--translate-x-1/2 aw--translate-y-1/2',
+          showBranding ? 'md:aw-size-[200%] aw-size-[250%]' : 'aw-size-[200%]',
         )}
-        src={apeOutline}
-        alt={'Background Ape'}
       />
       <div
         className={cn(

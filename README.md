@@ -386,4 +386,26 @@ When Ape Portal is used with both Bridge and Swap components, the portal will au
 **Ape Portal** uses Tailwind CSS for styling, but with the prefix `aw-` to prevent conflicts with other apps.  
 You can override these classes to fit your app's design.
 
+### Themes
+
+In addition to the default Ape Blue theme the portal supports light and dark themes.
+
+> **_NOTE:_** Setting the theme based on user settings is not supported at this time.
+
+To enable a theme you must pass the name of the theme to the `theme` property in the `ApeConfig` object. The supported themes are:
+
+- `light`
+- `dark`
+
+```js
+  const apeConfig: ApeConfig = {
+    openConnectModal,
+    theme: 'dark', // "light"
+  };
+
+  <ApeProvider config={apeConfig}>
+    <ApePortal />
+  </ApeProvider>
+```
+
 ---

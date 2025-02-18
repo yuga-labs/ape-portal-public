@@ -11,7 +11,7 @@ export const SwitchIcon = ({ ...props }) => {
           <path
             id="Path"
             d="M5.95119 17.7317V4.07318"
-            stroke="white"
+            className={'aw-stroke-text-primary'}
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -19,7 +19,7 @@ export const SwitchIcon = ({ ...props }) => {
           <path
             id="Path_2"
             d="M11.2439 13.2927L6.12195 18.4146L1 13.2927"
-            stroke="white"
+            className={'aw-stroke-text-primary'}
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -29,7 +29,7 @@ export const SwitchIcon = ({ ...props }) => {
           <path
             id="Path_3"
             d="M17.561 1.68289L17.561 15.3414"
-            stroke="white"
+            className={'aw-stroke-text-primary'}
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -37,7 +37,7 @@ export const SwitchIcon = ({ ...props }) => {
           <path
             id="Path_4"
             d="M12.2683 6.12195L17.3903 0.999997L22.5122 6.12195"
-            stroke="white"
+            className={'aw-stroke-text-primary'}
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"

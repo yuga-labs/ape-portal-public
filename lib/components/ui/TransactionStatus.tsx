@@ -176,10 +176,10 @@ function TransactionStatus({
       centerContents
       renderContent={() => (
         <div className="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center">
-          <div className="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]">
+          <div className="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-text-primary md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]">
             {status}
           </div>
-          <h2 className="aw-mt-8 aw-text-[16px] aw-text-white">
+          <h2 className="aw-mt-8 aw-text-[16px] aw-text-text-primary">
             {statusSecondary}
           </h2>
           <div
@@ -219,7 +219,7 @@ function TransactionStatus({
           <div className="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0">
             <div
               className={cn(
-                'aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white',
+                'aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-text-primary',
                 {
                   'aw-invisible':
                     status === BridgeState.COMPLETED ||
@@ -251,7 +251,7 @@ function TransactionStatus({
               <a
                 href={LINK_SUPPORT}
                 target="_blank"
-                className="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                className="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-text-primary/70 aw-underline"
               >
                 {isSwap ? 'Swap' : 'Bridge'} Support
               </a>

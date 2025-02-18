@@ -10,6 +10,7 @@ export const CrossIcon = ({ size = 24, ...props }) => {
     >
       <g id="icon-widgets">
         <path
+          className={'aw-stroke-primary'}
           id="Vector 1"
           d="M27 15L15.3327 26.6673"
           stroke="white"
@@ -18,6 +19,7 @@ export const CrossIcon = ({ size = 24, ...props }) => {
           strokeLinejoin="round"
         />
         <path
+          className={'aw-stroke-primary'}
           id="Vector 2"
           d="M27 27L15.3327 15.3327"
           stroke="white"

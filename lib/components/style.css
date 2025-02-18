@@ -64,12 +64,16 @@
   }
 }
 
+.decent-dialog div {
+  color: theme('colors.text-primary') !important;
+}
+
 .decent-dialog .box-load-shine {
   background: linear-gradient(
     90deg,
-    theme('colors.apeBlue') 0%,
-    theme('colors.apeDarkBlue') 50%,
-    theme('colors.apeBlue') 100%
+    theme('colors.primary') 0%,
+    theme('colors.primaryDark') 50%,
+    theme('colors.primary') 100%
   ) !important;
   background-size: 400% 400% !important;
   animation: slide 1s infinite alternate !important;
@@ -79,7 +83,7 @@
   width: 100% !important;
   height: 3.5em;
   border-radius: 0.6em !important;
-  border-top: 2px solid rgb(2, 70, 205, 0.4);
+  border-top: 2px solid theme('colors.primary') !important;
   font-family: DMSans, serif;
   background: linear-gradient(
     180deg,
@@ -96,12 +100,12 @@
   width: 100%;
   background-color: transparent;
   margin-left: 10px;
-  color: #ffffff;
+  color: theme('colors.text-primary');
   text-overflow: ellipsis;
 }
 
 .decent-dialog .box-address-search-box > input::placeholder {
-  color: #ffffff;
+  color: theme('colors.text-primary');
   opacity: 50%;
 }
 
@@ -135,7 +139,7 @@
   font-family: DMSans, serif;
   font-weight: bold;
   font-size: 1em;
-  color: rgba(157, 190, 255, 1) !important;
+  color: theme('colors.text-secondary') !important;
   padding: 0;
   letter-spacing: 2px;
 }
@@ -148,7 +152,7 @@
 
 .decent-dialog .box-section-title::after {
   content: ':';
-  color: #7dd3fc !important;
+  color: theme('colors.text-secondary') !important;
 }
 
 .decent-dialog .box-token-row div {
@@ -192,17 +196,17 @@
 }
 
 .decent-dialog .box-token-row:hover {
-  background: theme('colors.apeDarkBlue');
+  background: theme('colors.accent');
 }
 
 .decent-dialog .box-popular-chip {
-  background: theme('colors.apeBlue');
+  background: theme('colors.primary');
   padding: 6px 12px !important;
   border: none;
 }
 
 .decent-dialog .box-popular-chip:hover {
-  background: theme('colors.apeDarkBlue');
+  background: theme('colors.primaryDark');
 }
 
 .decent-dialog .box-popular-chip span {
@@ -227,6 +231,10 @@
   color: white;
   font-size: 1em;
   font-family: 'DMSans';
+}
+
+.decent-dialog .box-font-light.box-text-xs {
+  font-weight: normal;
 }
 
 .box-missing-img {

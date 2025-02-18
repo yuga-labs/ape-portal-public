@@ -93,7 +93,7 @@ export const ChainDropdown = ({
                 selected={solanaSelected}
               >
                 <SolanaLogo className={'aw-aspect-square aw-size-6'} />
-                <div className="aw-text-center aw-font-dmmono aw-text-sm aw-font-medium aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-white">
+                <div className="aw-text-center aw-font-dmmono aw-text-sm aw-font-medium aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-text-primary">
                   Solana
                 </div>
               </ChainPillButton>

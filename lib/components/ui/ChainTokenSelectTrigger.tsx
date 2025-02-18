@@ -15,7 +15,7 @@ export const ChainTokenSelectTrigger = ({
   return (
     <div
       className={cn(
-        'aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80',
+        'aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-text-text-primary aw-rounded-full aw-border-t-2 aw-border-primaryLight md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80',
       )}
     >
       <div className="aw-relative aw-z-0 aw-mr-2">
@@ -37,11 +37,7 @@ export const ChainTokenSelectTrigger = ({
           </div>
         )}
       </div>
-      <span
-        className={
-          'aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]'
-        }
-      >
+      <span className={'aw-text-[16px] aw-uppercase md:aw-text-[22px]'}>
         {currentToken.token.symbol}
       </span>
       <ArrowDown size={35} />

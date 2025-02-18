@@ -5,7 +5,7 @@ function CloseButton({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'aw-absolute aw-right-2 aw-top-2 aw-rounded-full aw-bg-apeAccent aw-duration-700 hover:aw-scale-125',
+        'aw-absolute aw-right-2 aw-top-2 aw-rounded-full aw-bg-text-primary/80 aw-duration-700 hover:aw-scale-125',
         className,
       )}
     >

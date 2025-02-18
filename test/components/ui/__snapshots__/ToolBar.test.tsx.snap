@@ -9,7 +9,7 @@ exports[`components/ui/ToolBar > should allow user to Add Network when connected
         class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
       >
         <div
-          class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+          class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-text-primary aw-underline aw-opacity-50"
         >
           <button
             class="aw-flex disabled:aw-cursor-not-allowed"
@@ -45,7 +45,7 @@ exports[`components/ui/ToolBar > should allow user to Add Network when connected
       class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
     >
       <div
-        class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+        class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-text-primary aw-underline aw-opacity-50"
       >
         <button
           class="aw-flex disabled:aw-cursor-not-allowed"
@@ -138,7 +138,7 @@ exports[`components/ui/ToolBar > should not allow user to Add Network when conne
         class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
       >
         <div
-          class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+          class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-text-primary aw-underline aw-opacity-50"
         >
           <button
             class="aw-flex disabled:aw-cursor-not-allowed"
@@ -175,7 +175,7 @@ exports[`components/ui/ToolBar > should not allow user to Add Network when conne
       class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
     >
       <div
-        class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+        class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-text-primary aw-underline aw-opacity-50"
       >
         <button
           class="aw-flex disabled:aw-cursor-not-allowed"
@@ -269,7 +269,7 @@ exports[`components/ui/ToolBar > should render toolbar with connected wallet 1`]
         class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
       >
         <div
-          class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+          class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-text-primary aw-underline aw-opacity-50"
         >
           <button
             class="aw-flex disabled:aw-cursor-not-allowed"
@@ -305,7 +305,7 @@ exports[`components/ui/ToolBar > should render toolbar with connected wallet 1`]
       class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
     >
       <div
-        class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+        class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-text-primary aw-underline aw-opacity-50"
       >
         <button
           class="aw-flex disabled:aw-cursor-not-allowed"
@@ -395,7 +395,7 @@ exports[`components/ui/ToolBar > should render toolbar with default values 1`] =
     class="aw-mt-1 aw-flex aw-h-6 aw-w-full aw-flex-row aw-justify-center"
   >
     <div
-      class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-white aw-underline aw-opacity-50"
+      class="aw-flex aw-flex-row aw-gap-x-8 aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-leading-[14px] aw-text-text-primary aw-underline aw-opacity-50"
     >
       <button
         class="aw-flex disabled:aw-cursor-not-allowed"

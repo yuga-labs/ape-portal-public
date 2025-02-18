@@ -240,10 +240,10 @@ export const ActionButton = ({
             'aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-w-full',
             style === ActionButtonStyle.GradientFull
               ? 'aw-absolute aw-left-1/2 aw-top-1/2 aw--translate-x-1/2 aw--translate-y-1/2 aw-cursor-not-allowed aw-text-blue-900'
-              : 'aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white',
+              : 'aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-primaryDark aw-text-center aw-text-text-primary',
             buttonDisabled &&
               style != ActionButtonStyle.GradientFull &&
-              'aw-bg-apeCtaBlueDisabled aw-text-apeCtaTextDisabled',
+              'aw-text-text-disabled',
           )}
         >
           <motion.div

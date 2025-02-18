@@ -18,6 +18,8 @@ export interface ApeConfig {
   enableSolanaRedirect?: boolean;
   /* Url a user will be redirected to for Solana */
   solanaRedirectUrl?: string;
+  /* Theme of the portal. Default is ape */
+  theme?: 'ape' | 'dark' | 'light';
 }
 
 export interface ApeProviderProps {

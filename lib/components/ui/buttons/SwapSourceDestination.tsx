@@ -37,13 +37,13 @@ export const SwapSourceDestination = ({
           }}
           aria-label={'swap-source-destination'}
           className={
-            'aw-gradient-lavender-coral-sunset aw-relative aw-flex aw-size-full aw-items-center aw-justify-center aw-rounded-full aw-bg-apeCtaBlue aw-p-[3px] aw-duration-500 hover:aw-scale-110 disabled:aw-cursor-not-allowed'
+            'aw-gradient-lavender-coral-sunset aw-relative aw-flex aw-size-full aw-items-center aw-justify-center aw-rounded-full aw-bg-primaryDark aw-p-[3px] aw-duration-500 hover:aw-scale-110 disabled:aw-cursor-not-allowed'
           }
           disabled={loading || disabled}
         >
           <SwitchIcon
             className={
-              'aw-z-60 aw-size-full aw-rounded-full aw-bg-apeCtaBlue aw-p-2 aw-duration-1000 aw-animate-in hover:aw-rotate-180'
+              'aw-z-60 aw-size-full aw-rounded-full aw-bg-primaryDark aw-p-2 aw-duration-1000 aw-animate-in hover:aw-rotate-180'
             }
           />
         </button>

@@ -9,7 +9,6 @@ import Granim from 'granim';
 import { cn, createGranimConfig } from '../../utils/utils.ts';
 import { ModalPortal } from '../ui/modal/ModalPortal.tsx';
 import { TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
-import apePortalLogo from '../../assets/svg/ape-portal-logo.svg';
 import { TabButton } from '../ui/buttons/TabButton.tsx';
 import { TokenSwap } from '../ui/TokenSwap.tsx';
 import { useApeContext } from '../../providers/ape/apeProvider.context.ts';
@@ -18,6 +17,7 @@ import { useTabManager } from '../../hooks/useTabManager.ts';
 import { Buy } from '../buy/buy.tsx';
 import { GradientCanvas } from '../ui/GradientCanvas.tsx';
 import ErrorModal from '../ui/modal/ErrorModal.tsx';
+import { ApePortalLogo } from '../icons/ApePortalLogo.tsx';
 
 export type ApePortalProps = Omit<PortalProps, 'showBranding'> & {
   tabConfig?: TabConfig;
@@ -28,7 +28,7 @@ export const ApePortal = ({
   tabConfig = DefaultTabConfig,
   className,
 }: ApePortalProps) => {
-  const { enableOnramp } = useApeContext();
+  const { enableOnramp, theme } = useApeContext();
   useEffect(() => {
     new Granim(createGranimConfig('#aw-gradient-bg', 'diagonal'));
   }, []);
@@ -36,7 +36,7 @@ export const ApePortal = ({
     useTabManager(tabConfig);
 
   return (
-    <div className={cn('aw-overflow-y-hidden', className)}>
+    <div className={cn('aw-overflow-y-hidden', className, theme)}>
       <div className="aw-relative aw-z-50 aw-flex aw-max-w-[500px] aw-items-center aw-justify-center aw-text-clip aw-rounded-[10px] aw-p-1 md:aw-w-[550px]">
         <GradientCanvas id={'aw-gradient-bg'} />
         <ModalPortal />
@@ -46,14 +46,10 @@ export const ApePortal = ({
           className="aw-relative aw-z-50 aw-flex aw-size-full aw-flex-col aw-text-clip"
         >
           <div className="aw-shadow-tab-header">
-            <img
-              src={apePortalLogo}
-              alt={'Ape Portal'}
-              className="aw-z-40 aw-h-[88px] aw-w-full aw-rounded-t-[5px] aw-bg-ape-portal-logo aw-py-4"
-            />
+            <ApePortalLogo className="aw-z-40 aw-h-[88px] aw-w-full aw-rounded-t-[5px] aw-bg-ape-portal-logo aw-py-4" />
             <TabList
               className={
-                'aw-z-40 aw-flex aw-w-full aw-flex-row aw-gap-x-0.5 aw-border-b aw-border-b-apeAccent aw-bg-ape-blue-700 aw-px-0.5 aw-pt-0.5'
+                'aw-z-40 aw-flex aw-w-full aw-flex-row aw-gap-x-0.5 aw-border-b aw-border-b-accent aw-bg-primaryDark aw-px-0.5 aw-pt-0.5'
               }
             >
               {[...tabs].map((portalType: PortalType, index) => {
@@ -70,7 +66,7 @@ export const ApePortal = ({
             </TabList>
           </div>
           <TabPanels
-            /** TODO: restore aw-bg-apeBlue here after spotlight bg stuff is repaired */
+            /** TODO: restore aw-bg-primary here after spotlight bg stuff is repaired */
             className={'aw-relative aw-z-50 aw-size-full aw-min-h-[470px]'}
           >
             <TabPanel unmount={false}>

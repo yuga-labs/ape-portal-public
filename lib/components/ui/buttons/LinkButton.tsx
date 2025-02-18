@@ -8,7 +8,7 @@ export const LinkButton = ({ text, url }: { text: string; url: string }) => {
       <BaseButton>
         <div
           className={cn(
-            'aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]',
+            'aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-text-text-primary aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]',
           )}
         >
           {text}

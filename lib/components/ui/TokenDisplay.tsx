@@ -1,8 +1,21 @@
 import { getChainName, TokenInfo } from '@decent.xyz/box-common';
 import { ChainIcon, TokenLogo } from '@decent.xyz/box-ui';
 import pulse from '../../assets/lotties/pulse.json';
+import blackPulse from '../../assets/lotties/black-pulse.json';
+import whitePulse from '../../assets/lotties/white-pulse.json';
 import Lottie from 'lottie-react';
 import { cn } from '../../utils/utils';
+import { useApeContext } from '../../providers/ape/apeProvider.context.ts';
+
+interface ThemeAnimationMap {
+  [theme: string]: object;
+}
+
+const themeToAnimation: ThemeAnimationMap = {
+  ape: pulse,
+  dark: whitePulse,
+  light: blackPulse,
+};
 
 function TokenDisplay({
   token,
@@ -19,6 +32,7 @@ function TokenDisplay({
   showChain?: boolean;
   left?: boolean;
 }) {
+  const { theme } = useApeContext();
   return (
     <div
       className={cn('aw-relative aw-flex aw-w-1/2 aw-items-center', {
@@ -33,7 +47,7 @@ function TokenDisplay({
       >
         <TokenLogo
           className={
-            'aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1'
+            'aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1'
           }
           token={token}
         />
@@ -45,7 +59,7 @@ function TokenDisplay({
         )}
         <div
           className={
-            'aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100'
+            'aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100'
           }
         >
           <div className="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50">
@@ -63,7 +77,12 @@ function TokenDisplay({
             className="aw-absolute aw-z-60 aw-w-[200%] md:aw-w-[300%]"
             data-testid="animation-pulse-token"
           >
-            <Lottie animationData={pulse} loop={true} />
+            <Lottie
+              animationData={
+                theme ? themeToAnimation[theme] : themeToAnimation['ape']
+              }
+              loop={true}
+            />
           </div>
         )}
       </div>

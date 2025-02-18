@@ -7,8 +7,10 @@ import { BridgeTransactionData } from '../../classes/BridgeTransactionData.ts';
 import { WarningIcon } from '../icons/WarningIcon.tsx';
 import { HIGH_SLIPPAGE_WARNING } from './TransactionWarnings.tsx';
 import { DecimalInput } from './input/DecimalInput.tsx';
+import { useApeContext } from '../../providers/ape/apeProvider.context.ts';
 
 export const SlippageInputModule = () => {
+  const { theme } = useApeContext();
   const { bridgeTransactionData, setSlippagePercentage } = usePortalStore(
     (state) => state,
   );
@@ -76,17 +78,17 @@ export const SlippageInputModule = () => {
   return (
     <div
       className={
-        'aw-mb-2 aw-flex aw-flex-row aw-items-center aw-justify-between'
+        'aw-mb-2 aw-flex aw-flex-row aw-items-center aw-justify-between aw-text-text-primary'
       }
     >
-      <div className="aw-font-dmsans aw-text-[15px] aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70">
+      <div className="aw-font-dmsans aw-text-[15px] aw-leading-[18px] aw-tracking-wide aw-opacity-70">
         Max slippage:
       </div>
       <Popover className="aw-relative">
         <PopoverButton>
           <div
             className={cn(
-              'aw-transition-colors aw-flex aw-flex-row aw-items-center aw-justify-end aw-gap-[3px] aw-gap-x-2 aw-rounded-[5px] aw-bg-apeDarkBlue/25 aw-py-0.5 aw-pl-4 aw-pr-1',
+              'aw-transition-colors aw-flex aw-flex-row aw-items-center aw-justify-end aw-gap-[3px] aw-gap-x-2 aw-rounded-[5px] aw-bg-primaryDark/25 aw-py-0.5 aw-pl-4 aw-pr-1',
               {
                 'aw-bg-warning/25': bridgeTransactionData.isSlippageHigh,
               },
@@ -94,7 +96,7 @@ export const SlippageInputModule = () => {
           >
             <div
               className={cn(
-                'aw-text-center aw-font-dmsans aw-text-[14px] aw-tracking-wide aw-text-white',
+                'aw-text-center aw-font-dmsans aw-text-[14px] aw-tracking-wide',
                 {
                   'aw-text-warning aw-font-bold':
                     bridgeTransactionData.isSlippageHigh,
@@ -105,8 +107,8 @@ export const SlippageInputModule = () => {
               {bridgeTransactionData.slippagePercentage ===
                 BridgeTransactionData.DEFAULT_SLIPPAGE && 'Auto'}
             </div>
-            <div className="aw-flex aw-items-center aw-justify-start aw-gap-2.5 aw-rounded-[60px] aw-bg-[#002775] aw-p-1.5">
-              <PencilIcon className="aw-size-3 aw-text-white" />
+            <div className="aw-flex aw-items-center aw-justify-start aw-gap-2.5 aw-rounded-[60px] aw-bg-primaryDark aw-p-1.5">
+              <PencilIcon className="aw-size-3" />
             </div>
           </div>
         </PopoverButton>
@@ -115,17 +117,22 @@ export const SlippageInputModule = () => {
           className="aw-z-100 aw-flex aw-flex-col"
         >
           {({ close }) => (
-            <div className="aw-inline-flex aw-min-h-[164px] aw-w-[320px] aw-flex-col aw-items-start aw-justify-center aw-gap-3 aw-rounded-[10px] aw-border aw-border-white/20 aw-bg-[#002775] aw-px-5 aw-py-[17px]">
+            <div
+              className={cn(
+                'aw-inline-flex aw-min-h-[164px] aw-w-[320px] aw-flex-col aw-items-start aw-justify-center aw-gap-3 aw-rounded-[10px] aw-border aw-border-text-primary/20 aw-bg-primary aw-px-5 aw-py-[17px]',
+                theme,
+              )}
+            >
               <div className="aw-inline-flex aw-items-start aw-justify-between aw-self-stretch">
-                <div className="aw-text-center aw-font-dmsans aw-text-sm aw-font-bold aw-leading-[18px] aw-text-white">
+                <div className="aw-text-center aw-font-dmsans aw-text-sm aw-font-bold aw-leading-[18px] aw-text-text-primary">
                   Max slippage
                 </div>
-                <div className="aw-text-right aw-font-dmsans aw-text-sm aw-font-bold aw-leading-[18px] aw-text-white">
+                <div className="aw-text-right aw-font-dmsans aw-text-sm aw-font-bold aw-leading-[18px] aw-text-text-primary">
                   {customSlippageEnabled ? 'Custom' : 'Auto'}
                 </div>
               </div>
-              <div className="aw-inline-flex aw-items-center aw-justify-start aw-gap-2.5 aw-self-stretch aw-border-b aw-border-white/25 aw-pb-4">
-                <div className="aw-flex aw-h-9 aw-shrink aw-grow aw-basis-0 aw-items-center aw-justify-center aw-rounded aw-border aw-border-white/20 aw-bg-[#002d86] aw-p-[3px]">
+              <div className="aw-inline-flex aw-items-center aw-justify-start aw-gap-2.5 aw-self-stretch aw-border-b aw-border-text-primary/25 aw-pb-4">
+                <div className="aw-flex aw-h-9 aw-shrink aw-grow aw-basis-0 aw-items-center aw-justify-center aw-rounded aw-border aw-border-text-primary/20 aw-bg-primaryDark aw-p-[3px]">
                   <button
                     onClick={() => {
                       setError(undefined);
@@ -135,11 +142,11 @@ export const SlippageInputModule = () => {
                     className={cn(
                       'aw-flex aw-items-center aw-justify-center aw-gap-2.5 aw-rounded aw-px-2.5 aw-py-1.5',
                       {
-                        'aw-bg-[#0054fa]': !customSlippageEnabled,
+                        'aw-bg-accent': !customSlippageEnabled,
                       },
                     )}
                   >
-                    <div className="aw-text-center aw-font-dmsans aw-text-[13px] aw-font-bold aw-leading-[18px] aw-text-white">
+                    <div className="aw-text-center aw-font-dmsans aw-text-[13px] aw-font-bold aw-leading-[18px] aw-text-text-primary">
                       Auto
                     </div>
                   </button>
@@ -150,19 +157,19 @@ export const SlippageInputModule = () => {
                     className={cn(
                       'aw-flex aw-items-center aw-justify-center aw-gap-2.5 aw-rounded aw-px-2.5 aw-py-1.5',
                       {
-                        'aw-bg-[#0054fa]': customSlippageEnabled,
+                        'aw-bg-accent': customSlippageEnabled,
                       },
                     )}
                   >
-                    <div className="aw-text-center aw-font-dmsans aw-text-[13px] aw-font-bold aw-leading-[18px] aw-text-white">
+                    <div className="aw-text-center aw-font-dmsans aw-text-[13px] aw-font-bold aw-leading-[18px] aw-text-text-primary">
                       Custom
                     </div>
                   </button>
                 </div>
                 <div
                   className={cn(
-                    'aw-flex aw-w-full aw-flex-row aw-gap-x-2 aw-self-stretch aw-text-ellipsis aw-rounded aw-border aw-border-white/20 aw-bg-[#002d86] aw-p-2 aw-text-right aw-font-dmsans  aw-text-sm aw-font-medium aw-text-[#4e89ff]',
-                    { 'aw-text-white': customSlippageEnabled },
+                    'aw-flex aw-w-full aw-flex-row aw-gap-x-2 aw-self-stretch aw-text-ellipsis aw-rounded aw-border aw-border-text-primary/20 aw-bg-primaryDark aw-p-2 aw-text-right aw-font-dmsans  aw-text-sm aw-font-medium aw-text-text-primary',
+                    { 'aw-text-text-primary': customSlippageEnabled },
                   )}
                 >
                   <DecimalInput
@@ -171,7 +178,7 @@ export const SlippageInputModule = () => {
                     disabled={!customSlippageEnabled}
                     placeholder={'Amount'}
                     className={cn(
-                      'aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-text-right  [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none',
+                      'aw-w-full aw-self-stretch aw-text-ellipsis aw-bg-transparent aw-text-right [appearance:aw-textfield] focus:aw-border-indigo-500 focus:aw-outline-none focus:aw-ring-indigo-500 disabled:aw-opacity-50 [&::-webkit-inner-spin-button]:aw-appearance-none [&::-webkit-outer-spin-button]:aw-appearance-none',
                       {
                         'aw-cursor-not-allowed': !customSlippageEnabled,
                       },
@@ -192,7 +199,7 @@ export const SlippageInputModule = () => {
                 onClick={() => {
                   handleApplyChanges(close);
                 }}
-                className="aw-inline-flex aw-items-center aw-justify-center aw-gap-2.5 aw-self-stretch aw-rounded aw-bg-[#0054fa] aw-px-2.5 aw-py-[9px] aw-text-center aw-font-dmsans aw-text-[13px] aw-font-bold aw-leading-[18px] aw-text-white aw-transition-colors aw-duration-200 hover:aw-bg-[#053389]"
+                className="aw-inline-flex aw-items-center aw-justify-center aw-gap-2.5 aw-self-stretch aw-rounded aw-bg-accent aw-px-2.5 aw-py-[9px] aw-text-center aw-font-dmsans aw-text-[13px] aw-font-bold aw-leading-[18px] aw-text-text-primary aw-transition-colors aw-duration-200 hover:aw-bg-primaryDark"
               >
                 Apply changes
               </button>

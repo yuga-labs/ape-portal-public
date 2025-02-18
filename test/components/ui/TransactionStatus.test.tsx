@@ -8,6 +8,7 @@ import { BridgeTransactionData } from '../../../lib/classes/BridgeTransactionDat
 import { AllTheProviders, customRender, setupConfig } from '../../index';
 import { defaultApeConfig } from '../../utils.ts';
 import { useDecentScan } from '@decent.xyz/box-hooks';
+import { ApeProvider } from '../../../lib';
 
 const TEST_TX_HASH = '0x1234567890123456789012345678901234567890';
 
@@ -36,7 +37,11 @@ describe('components/ui/TransactionStatus', () => {
 
   test('should render status with bridge copy', async () => {
     const isSwap = false;
-    const transactionStatus = render(<TransactionStatus isSwap={isSwap} />);
+    const transactionStatus = render(
+      <ApeProvider config={defaultApeConfig}>
+        <TransactionStatus isSwap={isSwap} />
+      </ApeProvider>,
+    );
     const viewTransactionButton = screen.getByText(/view transaction/i);
     const viewTransactionLink = viewTransactionButton.closest('a');
     const bridgingText = screen.getByText(/bridging/i);
@@ -129,7 +134,11 @@ describe('components/ui/TransactionStatus', () => {
 
   test('should render status with swap copy', async () => {
     const isSwap = true;
-    const transactionStatus = render(<TransactionStatus isSwap={isSwap} />);
+    const transactionStatus = render(
+      <ApeProvider config={defaultApeConfig}>
+        <TransactionStatus isSwap={isSwap} />
+      </ApeProvider>,
+    );
     const viewTransactionButton = screen.getByText(/view transaction/i);
     const swapText = screen.getByText(/swapping/i);
     const supportText = screen.getByText(/swap support/i);
@@ -174,7 +183,11 @@ describe('components/ui/TransactionStatus', () => {
       isValidating: false,
     });
 
-    const transactionStatus = render(<TransactionStatus isSwap={isSwap} />);
+    const transactionStatus = render(
+      <ApeProvider config={defaultApeConfig}>
+        <TransactionStatus isSwap={isSwap} />
+      </ApeProvider>,
+    );
     const modal = screen.getByRole('dialog');
     const closeButton = screen.getByRole('button', { name: /close/i });
     expect(modal).toBeVisible();

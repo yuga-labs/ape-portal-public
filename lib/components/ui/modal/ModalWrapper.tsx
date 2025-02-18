@@ -34,7 +34,7 @@ export const ModalWrapperBase = ({
   return (
     <div
       className={cn(
-        'aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80',
+        'aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-accent/70 aw-scrollbar-thumb-text-primary/80',
         className,
       )}
       {...props}
@@ -102,7 +102,7 @@ export const ModalWrapper = ({
           aria-describedby={undefined}
           className={'aw-pointer-events-auto aw-size-full'}
         >
-          <div className="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white">
+          <div className="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-primaryDark aw-text-text-primary">
             {showCloseButton && (
               <Dialog.Close aria-label="Close">
                 <CloseButton className={closeButtonClassName} />

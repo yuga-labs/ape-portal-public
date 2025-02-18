@@ -24,7 +24,7 @@ export const ChainSelectorModule = ({ className }: { className?: string }) => {
     >
       <div
         className={cn(
-          'aw-inline-flex aw-h-[35px] aw-items-center aw-justify-center aw-gap-2.5 aw-rounded-[55px] aw-bg-[#1652ca] aw-px-3 aw-py-[5px] aw-duration-500 aw-animate-in aw-slide-in-from-bottom',
+          'aw-inline-flex aw-h-[35px] aw-items-center aw-justify-center aw-gap-2.5 aw-rounded-[55px] aw-bg-primaryDark aw-px-3 aw-py-[5px] aw-duration-500 aw-animate-in aw-slide-in-from-bottom',
           className,
         )}
       >
@@ -33,7 +33,7 @@ export const ChainSelectorModule = ({ className }: { className?: string }) => {
           src={getChainLogoOrFail(sourceToken.token.chainId)}
           className="aw-flex aw-size-6 aw-items-center aw-justify-center aw-rounded-[49.84px]"
         />
-        <div className="aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-uppercase aw-leading-normal aw-tracking-wide aw-text-[#c9dbff]">
+        <div className="aw-text-center aw-font-dmmono aw-text-xs aw-font-medium aw-uppercase aw-leading-normal aw-tracking-wide aw-text-text-secondary">
           {getChainName(sourceToken.token.chainId)}
         </div>
       </div>

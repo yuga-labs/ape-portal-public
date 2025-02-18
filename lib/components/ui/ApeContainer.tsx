@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import Granim from 'granim';
 import { cn, createGranimConfig } from '../../utils/utils.ts';
 import { ModalPortal } from './modal/ModalPortal.tsx';
-import apePortalLogo from '../../assets/svg/ape-portal-logo.svg';
 import { GradientCanvas } from './GradientCanvas.tsx';
+import { ApePortalLogo } from '../icons/ApePortalLogo.tsx';
 
 export type ApeContainerProps = {
   children: React.ReactNode;
@@ -48,11 +48,7 @@ export const ApeContainer = ({
     <div className={cn('aw-overflow-y-visible', className)}>
       <div className="aw-relative aw-z-50 aw-flex aw-w-[95vw] aw-max-w-[500px] aw-flex-col aw-items-center aw-justify-center aw-text-clip aw-rounded-[10px] aw-p-1 md:aw-w-[550px]">
         {showGradient && <GradientCanvas id={'aw-ape-container-bg'} />}
-        <img
-          src={apePortalLogo}
-          alt={'Ape Portal'}
-          className="aw-relative aw-z-40 aw-h-[88px] aw-w-full aw-rounded-t-[5px] aw-bg-ape-portal-logo aw-py-4"
-        />
+        <ApePortalLogo className="aw-relative aw-z-40 aw-h-[88px] aw-w-full aw-rounded-t-[5px] aw-bg-ape-portal-logo aw-py-4" />
         <ModalPortal />
         <div
           className={

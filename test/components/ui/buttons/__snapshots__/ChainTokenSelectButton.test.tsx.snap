@@ -6,7 +6,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should not render ChainI
   "baseElement": <body>
     <div>
       <div
-        class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+        class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-text-text-primary aw-rounded-full aw-border-t-2 aw-border-primaryLight md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
       >
         <div
           class="aw-relative aw-z-0 aw-mr-2"
@@ -18,12 +18,12 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should not render ChainI
           />
         </div>
         <span
-          class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+          class="aw-text-[16px] aw-uppercase md:aw-text-[22px]"
         >
           ETH
         </span>
         <svg
-          fill="none"
+          class="aw-fill-none"
           height="35"
           viewBox="0 0 24 24"
           width="35"
@@ -33,6 +33,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should not render ChainI
             id="arrow-down"
           >
             <path
+              class="aw-stroke-text-primary"
               d="M8 10L12 14L16 10"
               id="Vector"
               stroke="white"
@@ -48,7 +49,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should not render ChainI
   "connect": [Function],
   "container": <div>
     <div
-      class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+      class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-text-text-primary aw-rounded-full aw-border-t-2 aw-border-primaryLight md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
     >
       <div
         class="aw-relative aw-z-0 aw-mr-2"
@@ -60,12 +61,12 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should not render ChainI
         />
       </div>
       <span
-        class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+        class="aw-text-[16px] aw-uppercase md:aw-text-[22px]"
       >
         ETH
       </span>
       <svg
-        fill="none"
+        class="aw-fill-none"
         height="35"
         viewBox="0 0 24 24"
         width="35"
@@ -75,6 +76,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should not render ChainI
           id="arrow-down"
         >
           <path
+            class="aw-stroke-text-primary"
             d="M8 10L12 14L16 10"
             id="Vector"
             stroke="white"
@@ -146,7 +148,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should only render Chain
   "baseElement": <body>
     <div>
       <div
-        class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+        class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-text-text-primary aw-rounded-full aw-border-t-2 aw-border-primaryLight md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
       >
         <div
           class="aw-relative aw-z-0 aw-mr-2"
@@ -162,17 +164,17 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should only render Chain
             <img
               alt=""
               class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
-              src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+              src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
             />
           </div>
         </div>
         <span
-          class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+          class="aw-text-[16px] aw-uppercase md:aw-text-[22px]"
         >
           ETH
         </span>
         <svg
-          fill="none"
+          class="aw-fill-none"
           height="35"
           viewBox="0 0 24 24"
           width="35"
@@ -182,6 +184,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should only render Chain
             id="arrow-down"
           >
             <path
+              class="aw-stroke-text-primary"
               d="M8 10L12 14L16 10"
               id="Vector"
               stroke="white"
@@ -197,7 +200,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should only render Chain
   "connect": [Function],
   "container": <div>
     <div
-      class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+      class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-text-text-primary aw-rounded-full aw-border-t-2 aw-border-primaryLight md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
     >
       <div
         class="aw-relative aw-z-0 aw-mr-2"
@@ -213,17 +216,17 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should only render Chain
           <img
             alt=""
             class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
-            src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+            src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
           />
         </div>
       </div>
       <span
-        class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+        class="aw-text-[16px] aw-uppercase md:aw-text-[22px]"
       >
         ETH
       </span>
       <svg
-        fill="none"
+        class="aw-fill-none"
         height="35"
         viewBox="0 0 24 24"
         width="35"
@@ -233,6 +236,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should only render Chain
           id="arrow-down"
         >
           <path
+            class="aw-stroke-text-primary"
             d="M8 10L12 14L16 10"
             id="Vector"
             stroke="white"
@@ -304,7 +308,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should render ChainToken
   "baseElement": <body>
     <div>
       <div
-        class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+        class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-text-text-primary aw-rounded-full aw-border-t-2 aw-border-primaryLight md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
       >
         <div
           class="aw-relative aw-z-0 aw-mr-2"
@@ -316,12 +320,12 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should render ChainToken
           />
         </div>
         <span
-          class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+          class="aw-text-[16px] aw-uppercase md:aw-text-[22px]"
         >
           ETH
         </span>
         <svg
-          fill="none"
+          class="aw-fill-none"
           height="35"
           viewBox="0 0 24 24"
           width="35"
@@ -331,6 +335,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should render ChainToken
             id="arrow-down"
           >
             <path
+              class="aw-stroke-text-primary"
               d="M8 10L12 14L16 10"
               id="Vector"
               stroke="white"
@@ -346,7 +351,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should render ChainToken
   "connect": [Function],
   "container": <div>
     <div
-      class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-rounded-full aw-border-t-2 aw-border-blue-500 md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
+      class="aw-flex md:aw-h-14 aw-h-12 aw-items-center aw-text-text-primary aw-rounded-full aw-border-t-2 aw-border-primaryLight md:aw-px-4 aw-pl-2 aw-shadow-xl disabled:aw-cursor-not-allowed disabled:aw-opacity-80"
     >
       <div
         class="aw-relative aw-z-0 aw-mr-2"
@@ -358,12 +363,12 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should render ChainToken
         />
       </div>
       <span
-        class="aw-text-[16px] aw-uppercase aw-text-white md:aw-text-[22px]"
+        class="aw-text-[16px] aw-uppercase md:aw-text-[22px]"
       >
         ETH
       </span>
       <svg
-        fill="none"
+        class="aw-fill-none"
         height="35"
         viewBox="0 0 24 24"
         width="35"
@@ -373,6 +378,7 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should render ChainToken
           id="arrow-down"
         >
           <path
+            class="aw-stroke-text-primary"
             d="M8 10L12 14L16 10"
             id="Vector"
             stroke="white"

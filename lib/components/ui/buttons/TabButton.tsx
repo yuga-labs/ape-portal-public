@@ -9,7 +9,7 @@ import { useApeContext } from '../../../providers/ape/apeProvider.context.ts';
 export const SelectedTabClass =
   'aw-bg-tab-button-selected disabled:aw-cursor-auto aw-shadow-tab-button-selected';
 export const UnselectedTabClass =
-  'aw-bg-ape-blue-700 aw-opacity-90 aw-shadow-tab-button';
+  'aw-bg-tab-button-unselected aw-opacity-90 aw-shadow-tab-button';
 
 export const TabButton = ({
   portalType,
@@ -39,7 +39,7 @@ export const TabButton = ({
         }}
         disabled={disabled}
         className={cn(
-          'aw-h-14 aw-rounded-[2px] aw-bg-gray-400/30  disabled:aw-opacity-80 aw-leading-[14px] aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-white aw-text-[14px] disabled:aw-cursor-not-allowed aw-z-20 hover:enabled:aw-underline focus:aw-outline-none',
+          'aw-h-14 aw-rounded-[2px] aw-bg-gray-400/30  disabled:aw-opacity-80 aw-leading-[14px] aw-tracking-[1.4px] aw-font-dmmono aw-uppercase aw-font-medium aw-relative aw-flex aw-flex-1 aw-items-center aw-justify-center aw-text-text-primary aw-text-[14px] disabled:aw-cursor-not-allowed aw-z-20 hover:enabled:aw-underline focus:aw-outline-none',
           selected && SelectedTabClass,
           !selected && UnselectedTabClass,
         )}

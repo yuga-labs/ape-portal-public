@@ -20,14 +20,14 @@ export const ChainPillButton = ({
         void onClick();
       }}
       className={cn(
-        'aw-flex aw-h-[40px] aw-items-center aw-justify-center aw-gap-2 aw-rounded-[55px] aw-bg-apeBlue aw-pl-2 aw-pr-2.5 aw-py-1 hover:aw-bg-apeDarkBlue aw-border aw-transition-all aw-duration-300 aw-ease-in-out',
+        'aw-flex aw-h-[40px] aw-items-center aw-justify-center aw-gap-2 aw-rounded-[55px] aw-bg-primary aw-pl-2 aw-pr-2.5 aw-py-1 hover:aw-bg-primaryDark aw-border aw-transition-all aw-duration-300 aw-ease-in-out',
         selected ? 'aw-border-white/50' : 'aw-border-transparent',
       )}
     >
       {children ?? (
         <>
           <ChainIcon chainId={chain} className={'aw-aspect-square aw-size-6'} />
-          <div className="aw-text-center aw-font-dmmono aw-text-sm aw-font-medium aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-white">
+          <div className="aw-text-center aw-font-dmmono aw-text-sm aw-font-medium aw-uppercase aw-leading-[14px] aw-tracking-wide aw-text-text-primary">
             {getChainName(chain as ChainId) ?? 'Unknown'}
           </div>
         </>

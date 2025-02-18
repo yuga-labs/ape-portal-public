@@ -113,7 +113,10 @@ export const ApeStableDisclosure = ({
 
   return (
     <div className="aw-ml-2 aw-flex aw-items-center">
-      <AdaptiveTooltip content={tooltipContent} className="aw-text-white">
+      <AdaptiveTooltip
+        content={tooltipContent}
+        className="aw-text-text-primary"
+      >
         <InfoIcon className="aw-cursor-help" />
       </AdaptiveTooltip>
     </div>

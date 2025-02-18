@@ -1,7 +1,5 @@
-import { MouseEventHandler, useEffect, useState } from 'react';
+import { MouseEventHandler, ReactNode, useEffect, useState } from 'react';
 import * as TooltipPrimitive from '@radix-ui/react-tooltip';
-
-import { ReactNode } from 'react';
 import { cn } from '../../../utils/utils';
 import { useModalStore } from '../../../store/useModalStore';
 
@@ -86,7 +84,7 @@ const AdaptiveTooltip = ({
             avoidCollisions
             sideOffset={5}
             className={cn(
-              'aw-z-100 aw-w-[275px] aw-max-w-[90vw] aw-animate-fade-in aw-flex-col aw-items-start aw-justify-center aw-gap-3 aw-rounded-[10px] aw-border aw-border-white/20 aw-bg-[#002775] aw-px-5 aw-py-[17px]',
+              'aw-z-100 aw-w-[275px] aw-max-w-[90vw] aw-animate-fade-in aw-flex-col aw-items-start aw-justify-center aw-gap-3 aw-rounded-[10px] aw-border aw-border-white/20 aw-bg-primaryDark aw-px-5 aw-py-[17px]',
               className,
             )}
             onPointerDownOutside={

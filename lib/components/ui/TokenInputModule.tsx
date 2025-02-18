@@ -116,7 +116,7 @@ export const TokenInputModule = ({
     <>
       <div
         className={cn(
-          'aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-blue-500 aw-bg-gradient-to-t aw-from-white/20 aw-to-white/10 aw-p-4 aw-backdrop-blur-[38px]',
+          'aw-relative aw-font-dmsans aw-flex aw-w-full aw-flex-col aw-gap-[12px] aw-text-text-primary aw-text-clip aw-rounded-xl aw-border-t-2 aw-border-primaryLight aw-bg-gradient-to-t aw-from-text-disabled/20 aw-to-text-disabled/0 aw-p-4 aw-backdrop-blur-[38px]',
           className,
         )}
         data-testid={`token-input-${inputType}`}
@@ -157,7 +157,7 @@ export const TokenInputModule = ({
           </ModalWrapper>
         </div>
         <div className="aw-z-50 aw-flex aw-size-full aw-flex-row aw-items-center aw-justify-between aw-gap-x-2 aw-text-nowrap">
-          <div className="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70">
+          <div className="aw-flex aw-size-full aw-items-center aw-text-left aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-opacity-70">
             {inputUsdValue}
             <ApeStableDisclosure
               isSourceToken={isSourceToken}
@@ -170,13 +170,13 @@ export const TokenInputModule = ({
             />
           </div>
           <div>
-            <span className="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40">
+            <span className="aw-mr-1 aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-opacity-40">
               Balance
               {isDifferentDestinationWallet &&
                 ` ${shortenAddress(destinationAddress)}`}
               :
             </span>
-            <span className="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70">
+            <span className="aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-opacity-70">
               {isBalanceLoading ? 'Loading...' : tokenBalanceTrimmed}
             </span>
           </div>

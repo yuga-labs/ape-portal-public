@@ -24,10 +24,10 @@ const DetailRow = ({
         'aw-flex aw-flex-row aw-items-center aw-justify-end aw-gap-x-2.5'
       }
     >
-      <span className="aw-text-center aw-text-[14px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-40">
+      <span className="aw-text-center aw-text-[14px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-opacity-40">
         {descriptor}
       </span>
-      <span className="aw-text-center aw-text-[14px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-text-white aw-opacity-70">
+      <span className="aw-text-center aw-text-[14px] aw-font-normal aw-leading-[18px] aw-tracking-tight aw-opacity-70">
         {information}
       </span>
     </div>
@@ -45,21 +45,21 @@ export const TransactionOverview = () => {
       as={motion.div}
       layout={'position'}
       transition={{ duration: 0.5 }}
-      className="aw-mb-auto aw-w-full aw-rounded-[5px] aw-border-2 aw-border-white/20 aw-bg-blue-700 aw-px-3 aw-pt-1 aw-font-dmsans"
+      className="aw-mb-auto aw-w-full aw-rounded-[5px] aw-border-2 aw-border-text-primary/20 aw-bg-primary aw-px-3 aw-pt-1 aw-font-dmsans aw-text-text-primary"
     >
       {({ open }) => (
         <>
-          <DisclosureButton className="aw-mb-2 aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-end aw-rounded aw-border-b-2 aw-border-white/10 aw-text-right">
+          <DisclosureButton className="aw-mb-2 aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-end aw-rounded aw-border-b-2 aw-border-text-primary/10 aw-text-right">
             <div
               className={
                 'aw-flex aw-w-full aw-flex-row aw-items-center aw-justify-between'
               }
             >
-              <span className="aw-font-dmsans aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-wide aw-text-white aw-opacity-70">
+              <span className="aw-font-dmsans aw-text-[15px] aw-font-normal aw-leading-[18px] aw-tracking-wide aw-opacity-70">
                 Fees:
               </span>
               <div className={'aw-flex aw-flex-row aw-items-center'}>
-                <span className="aw-max-w-[300px] aw-overflow-hidden aw-text-ellipsis aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight aw-text-white">
+                <span className="aw-max-w-[300px] aw-overflow-hidden aw-text-ellipsis aw-text-[15px] aw-font-bold aw-leading-[18px] aw-tracking-tight">
                   {bridgeTransactionData.totalFeeUsdString}
                 </span>
                 <ArrowDown
@@ -85,7 +85,7 @@ export const TransactionOverview = () => {
                 >
                   <div
                     className={
-                      'aw-flex aw-flex-col aw-gap-y-2 aw-border-t-2 aw-border-white/10 aw-py-2'
+                      'aw-flex aw-flex-col aw-gap-y-2 aw-border-t-2 aw-border-text-primary/10 aw-py-2'
                     }
                   >
                     <DetailRow

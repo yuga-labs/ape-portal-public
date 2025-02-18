@@ -13,16 +13,16 @@ exports[`components/ui/TokenDisplay > should not render animation if animationVi
         >
           <img
             alt="Ether"
-            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
             src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
           />
           <img
             alt=""
             class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-            src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+            src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
           />
           <div
-            class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+            class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
           >
             <div
               class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -56,16 +56,16 @@ exports[`components/ui/TokenDisplay > should not render animation if animationVi
       >
         <img
           alt="Ether"
-          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
           src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
         />
         <img
           alt=""
           class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-          src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+          src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
         />
         <div
-          class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+          class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
         >
           <div
             class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -155,16 +155,16 @@ exports[`components/ui/TokenDisplay > should render TokenDisplay 1`] = `
         >
           <img
             alt="Ether"
-            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
             src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
           />
           <img
             alt=""
             class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-            src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+            src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
           />
           <div
-            class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+            class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
           >
             <div
               class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -202,16 +202,16 @@ exports[`components/ui/TokenDisplay > should render TokenDisplay 1`] = `
       >
         <img
           alt="Ether"
-          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
           src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
         />
         <img
           alt=""
           class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-          src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+          src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
         />
         <div
-          class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+          class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
         >
           <div
             class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"

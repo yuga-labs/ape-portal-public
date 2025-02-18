@@ -19,7 +19,7 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-primaryDark aw-text-text-primary"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -31,18 +31,18 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-accent/70 aw-scrollbar-thumb-text-primary/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-text-primary md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Processing Transaction
             </div>
             <h2
-              class="aw-mt-8 aw-text-[16px] aw-text-white"
+              class="aw-mt-8 aw-text-[16px] aw-text-text-primary"
             >
               Bridging
             </h2>
@@ -61,16 +61,16 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
                       class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                      src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -105,16 +105,16 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
-                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
                       class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                      src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -144,7 +144,7 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
               class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
             >
               <div
-                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white aw-invisible"
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-text-primary aw-invisible"
               >
                 <div
                   class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
@@ -163,13 +163,14 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
                   target="_blank"
                 >
                   <button
-                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px]"
+                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-accent aw-text-text-primary aw-tracking-[1.6px]"
                   >
                     <div
-                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
+                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-text-text-primary aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
                     >
                       View Transaction
                       <svg
+                        class="aw-stroke-text-primary"
                         fill="none"
                         height="10"
                         viewBox="0 0 12 12"
@@ -179,14 +180,13 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
                         <path
                           d="M11 1L1 11M11 1H1M11 1V11"
                           id="Vector"
-                          stroke="white"
                         />
                       </svg>
                     </div>
                   </button>
                 </a>
                 <a
-                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-text-primary/70 aw-underline"
                   href="https://help.apeportal.xyz"
                   target="_blank"
                 >
@@ -341,7 +341,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-primaryDark aw-text-text-primary"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -353,18 +353,18 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-accent/70 aw-scrollbar-thumb-text-primary/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-text-primary md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Processing Transaction
             </div>
             <h2
-              class="aw-mt-8 aw-text-[16px] aw-text-white"
+              class="aw-mt-8 aw-text-[16px] aw-text-text-primary"
             >
               Bridging
             </h2>
@@ -383,16 +383,16 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
                       class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                      src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -427,16 +427,16 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
-                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
                       class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                      src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -466,7 +466,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
               class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
             >
               <div
-                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white"
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-text-primary"
               >
                 <div
                   class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
@@ -487,13 +487,14 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
                   target="_blank"
                 >
                   <button
-                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px]"
+                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-accent aw-text-text-primary aw-tracking-[1.6px]"
                   >
                     <div
-                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
+                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-text-text-primary aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
                     >
                       View Transaction
                       <svg
+                        class="aw-stroke-text-primary"
                         fill="none"
                         height="10"
                         viewBox="0 0 12 12"
@@ -503,14 +504,13 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
                         <path
                           d="M11 1L1 11M11 1H1M11 1V11"
                           id="Vector"
-                          stroke="white"
                         />
                       </svg>
                     </div>
                   </button>
                 </a>
                 <a
-                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-text-primary/70 aw-underline"
                   href="https://help.apeportal.xyz"
                   target="_blank"
                 >
@@ -604,7 +604,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-primaryDark aw-text-text-primary"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -616,18 +616,18 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-accent/70 aw-scrollbar-thumb-text-primary/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-text-primary md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Check Your Wallet
             </div>
             <h2
-              class="aw-mt-8 aw-text-[16px] aw-text-white"
+              class="aw-mt-8 aw-text-[16px] aw-text-text-primary"
             >
               Bridging
             </h2>
@@ -646,16 +646,16 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
                       class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                      src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -686,16 +686,16 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
-                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
                       class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                      src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -721,7 +721,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
               class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
             >
               <div
-                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white"
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-text-primary"
               >
                 <div
                   class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
@@ -738,10 +738,10 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
                 class="aw-flex aw-flex-col"
               >
                 <button
-                  class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-white aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
+                  class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 aw-font-dmmono aw-uppercase aw-text-text-primary aw-tracking-[1.6px] disabled:aw-opacity-100 aw-bg-gradient-lavender-coral-sunset"
                 >
                   <div
-                    class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-apeCtaBlue aw-text-center aw-text-white"
+                    class="aw-relative aw-overflow-hidden aw-font-dmmono aw-text-[16px] md:aw-text-[18px] aw-font-medium aw-inline-flex aw-size-full aw-items-center aw-justify-center aw-rounded-[5px] aw-bg-primaryDark aw-text-center aw-text-text-primary"
                   >
                     <div
                       class="aw-absolute aw-h-[25px] aw-w-2/5 aw-rounded-full aw-bg-white aw-opacity-10 aw-blur-2xl aw-filter"
@@ -751,7 +751,7 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
                   </div>
                 </button>
                 <a
-                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-text-primary/70 aw-underline"
                   href="https://help.apeportal.xyz"
                   target="_blank"
                 >
@@ -845,7 +845,7 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-primaryDark aw-text-text-primary"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -857,18 +857,18 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-accent/70 aw-scrollbar-thumb-text-primary/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-text-primary md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Processing Transaction
             </div>
             <h2
-              class="aw-mt-8 aw-text-[16px] aw-text-white"
+              class="aw-mt-8 aw-text-[16px] aw-text-text-primary"
             >
               Bridging
             </h2>
@@ -887,16 +887,16 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
                       class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-                      src="https://box-v2.api.decent.xyz/chains/ethereum.png"
+                      src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -931,16 +931,16 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
-                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
                       class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
-                      src="https://box-v3.api.decent.xyz/chains/apechain.svg"
+                      src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -970,7 +970,7 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
               class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
             >
               <div
-                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white aw-invisible"
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-text-primary aw-invisible"
               >
                 <div
                   class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
@@ -989,13 +989,14 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
                   target="_blank"
                 >
                   <button
-                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px]"
+                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-accent aw-text-text-primary aw-tracking-[1.6px]"
                   >
                     <div
-                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
+                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-text-text-primary aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
                     >
                       View Transaction
                       <svg
+                        class="aw-stroke-text-primary"
                         fill="none"
                         height="10"
                         viewBox="0 0 12 12"
@@ -1005,14 +1006,13 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
                         <path
                           d="M11 1L1 11M11 1H1M11 1V11"
                           id="Vector"
-                          stroke="white"
                         />
                       </svg>
                     </div>
                   </button>
                 </a>
                 <a
-                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-text-primary/70 aw-underline"
                   href="https://help.apeportal.xyz"
                   target="_blank"
                 >
@@ -1105,7 +1105,7 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
       tabindex="-1"
     >
       <div
-        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-apeDarkBlue aw-text-white"
+        class="aw-relative aw-flex aw-size-full aw-animate-fade-in aw-rounded-[10px] aw-bg-primaryDark aw-text-text-primary"
       >
         <span
           style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; word-wrap: normal;"
@@ -1117,18 +1117,18 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
           </h2>
         </span>
         <div
-          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-black/70 aw-scrollbar-thumb-blue-700/80 aw-items-center aw-justify-center"
+          class="aw-flex aw-size-full aw-flex-col aw-gap-y-3 aw-overflow-auto aw-p-4 aw-scrollbar aw-scrollbar-track-accent/70 aw-scrollbar-thumb-text-primary/80 aw-items-center aw-justify-center"
         >
           <div
             class="aw-flex aw-h-full aw-flex-col aw-items-center aw-justify-center"
           >
             <div
-              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-white md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
+              class="aw-mt-12 aw-px-20 aw-text-center aw-text-[25px] aw-leading-[38px] aw-text-text-primary md:aw-px-24 md:aw-text-[35px] md:aw-leading-[40px]"
             >
               Processing Transaction
             </div>
             <h2
-              class="aw-mt-8 aw-text-[16px] aw-text-white"
+              class="aw-mt-8 aw-text-[16px] aw-text-text-primary"
             >
               Swapping
             </h2>
@@ -1147,11 +1147,11 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -1186,11 +1186,11 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-white aw-p-1"
-                      src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
+                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <div
-                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-white  aw-opacity-100"
+                      class="aw-absolute aw-mt-40 aw-flex aw-w-full aw-flex-col aw-justify-center aw-gap-y-[6px] aw-overflow-visible aw-text-nowrap aw-text-center aw-uppercase aw-text-text-primary aw-opacity-100"
                     >
                       <div
                         class="aw-flex aw-justify-center aw-font-mono aw-text-[11px] aw-leading-[14px] aw-tracking-[1.1px] aw-opacity-50"
@@ -1220,7 +1220,7 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
               class="aw-mb-10 aw-mt-2 aw-w-full aw-px-3 aw-pb-3 aw-text-center md:aw-mb-0"
             >
               <div
-                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-white aw-invisible"
+                class="aw-mb-8 aw-mt-24 aw-flex aw-flex-col aw-font-dmsans aw-text-[13px] aw-leading-[18px] aw-tracking-[0.13px] aw-text-text-primary aw-invisible"
               >
                 <div
                   class="aw-flex aw-min-h-5 aw-justify-center aw-font-normal aw-opacity-50"
@@ -1239,13 +1239,14 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
                   target="_blank"
                 >
                   <button
-                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-apeAccent aw-text-white aw-tracking-[1.6px]"
+                    class="aw-min-h-[62px] aw-text-sm aw-leading-[14px] aw-w-full aw-flex aw-items-center aw-justify-center aw-rounded-[5px] aw-p-0.5 enabled:hover:aw-p-[0.1875rem] aw-transition-all aw-duration-300 aw-ease-in-out enabled:hover:aw-duration-100 disabled:aw-cursor-not-allowed disabled:aw-p-0 disabled:aw-opacity-70 aw-font-dmmono aw-uppercase aw-bg-accent aw-text-text-primary aw-tracking-[1.6px]"
                   >
                     <div
-                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
+                      class="aw-flex aw-w-full aw-flex-1 aw-flex-row aw-items-center aw-text-text-primary aw-justify-center aw-gap-x-4 aw-text-center aw-tracking-[1.4px]"
                     >
                       View Transaction
                       <svg
+                        class="aw-stroke-text-primary"
                         fill="none"
                         height="10"
                         viewBox="0 0 12 12"
@@ -1255,14 +1256,13 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
                         <path
                           d="M11 1L1 11M11 1H1M11 1V11"
                           id="Vector"
-                          stroke="white"
                         />
                       </svg>
                     </div>
                   </button>
                 </a>
                 <a
-                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-white/70 aw-underline"
+                  class="aw-mt-3 aw-text-center aw-font-mono aw-text-[13px] aw-tracking-wide aw-text-text-primary/70 aw-underline"
                   href="https://help.apeportal.xyz"
                   target="_blank"
                 >

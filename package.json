@@ -1,7 +1,7 @@
 {
   "name": "@yuga-labs/ape-portal-public",
   "description": "ApeChain Portal. Offers a set of components to interact with the ApeChain blockchain.",
-  "version": "0.3.22",
+  "version": "0.3.23",
   "license": "APEPORTAL-1.0",
   "type": "module",
   "main": "./dist/cjs/index.js",

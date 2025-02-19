@@ -122,7 +122,7 @@ export function Buy({
     >
       <div
         data-testid="aw-onramp-container"
-        className="aw-flex aw-min-h-[470px] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-primary"
+        className="aw-flex aw-min-h-[470px] aw-w-[90vw] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-primary md:aw-w-full"
       >
         {!isTabHosted && <ErrorModal />}
         {fundsReceiverWarning && isWalletConnected && (
@@ -144,7 +144,7 @@ export function Buy({
           )}
         />
         {!isWalletConnected && (
-          <div className="aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16">
+          <div className="aw-flex aw-w-[90vw] aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16 md:aw-w-full">
             <div className={'aw-font-dmsans aw-text-text-primary'}>
               <div className="aw-mb-6 aw-text-center aw-text-3xl aw-capitalize aw-leading-[37px] aw-tracking-wide">
                 Connect <br />

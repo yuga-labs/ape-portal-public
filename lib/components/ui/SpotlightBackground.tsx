@@ -86,7 +86,7 @@ export const SpotlightBackground = ({
       />
       <div
         className={cn(
-          'aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6',
+          'aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-w-[90vw] md:aw-w-full',
           {
             'aw-pt-3': showBranding && isSwap,
             'aw-pt-6': showBranding && !isSwap,

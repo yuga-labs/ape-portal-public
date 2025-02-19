@@ -171,7 +171,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                       />
                     </svg>
                     <div
-                      class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-pt-6"
+                      class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-w-[90vw] md:aw-w-full aw-pt-6"
                     >
                       <div
                         class="aw-relative aw-flex aw-flex-1 aw-flex-col aw-gap-y-3"
@@ -788,7 +788,7 @@ exports[`ApePortal > renders the default tab correctly with onramp disabled 1`] 
                     />
                   </svg>
                   <div
-                    class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-pt-6"
+                    class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-w-[90vw] md:aw-w-full aw-pt-6"
                   >
                     <div
                       class="aw-relative aw-flex aw-flex-1 aw-flex-col aw-gap-y-3"
@@ -1474,7 +1474,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                       />
                     </svg>
                     <div
-                      class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-pt-6"
+                      class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-w-[90vw] md:aw-w-full aw-pt-6"
                     >
                       <div
                         class="aw-relative aw-flex aw-flex-1 aw-flex-col aw-gap-y-3"
@@ -1930,7 +1930,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                   class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
                 >
                   <div
-                    class="aw-flex aw-min-h-[470px] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-primary"
+                    class="aw-flex aw-min-h-[470px] aw-w-[90vw] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-primary md:aw-w-full"
                     data-testid="aw-onramp-container"
                   >
                     <div
@@ -1939,7 +1939,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                       id="aw-onramp-halliday"
                     />
                     <div
-                      class="aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16"
+                      class="aw-flex aw-w-[90vw] aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16 md:aw-w-full"
                     >
                       <div
                         class="aw-font-dmsans aw-text-text-primary"
@@ -2163,7 +2163,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                     />
                   </svg>
                   <div
-                    class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-pt-6"
+                    class="aw-z-60 aw-flex aw-flex-1 aw-flex-col aw-px-2 aw-pb-2 aw-transition-all md:aw-px-6 aw-w-[90vw] md:aw-w-full aw-pt-6"
                   >
                     <div
                       class="aw-relative aw-flex aw-flex-1 aw-flex-col aw-gap-y-3"
@@ -2619,7 +2619,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                 class="aw-relative aw-z-50 aw-flex aw-size-full aw-min-h-[470px] aw-flex-col aw-justify-center aw-text-clip"
               >
                 <div
-                  class="aw-flex aw-min-h-[470px] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-primary"
+                  class="aw-flex aw-min-h-[470px] aw-w-[90vw] aw-justify-center aw-overflow-clip aw-rounded-b-[10px] aw-bg-primary md:aw-w-full"
                   data-testid="aw-onramp-container"
                 >
                   <div
@@ -2628,7 +2628,7 @@ exports[`ApePortal > renders the default tab correctly with onramp enabled 1`] =
                     id="aw-onramp-halliday"
                   />
                   <div
-                    class="aw-flex aw-w-full aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16"
+                    class="aw-flex aw-w-[90vw] aw-flex-col aw-items-center aw-justify-between aw-px-8 aw-pb-8 aw-pt-16 md:aw-w-full"
                   >
                     <div
                       class="aw-font-dmsans aw-text-text-primary"

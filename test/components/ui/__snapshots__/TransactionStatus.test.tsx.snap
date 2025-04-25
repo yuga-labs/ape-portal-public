@@ -61,12 +61,12 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
-                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
                       src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                     />
                     <div
@@ -105,12 +105,12 @@ exports[`components/ui/TransactionStatus > escape key DOES NOT close modal if sh
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
-                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
                       src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                     />
                     <div
@@ -383,12 +383,12 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
-                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
                       src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                     />
                     <div
@@ -427,12 +427,12 @@ exports[`components/ui/TransactionStatus > estimated time is visible in processi
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
-                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
                       src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                     />
                     <div
@@ -646,12 +646,12 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
-                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
                       src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                     />
                     <div
@@ -686,12 +686,12 @@ exports[`components/ui/TransactionStatus > estimated time is visible in waiting 
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
-                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
                       src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                     />
                     <div
@@ -887,12 +887,12 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
-                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
                       src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                     />
                     <div
@@ -931,12 +931,12 @@ exports[`components/ui/TransactionStatus > should render status with bridge copy
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <img
                       alt=""
-                      class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+                      class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
                       src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                     />
                     <div
@@ -1147,7 +1147,7 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                     />
                     <div
@@ -1186,7 +1186,7 @@ exports[`components/ui/TransactionStatus > should render status with swap copy 1
                   >
                     <img
                       alt="ApeCoin"
-                      class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+                      class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
                       src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                     />
                     <div

@@ -13,8 +13,8 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should not render ChainI
         >
           <img
             alt="Ether"
-            class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10"
-            src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+            class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10"
+            src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
           />
         </div>
         <span
@@ -56,8 +56,8 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should not render ChainI
       >
         <img
           alt="Ether"
-          class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10"
-          src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+          class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10"
+          src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
         />
       </div>
       <span
@@ -155,15 +155,15 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should only render Chain
         >
           <img
             alt="Ether"
-            class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
-            src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+            class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+            src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
           />
           <div
             data-testid="chain-icon"
           >
             <img
               alt=""
-              class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+              class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
               src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
             />
           </div>
@@ -207,15 +207,15 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should only render Chain
       >
         <img
           alt="Ether"
-          class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
-          src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+          class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+          src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
         />
         <div
           data-testid="chain-icon"
         >
           <img
             alt=""
-            class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+            class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
             src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
           />
         </div>
@@ -315,8 +315,8 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should render ChainToken
         >
           <img
             alt="Ether"
-            class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10"
-            src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+            class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10"
+            src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
           />
         </div>
         <span
@@ -358,8 +358,8 @@ exports[`components/ui/buttons/ChainTokenSelectButton > should render ChainToken
       >
         <img
           alt="Ether"
-          class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10"
-          src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+          class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10"
+          src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
         />
       </div>
       <span

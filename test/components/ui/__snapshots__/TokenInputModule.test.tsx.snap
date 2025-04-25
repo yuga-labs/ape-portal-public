@@ -44,7 +44,7 @@ exports[`components/ui/TokenInputModule > should NOT show destination wallet add
               >
                 <img
                   alt="ApeCoin"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                  class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -52,7 +52,7 @@ exports[`components/ui/TokenInputModule > should NOT show destination wallet add
                 >
                   <img
                     alt=""
-                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                     src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                   />
                 </div>
@@ -162,7 +162,7 @@ exports[`components/ui/TokenInputModule > should NOT show destination wallet add
             >
               <img
                 alt="ApeCoin"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -170,7 +170,7 @@ exports[`components/ui/TokenInputModule > should NOT show destination wallet add
               >
                 <img
                   alt=""
-                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                   src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                 />
               </div>
@@ -336,7 +336,7 @@ exports[`components/ui/TokenInputModule > should only render MaxButton when srcT
               >
                 <img
                   alt="ApeCoin"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                  class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -344,7 +344,7 @@ exports[`components/ui/TokenInputModule > should only render MaxButton when srcT
                 >
                   <img
                     alt=""
-                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                     src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                   />
                 </div>
@@ -454,7 +454,7 @@ exports[`components/ui/TokenInputModule > should only render MaxButton when srcT
             >
               <img
                 alt="ApeCoin"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -462,7 +462,7 @@ exports[`components/ui/TokenInputModule > should only render MaxButton when srcT
               >
                 <img
                   alt=""
-                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                   src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                 />
               </div>
@@ -628,7 +628,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton disabled if wa
               >
                 <img
                   alt="ApeCoin"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                  class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -636,7 +636,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton disabled if wa
                 >
                   <img
                     alt=""
-                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                     src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                   />
                 </div>
@@ -746,7 +746,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton disabled if wa
             >
               <img
                 alt="ApeCoin"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -754,7 +754,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton disabled if wa
               >
                 <img
                   alt=""
-                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                   src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                 />
               </div>
@@ -920,7 +920,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton enabled if wal
               >
                 <img
                   alt="ApeCoin"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                  class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
                 />
                 <div
@@ -928,7 +928,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton enabled if wal
                 >
                   <img
                     alt=""
-                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                     src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                   />
                 </div>
@@ -1037,7 +1037,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton enabled if wal
             >
               <img
                 alt="ApeCoin"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v3.api.decent.xyz/tokens/apecoin.svg"
               />
               <div
@@ -1045,7 +1045,7 @@ exports[`components/ui/TokenInputModule > should render MaxButton enabled if wal
               >
                 <img
                   alt=""
-                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                   src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
                 />
               </div>
@@ -1210,7 +1210,7 @@ exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
               >
                 <img
                   alt="ApeCoin"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                  class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                 />
                 <div
@@ -1218,7 +1218,7 @@ exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
                 >
                   <img
                     alt=""
-                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                     src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                   />
                 </div>
@@ -1318,7 +1318,7 @@ exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
             >
               <img
                 alt="ApeCoin"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
               />
               <div
@@ -1326,7 +1326,7 @@ exports[`components/ui/TokenInputModule > should render TokenInputModule 1`] = `
               >
                 <img
                   alt=""
-                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                   src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                 />
               </div>
@@ -1482,7 +1482,7 @@ exports[`components/ui/TokenInputModule > should show destination wallet address
               >
                 <img
                   alt="ApeCoin"
-                  class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                  class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                   src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
                 />
                 <div
@@ -1490,7 +1490,7 @@ exports[`components/ui/TokenInputModule > should show destination wallet address
                 >
                   <img
                     alt=""
-                    class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                    class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                     src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                   />
                 </div>
@@ -1591,7 +1591,7 @@ exports[`components/ui/TokenInputModule > should show destination wallet address
             >
               <img
                 alt="ApeCoin"
-                class="aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
+                class="box-rounded-full aw-size-8 aw-rounded-full aw-bg-white aw-p-1 md:aw-size-10 aw-mr-3"
                 src="https://box-v4.api.decentxyz.com/tokens/apecoin.svg"
               />
               <div
@@ -1599,7 +1599,7 @@ exports[`components/ui/TokenInputModule > should show destination wallet address
               >
                 <img
                   alt=""
-                  class="box-img-icon aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
+                  class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-0 aw-aspect-square aw-size-4 aw-rounded-full aw-shadow aw-shadow-black aw-duration-500 aw-animate-in aw-zoom-in md:aw-size-[22px]"
                   src="https://box-v4.api.decentxyz.com/chains/apechain.svg"
                 />
               </div>

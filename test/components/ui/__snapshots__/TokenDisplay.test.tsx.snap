@@ -13,12 +13,12 @@ exports[`components/ui/TokenDisplay > should not render animation if animationVi
         >
           <img
             alt="Ether"
-            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
-            src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+            class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+            src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
           />
           <img
             alt=""
-            class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+            class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
             src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
           />
           <div
@@ -56,12 +56,12 @@ exports[`components/ui/TokenDisplay > should not render animation if animationVi
       >
         <img
           alt="Ether"
-          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
-          src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+          class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+          src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
         />
         <img
           alt=""
-          class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+          class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
           src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
         />
         <div
@@ -155,12 +155,12 @@ exports[`components/ui/TokenDisplay > should render TokenDisplay 1`] = `
         >
           <img
             alt="Ether"
-            class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
-            src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+            class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+            src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
           />
           <img
             alt=""
-            class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+            class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
             src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
           />
           <div
@@ -202,12 +202,12 @@ exports[`components/ui/TokenDisplay > should render TokenDisplay 1`] = `
       >
         <img
           alt="Ether"
-          class="aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
-          src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025"
+          class="box-rounded-full aw-z-40 aw-aspect-square aw-size-[50px] aw-min-h-[50px] aw-min-w-[50px] aw-rounded-full aw-bg-text-primary aw-p-1"
+          src="https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"
         />
         <img
           alt=""
-          class="box-img-icon aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
+          class="box-img-icon box-rounded-full aw-absolute aw-bottom-0 aw-right-[10px] aw-z-50 aw-aspect-square aw-size-5 aw-rounded-full aw-shadow aw-shadow-black"
           src="https://box-v4.api.decentxyz.com/chains/ethereum.png"
         />
         <div
